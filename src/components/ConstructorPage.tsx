@@ -1,34 +1,38 @@
-import React, { useState } from "react";
-import SingleConstructor from "./SingleConstructor";
-import teams from "./API/Teams.json";
+
+// import SingleConstructor from "./SingleConstructor";
+import data from "./datas/Teams2.json";
 
 export default function ConstructorPage() {
-  const [data, setData] = useState([]);
+
+
+
+console.log(data.Teams)
+  // let { teams } = data;
+  // console.log(teams[0]?.[0].Name)
+
+  
+
+
 
   return (
     <>
-      <div className="">
-        {/* {JSON.stringify(teams[0].Constructor[0].Name)} */}
-        {/* {teams.map((t, i) => {
-          <SingleConstructor
-            name={t.Constructor[i].Name}
-            base={t.Constructor[i].Base}
-          />;
-        })} */}
+  <div>
+   
+     {data.Teams.map((res) => (
+      <div key={res.id}>
+        <h1 className="font-bold"> {res.Name}</h1>
+        <h2>{res.TeamChief}</h2>
+      </div>     
+       ))}
+  </div>
+     
 
-        {/* <SingleConstructor
-          name={teams[0].Constructor[0].Name}
-          base={teams[0].Constructor[0].Base}
-        /> */}
-        {/* {teams[0].Constructor.map((team) => {})} */}
-        {/* {teams.map((team) => {
-          return <h1 className="text-white">{team[0].Name}</h1>;
-        })} */}
-        {/* {teams.map((team, index) => {
-          return <h1 className="text-white">{team[0].Name}</h1>;
-        })} */}
-        {JSON.stringify(teams)}
-      </div>
+
+     
+
+      
+    
+
     </>
   );
 }

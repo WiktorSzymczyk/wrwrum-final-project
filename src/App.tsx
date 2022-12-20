@@ -9,11 +9,14 @@ import SingleTrack from "./components/SingleTrack";
 import NotFound from "./components/NotFound";
 import Navbar from "./components/Navbar";
 
+
 function App() {
+
+
   return (
-    <div className="App bg-[#151515] display-cover max-w-[100vw]">
+    <div className="App display-cover max-w-[100vw]">
       <div className="flex">
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/constructors" element={<ConstructorPage />} />
