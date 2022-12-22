@@ -17,7 +17,20 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/constructors" element={<ConstructorPage />} />
-          <Route path="/constructors/:id" element={<SingleConstructor />} />
+          <Route
+            path="/constructors/:id"
+            element={
+              <SingleConstructor
+                name=""
+                chief=""
+                powerUnit=""
+                img=""
+                d1Name=""
+                d2Name=""
+                chasis=""
+              />
+            }
+          />
           <Route path="/tracks" element={<Tracks />} />
           <Route path="/tracks/:id" element={<SingleTrack />} />
           <Route path="*" element={<NotFound />} />
