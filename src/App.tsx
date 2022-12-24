@@ -32,7 +32,11 @@ function App() {
             }
           />
           <Route path="/tracks" element={<Tracks />} />
-          <Route path="/tracks/:id" element={<SingleTrack />} />
+          <Route path="/tracks/:id" element={<SingleTrack name=''
+                img=''
+                country=''
+                distance=''
+                laps='' />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

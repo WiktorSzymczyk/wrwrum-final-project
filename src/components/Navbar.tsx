@@ -106,7 +106,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex flex-col bg-[#232323]">
+      <div className="flex flex-col bg-[#232323] pt-10">
         <div className="w-[20vw]">
           <div className="">
             <svg
@@ -168,10 +168,10 @@ export default function Navbar() {
         <Link className="" to="/">
           HOME
         </Link>
-        <Link className="" to="/">
+        <Link className="" to="/tracks">
           SEASONS
         </Link>
-        <Link className="" to="/">
+        <Link className="" to="/drivers">
           DRIVERS
         </Link>
         <Link className="" to="/constructors">
@@ -179,9 +179,6 @@ export default function Navbar() {
         </Link>
         <Link className="" to="/chat">
           CHAT ROOM
-        </Link>
-        <Link className="" to="/">
-          DRIVERS
         </Link>
       </div>
     </>
