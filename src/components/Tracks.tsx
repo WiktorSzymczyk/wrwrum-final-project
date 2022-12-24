@@ -2,14 +2,6 @@ import React from "react";
 import data from './Datas/Circuit.json'
 import SingleTrack from './SingleTrack';
 
-interface TrackProps{
-  name: String,
-  img: any,
-  country: String,
-  distance: String,
-  laps: String
-}
-
 export default function Tracks() {
   return (
   <>
