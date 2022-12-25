@@ -1,3 +1,62 @@
 {
-    "teams":"N/A"
+    "Teams":[
+        {
+            "id":0,
+            "img": "https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1645620474276.jpg",
+            "Name":"Red Bull Racing",
+            "Base":"Milton Keynes, United Kingdom",
+            "TeamChief":"Christian Horner",
+            "Chasis":"RB18",
+            "PowerUnit":"Red Bull Powertrains",
+            "FirstTeamEntry":"1997",
+            "WorldChampionships":"5",
+            "PolePositions":"81",
+            "FastestLaps":"84",
+            "Drivers": [
+                {
+                    "id":0,
+                    "Name":"Max",
+                    "Surname":"Verstappen",
+                    "Number":"1",
+                    "src":"https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col/image.png"     
+                }, 
+                {
+                    "id":1,
+                    "Name":"Sergio",
+                    "Surname":"Perez",
+                    "Number":"11",
+                    "src":"https://www.formula1.com/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/2col/image.png"
+                }
+            ]
+        },
+        {
+            "id":0,
+            "img": "https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1645620474276.jpg",
+            "Name":"Red Bull Racing",
+            "Base":"Milton Keynes, United Kingdom",
+            "TeamChief":"Christian Horner",
+            "Chasis":"RB18",
+            "PowerUnit":"Red Bull Powertrains",
+            "FirstTeamEntry":"1997",
+            "WorldChampionships":"5",
+            "PolePositions":"81",
+            "FastestLaps":"84",
+            "Drivers": [
+                {
+                    "id":0,
+                    "Name":"Max",
+                    "Surname":"Verstappen",
+                    "Number":"1",
+                    "src":"https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col/image.png"     
+                }, 
+                {
+                    "id":1,
+                    "Name":"Sergio",
+                    "Surname":"Perez",
+                    "Number":"11",
+                    "src":"https://www.formula1.com/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/2col/image.png"
+                }
+            ]
+        }
+    ]
 }

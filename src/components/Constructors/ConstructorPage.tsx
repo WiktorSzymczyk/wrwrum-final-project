@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SingleConstructor from "./SingleConstructor";
-import data from "./Datas/Teams.json";
+import data from "../Datas/Teams.json";
 
 export default function ConstructorPage() {
   // const [data, setData] = useState([]);
