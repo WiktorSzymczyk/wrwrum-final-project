@@ -8,6 +8,7 @@ interface DriverProps{
   pob: String
   dob: String
   points: String
+  countryImg: any
 }
 
 export default function SingleDriver(props: DriverProps) {
@@ -18,6 +19,9 @@ export default function SingleDriver(props: DriverProps) {
       <img className="w-full" src={props.img} alt="" />
       <div className="px-6 py-4 bg-[#161616]">
         <div className="font-bold text-3xl mb-2 text-white">{props.no}</div>
+        <div className='flex justify-center'>
+          <img src={props.countryImg} alt='' className='w-[15%]'/>
+          </div>
         <p className="text-gray-300 font-bold text-2xl">
           {props.Name}
         </p>
