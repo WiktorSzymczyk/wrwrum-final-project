@@ -2,7 +2,7 @@
     "Teams" : [
     {
         "id": 0,
-        "img": "https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1645620474276.jpg",
+        "img": "https://www.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing-logo.png.transform/2col/image.png",
         "Name":"Red Bull Racing",
         "Base":"Milton Keynes, United Kingdom",
         "TeamChief":"Christian Horner",
@@ -31,7 +31,7 @@
     },
     {
         "id":1,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/logo.img.jpg/1521797474166.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/ferrari-logo.png.transform/2col/image.png",
         "Name":"Scuderia Ferrari",
         "Base":"Maranello, Italy",
         "TeamChief":"Mattia Binotto",
@@ -57,7 +57,7 @@
         }
     },
     {   "id":2,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/logo.img.jpg/1582638425211.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/mercedes-logo.png.transform/2col/image.png",
         "Name":"Mercedes-AMG Petronas F1 Team",
         "Base":"Brackley, United Kingdom",
         "TeamChief":"Toto Wolff",
@@ -84,7 +84,7 @@
     },
     {
         "id":3,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/logo.img.jpg/1645620884650.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/alpine-logo.png.transform/2col/image.png",
         "Name":"BWT Alpine F1 Team",
         "Base":"Enstone, United Kingdom",
         "TeamChief":"Otmar Szafnauer",
@@ -111,7 +111,7 @@
     },
     {
         "id":4,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/logo.img.jpg/1644831223911.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/mclaren-logo.png.transform/2col/image.png",
         "Name":"McLaren F1 Team",
         "Base":"Woking, United Kingdom",
         "TeamChief":"Andreas Seidl",
@@ -138,7 +138,7 @@
     },
     {
         "id":5,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/logo.img.png/1643019381208.png",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/alfa-romeo-logo.png.transform/2col/image.png",
         "Name":"Alfa Romeo F1 Team ORLEN",
         "Base":"Hinwil, Switzerland",
         "TeamChief":"Frédéric Vasseur",
@@ -165,7 +165,7 @@
     },
     {
         "id":6,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/logo.img.jpg/1645620644658.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/aston-martin-logo.png.transform/2col/image.png",
         "Name":"Aston Martin Aramco Cognizant F1 Team",
         "Base":"Silverstone, United Kingdom",
         "TeamChief":"Mike Krack",
@@ -192,7 +192,7 @@
     },
     {
         "id":7,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/logo.img.jpg/1646210673011.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png",
         "Name":"Haas F1 Team",
         "Base":"Kannapolis, United States",
         "TeamChief":"Guenther Steiner",
@@ -219,7 +219,7 @@
     },
     {
         "id":8,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/logo.img.jpg/1582650557134.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/alphatauri-logo.png.transform/2col/image.png",
         "Name":"Scuderia AlphaTauri",
         "Base":"Faenza, Italy",
         "TeamChief":"Franz Tost",
@@ -246,7 +246,7 @@
     },
     {
         "id":9,
-        "img":"https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/logo.img.jpg/1590743731407.jpg",
+        "img":"https://www.formula1.com/content/dam/fom-website/teams/2023/williams-logo.png.transform/2col/image.png",
         "Name":"Williams Racing",
         "Base":"Grove, United Kingdom",
         "TeamChief":"Jost Capito",
