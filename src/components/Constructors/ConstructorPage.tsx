@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SingleConstructor from "./SingleConstructor";
-import data from "../Datas/Teams.json";
+import data1 from "../Datas/2021/teams.json";
+import data2 from "../Datas/2022/teams.json";
+import data3 from "../Datas/2023/teams.json";
 
 export default function ConstructorPage() {
   // const [data, setData] = useState([]);
@@ -33,7 +35,7 @@ export default function ConstructorPage() {
         lg:gap-8 p- */}
 
         <div className="5">
-          {data.Teams.map((res) => (
+          {data3.Teams.map((res) => (
             <div key={res.id}>
               <SingleConstructor
                 name={res.Name}

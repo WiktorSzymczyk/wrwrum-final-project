@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ConstructorPage from "./components/Constructors/ConstructorPage";
 import SingleConstructor from "./components/Constructors/SingleConstructor";
-import Tracks from "./components/Tracks";
+import Tracks from "./components/Tracks/Tracks";
 import SingleTrack from "./components/Tracks/SingleTrack";
 import NotFound from "./components/NotFound";
 import Navbar from "./components/Navbar";

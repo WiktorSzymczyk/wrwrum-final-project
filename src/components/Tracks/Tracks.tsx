@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import data from './Datas/Circuit.json'
+import data1 from '../Datas/2021/circuit.json'
+import data2 from '../Datas/2022/circuit.json'
+import data3 from '../Datas/2023/circuit.json'
 import SingleTrack from './SingleTrack';
 
 export default function Tracks() {
@@ -14,7 +16,7 @@ export default function Tracks() {
     </select>
 
     <div className="pr-[15%] md:pr-[15%] lg:pr-[10%]">
-          {data.circuit.map((res) => (
+          {data3.circuit.map((res) => (
             <div key={res.id}>
               <SingleTrack
                 name={res.name}
