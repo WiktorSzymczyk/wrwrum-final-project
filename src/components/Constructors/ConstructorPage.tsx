@@ -5,33 +5,8 @@ import data2 from "../Datas/2022/teams.json";
 import data3 from "../Datas/2023/teams.json";
 
 export default function ConstructorPage() {
-  // const [data, setData] = useState([]);
-
-  // const teams = JSON.parse();
-
   return (
     <>
-        {/* {JSON.stringify(teams[0].Constructor[0].Name)} */}
-        {/* {teams.map((t, i) => {
-          <SingleConstructor
-            name={t.Constructor[i].Name}
-            base={t.Constructor[i].Base}
-          />;
-        })} */}
-        {/* <SingleConstructor
-          name={teams[0].Constructor[0].Name}
-          base={teams[0].Constructor[0].Base}
-        /> */}
-        {/* {teams[0].Constructor.map((team) => {})} */}
-        {/* {teams.map((team) => {
-          return <h1 className="text-white">{team[0].Name}</h1>;
-        })} */}
-        {/* {teams.map((team, index) => {
-          return <h1 className="text-white">{team[0].Name}</h1>;
-        })} */}
-
-        {/* grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4
-        lg:gap-8 p- */}
 
           <div className="flex flex-col justify-center">
           {data3.Teams.map((res) => (
