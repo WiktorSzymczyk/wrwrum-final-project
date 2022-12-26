@@ -102,11 +102,9 @@ export default function Navbar() {
   //   </div>
   // );
 
-  const [seasons, setSeasons] = useState(false);
-
   return (
     <>
-      <div className="flex flex-col bg-[#232323] pt-10">
+      <div className="flex flex-col bg-[#232323] pt-10 text-white font-semibold text-2xl">
         <div className="w-[20vw]">
           <div className="">
             <svg
@@ -165,19 +163,22 @@ export default function Navbar() {
             </svg>
           </div>
         </div>
-        <Link className="" to="/">
+        <Link className="py-5" to="/">
           HOME
         </Link>
-        <Link className="" to="/tracks">
+        <Link className="py-5" to="/vote">
+          VOTE
+        </Link>
+        <Link className="py-5" to="/tracks">
           SEASONS
         </Link>
-        <Link className="" to="/drivers">
+        <Link className="py-5" to="/drivers">
           DRIVERS
         </Link>
-        <Link className="" to="/constructors">
+        <Link className="py-5" to="/constructors">
           CONSTRUCTORS
         </Link>
-        <Link className="" to="/chat">
+        <Link className="py-5" to="/chat">
           CHAT ROOM
         </Link>
       </div>
