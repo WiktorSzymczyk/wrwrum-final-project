@@ -8,7 +8,7 @@ export default function ConstructorPage() {
   return (
     <>
       <div className="flex flex-col justify-center">
-        {data3.Teams.map((res) => (
+        {data3.teams.map((res) => (
           <div key={res.id}>
             <SingleConstructor
               name={res.Name}
