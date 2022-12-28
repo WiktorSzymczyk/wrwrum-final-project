@@ -1,17 +1,6 @@
 import React from 'react'
-interface DriverProps{
-  img: any
-  Name: String
-  no: String
-  team: String
-  country: String
-  pob: String
-  dob: String
-  points: String
-  countryImg: any
-}
 
-export default function SingleDriver(props: DriverProps) {
+export default function SingleDriver(props: {img: any, Name: String, no: String, team: String, country: String, pob: String, dob: String, points: String, countryImg: any}) {
   return (
     <div>
         <div className="p-10">  

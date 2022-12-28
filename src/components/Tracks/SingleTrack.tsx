@@ -1,18 +1,6 @@
 import React from "react";
 
-interface TrackProps {
-  name: any,
-  img: any,
-  country: String,
-  distance: String,
-  laps: String,
-  firstGrandPrix: String
-  lapRecordTime: String
-  lapRecordDriver: String
-  lapRecordSeason: String
-  circuitLength: String
-}
-export default function SingleTrack(props: TrackProps) {
+export default function SingleTrack(props: {name: any, img: any, country: String, distance: String, firstGrandPrix: String, circuitLength: String, laps: String, lapRecordTime: String, lapRecordSeason: String, lapRecordDriver: String}) {
   return (
     <div>
       <div className="p-10">  

@@ -1,18 +1,6 @@
 import React from "react";
 
-interface TeamData {
-  name: String;
-  chief: String;
-  powerUnit: String;
-  img: any;
-  d1Name: String;
-  d2Name: String;
-  chasis: String;
-  first: String,
-  world: String
-}
-
-export default function SingleConstructor(props: TeamData) {
+export default function SingleConstructor(props: {name: String, chief: String, powerUnit: String, img: any, d1Name: String, d2Name: String, chasis: String, first: String, world: String}) {
   return (
     <div className="bg-stone-800 flex justify-center mb-5">
       {/* Basic data output */}
