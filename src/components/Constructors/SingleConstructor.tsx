@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../Image";
 
 export default function SingleConstructor(props: {name: String, chief: String, powerUnit: String, img: any, d1Name: String, d2Name: String, chasis: String, first: String, world: String}) {
   return (
@@ -7,7 +8,7 @@ export default function SingleConstructor(props: {name: String, chief: String, p
         <div className="p-10">  
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <div className="flex justify-center">
-              <img className="w-[50%]" src={props.img} alt=''/>
+              <Image className="w-[50%]" src={props.img} alt=''/>
             </div>
             <div className="px-6 py-4 bg-[#161616]">
               <div className="font-bold text-3xl mb-2 text-white">
