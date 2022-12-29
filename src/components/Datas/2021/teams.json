@@ -1,0 +1,276 @@
+{
+	"teams": [
+		{
+			"id": 0,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing-logo.png.transform/2col/image.png",
+			"Name": "Red Bull Racing",
+			"Base": "Milton Keynes, United Kingdom",
+			"TeamChief": "Christian Horner",
+			"Chasis": "RB18",
+			"PowerUnit": "Red Bull Powertrains",
+			"FirstTeamEntry": "1997",
+			"WorldChampionships": "5",
+			"PolePositions": "81",
+			"FastestLaps": "84",
+			"Drivers": [
+				{
+					"id": 0,
+					"Name": "Max",
+					"Surname": "Verstappen",
+					"Number": "1",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col/image.png"
+				},
+				{
+					"id": 1,
+					"Name": "Sergio",
+					"Surname": "Perez",
+					"Number": "11",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/2col/image.png"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/ferrari-logo.png.transform/2col/image.png",
+			"Name": "Scuderia Ferrari",
+			"Base": "Maranello, Italy",
+			"TeamChief": "Mattia Binotto",
+			"Chasis": "F1-75",
+			"PowerUnit": "Ferrari",
+			"FirstTeamEntry": "1950",
+			"WorldChampionships": "16",
+			"PolePositions": "242",
+			"FastestLaps": "258",
+			"Drivers": {
+				"0": {
+					"Name": "Charles",
+					"Surname": "Leclerc",
+					"Number": "16",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Carlos",
+					"Surname": "Sainz",
+					"Number": "55",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 2,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/mercedes-logo.png.transform/2col/image.png",
+			"Name": "Mercedes-AMG Petronas F1 Team",
+			"Base": "Brackley, United Kingdom",
+			"TeamChief": "Toto Wolff",
+			"Chasis": "W13",
+			"PowerUnit": "Mercedes",
+			"FirstTeamEntry": "1970",
+			"WorldChampionships": "8",
+			"PolePositions": "128",
+			"FastestLaps": "91",
+			"Drivers": {
+				"0": {
+					"Name": "Lewis",
+					"Surname": "Hamilton",
+					"Number": "44",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Valtteri",
+					"Surname": "Bottas",
+					"Number": "77",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 3,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/alpine-logo.png.transform/2col/image.png",
+			"Name": "BWT Alpine F1 Team",
+			"Base": "Enstone, United Kingdom",
+			"TeamChief": "Otmar Szafnauer",
+			"Chasis": "A522",
+			"PowerUnit": "Renault",
+			"FirstTeamEntry": "1986",
+			"WorldChampionships": "2",
+			"PolePositions": "20",
+			"FastestLaps": "15",
+			"Drivers": {
+				"0": {
+					"Name": "Fernando",
+					"Surname": "Alonso",
+					"Number": "14",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Esteban",
+					"Surname": "Ocon",
+					"Number": "31",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 4,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/mclaren-logo.png.transform/2col/image.png",
+			"Name": "McLaren F1 Team",
+			"Base": "Woking, United Kingdom",
+			"TeamChief": "Andreas Seidl",
+			"Chasis": "MCL36",
+			"PowerUnit": "Mercedes",
+			"FirstTeamEntry": "1966",
+			"WorldChampionships": "8",
+			"PolePositions": "156",
+			"FastestLaps": "162",
+			"Drivers": {
+				"0": {
+					"Name": "Daniel",
+					"Surname": "Ricciardo",
+					"Number": "3",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/D/DANRIC01_Daniel_Ricciardo/danric01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Lando",
+					"Surname": "Norris",
+					"Number": "4",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 5,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/alfa-romeo-logo.png.transform/2col/image.png",
+			"Name": "Alfa Romeo F1 Team ORLEN",
+			"Base": "Hinwil, Switzerland",
+			"TeamChief": "Frédéric Vasseur",
+			"Chasis": "C42",
+			"PowerUnit": "Ferrari",
+			"FirstTeamEntry": "1993",
+			"WorldChampionships": "N/A",
+			"PolePositions": "1",
+			"FastestLaps": "6",
+			"Drivers": {
+				"0": {
+					"Name": "Antonio",
+					"Surname": "Giovinazzi",
+					"Number": "99",
+					"src": "https://s3-eu-west-1.amazonaws.com/racingnews-v2-prod/Riders/Giovinazzi/_570x570_crop_center-center_none/f1_2021_ag_alf_lg.png?v=1650634606"
+				},
+				"1": {
+					"Name": "Kimi",
+					"Surname": "Raikkonen",
+					"Number": "7",
+					"src": "https://s3-eu-west-1.amazonaws.com/racingnews-v2-prod/Riders/Raikkonen/_570x570_crop_center-center_none/f1_2021_kr_alf_lg.png?v=1643809079"
+				}
+			}
+		},
+		{
+			"id": 6,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/aston-martin-logo.png.transform/2col/image.png",
+			"Name": "Aston Martin Aramco Cognizant F1 Team",
+			"Base": "Silverstone, United Kingdom",
+			"TeamChief": "Mike Krack",
+			"Chasis": "AMR22",
+			"PowerUnit": "Mercedes",
+			"FirstTeamEntry": "2018",
+			"WorldChampionships": "N/A",
+			"PolePositions": "1",
+			"FastestLaps": "N/A",
+			"Drivers": {
+				"0": {
+					"Name": "Sebastian",
+					"Surname": "Vettel",
+					"Number": "5",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/S/SEBVET01_Sebastian_Vettel/sebvet01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Lance",
+					"Surname": "Stroll",
+					"Number": "18",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 7,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png",
+			"Name": "Haas F1 Team",
+			"Base": "Kannapolis, United States",
+			"TeamChief": "Guenther Steiner",
+			"Chasis": "VF-22",
+			"PowerUnit": "Ferrari",
+			"FirstTeamEntry": "2016",
+			"WorldChampionships": "N/A",
+			"PolePositions": "1",
+			"FastestLaps": "2",
+			"Drivers": {
+				"0": {
+					"Name": "Mick",
+					"Surname": "Schumacher",
+					"Number": "47",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/M/MICSCH02_Mick_Schumacher/micsch02.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Kevin",
+					"Surname": "Magnussen",
+					"Number": "20",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/K/KEVMAG01_Kevin_Magnussen/kevmag01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 8,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/alphatauri-logo.png.transform/2col/image.png",
+			"Name": "Scuderia AlphaTauri",
+			"Base": "Faenza, Italy",
+			"TeamChief": "Franz Tost",
+			"Chasis": "AT03",
+			"PowerUnit": "Red Bull Powertrains",
+			"FirstTeamEntry": "1985",
+			"WorldChampionships": "N/A",
+			"PolePositions": "1",
+			"FastestLaps": "2",
+			"Drivers": {
+				"0": {
+					"Name": "Pierre",
+					"Surname": "Gasly",
+					"Number": "10",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "Yuki",
+					"Surname": "Tsunoda",
+					"Number": "22",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png.transform/2col/image.png"
+				}
+			}
+		},
+		{
+			"id": 9,
+			"img": "https://www.formula1.com/content/dam/fom-website/teams/2023/williams-logo.png.transform/2col/image.png",
+			"Name": "Williams Racing",
+			"Base": "Grove, United Kingdom",
+			"TeamChief": "Jost Capito",
+			"Chasis": "FW44",
+			"PowerUnit": "Mercedes",
+			"FirstTeamEntry": "1978",
+			"WorldChampionships": "9",
+			"PolePositions": "128",
+			"FastestLaps": "133",
+			"Drivers": {
+				"0": {
+					"Name": "Nicholas",
+					"Surname": "Latifi",
+					"Number": "6",
+					"src": "https://www.formula1.com/content/dam/fom-website/drivers/N/NICLAF01_Nicholas_Latifi/niclaf01.png.transform/2col/image.png"
+				},
+				"1": {
+					"Name": "George",
+					"Surname": "Russell",
+					"Number": "63",
+					"src": "https://www.formula1.com/content/fom-website/en/drivers/george-russell/jcr:content/image.img.1536.medium.jpg/1670253611700.jpg"
+				}
+			}
+		}
+	]
+}
