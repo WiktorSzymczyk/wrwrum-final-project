@@ -1,0 +1,151 @@
+{
+    "season":[
+        {
+            "id":0,
+            "name":"Max Vestappen",
+            "nationality":"NED",
+            "car":"RED BULL RACING RBPT",
+            "points":"395.5"
+        },
+        {
+            "id":1,
+            "name":"Lewis Hamilton",
+            "nationality":"GBP",
+            "car":"MERCEDES",
+            "points":"387.5"
+        },
+        {
+            "id":2,
+            "name":"Valtteri Bottas",
+            "nationality":"FIN",
+            "car":"MERCEDES",
+            "points":"226"
+        },
+        {
+            "id":3,
+            "name":"Sergio Perez",
+            "nationality":"MEX",
+            "car":"RED BULL RACING RBPT",
+            "points":"190"
+        },
+        {
+            "id":4,
+            "name":"Carlos Sainz",
+            "nationality":"SPA",
+            "car":"FERRARI",
+            "points":"164.5"
+        },
+        {
+            "id":5,
+            "name":"Lando Norris",
+            "nationality":"GBP",
+            "car":"MCLAREN MERCEDES",
+            "points":"160"
+        },
+        {
+            "id":6,
+            "name":"Charles Leclerc",
+            "nationality":"MON",
+            "car":"FERRARI",
+            "points":"159"
+        },
+        {
+            "id":7,
+            "name":"Daniel Riccardo",
+            "nationality":"AUS",
+            "car":"MCLAREN MERCEDES",
+            "points":"115"
+        },
+        {
+            "id":8,
+            "name":"Pierre Gasly",
+            "nationality":"FRA",
+            "car":"ALPHATAURI RBPT",
+            "points":"110"
+        },
+        {
+            "id":9,
+            "name":"Fernando Alonso",
+            "nationality":"ESP",
+            "car":"ALPINE RENAULT",
+            "points":"81"
+        },
+        {
+            "id":10,
+            "name":"Estaban Ocon",
+            "nationality":"FRA",
+            "car":"ALPINE RENAULT",
+            "points":"74"
+        },
+        {
+            "id":11,
+            "name":"Sebastian Vettel",
+            "nationality":"GER",
+            "car":"ASTON MARTIN ARAMCO MERCEDES",
+            "points":"43"
+        },
+        {
+            "id":12,
+            "name":"Lance Stroll",
+            "nationality":"CAN",
+            "car":"ASTON MARTIN ARAMCO MERCEDES",
+            "points":"34"
+        },
+        {
+            "id":13,
+            "name":"Yuki Tsunoda",
+            "nationality":"JPN",
+            "car":"ALPHATAURI RBPT",
+            "points":"32"
+        },
+        {
+            "id":14,
+            "name":"George Russel",
+            "nationality":"GBP",
+            "car":"WILLIAMS MERCEDES",
+            "points":"16"
+        },
+        {
+            "id":15,
+            "name":"Kimi Räikkönen",
+            "nationality":"FIN",
+            "car":"ALFA ROMEO RACING FERRARI",
+            "points":"10"
+        },
+        {
+            "id":16,
+            "name":"Nicolas Latifi",
+            "nationality":"CAN",
+            "car":"WILLIAMS MERCEDES",
+            "points":"7"
+        },
+        {
+            "id":17,
+            "name":"Antionio Giovinazzi",
+            "nationality":"ITA",
+            "car":"ALFA ROMEO RACING FERRARI",
+            "points":"3"
+        },
+        {
+            "id":18,
+            "name":"Mick Schumacher",
+            "nationality":"GER",
+            "car":"HAAS FERRARI",
+            "points":"0"
+        },
+        {
+            "id":19,
+            "name":"Robert Kubica",
+            "nationality":"POL",
+            "car":"ALFA ROMEO RACING FERRARI",
+            "points":"0"
+        },
+        {
+            "id":20,
+            "name":"Nikita Mazepin",
+            "nationality":"RAF",
+            "car":"HAAS FERRARI",
+            "points":"0"
+        }
+    ]
+}

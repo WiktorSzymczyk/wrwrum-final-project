@@ -1,0 +1,64 @@
+{
+    "standings":[
+        {
+            "id":0,
+            "position":"1",
+            "car":"MERCEDES",
+            "pts": "613.5"
+        },
+        {
+            "id":1,
+            "position":"2",
+            "car":"RED BULL RACING HONDA",
+            "pts": "585.5"
+        },
+        {
+            "id":2,
+            "position":"3",
+            "car":"FERRARI",
+            "pts": "323.5"
+        },
+        {
+            "id":3,
+            "position":"4",
+            "car":"MCLAREN MERCEDES",
+            "pts": "275"
+        },
+        {
+            "id":4,
+            "position":"5",
+            "car":"ALPINE RENAULT",
+            "pts": "155"
+        },
+        {
+            "id":5,
+            "position":"6",
+            "car":"ALPHATAURI HONDA",
+            "pts": "142"
+        },
+        {
+            "id":6,
+            "position":"7",
+            "car":"ASTON MARTIN MERCEDES",
+            "pts": "77"
+        },
+{
+            "id":7,
+            "position":"8",
+            "car":"WILLIAMS MERCEDES",
+            "pts": "23"
+        },
+        {
+            "id":8,
+            "position":"9",
+            "car":"ALFA ROMEO RACING FERRARI",
+            "pts": "13"
+        },
+        {
+            "id":9,
+            "position":"10",
+            "car":"HAAS FERRARI",
+            "pts": "0"
+        }
+    ]
+}
