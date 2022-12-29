@@ -11,14 +11,11 @@ export default function SingleDriver(props: {img: any, Name: String, no: String,
         <div className='flex justify-center'>
           <img src={props.countryImg} alt='' className='w-[15%]'/>
           </div>
-        <p className="text-gray-300 font-bold text-2xl">
+        <p className="text-gray-300 font-bold text-2xl py-2">
           {props.Name}
         </p>
-        <p className="text-gray-300 text-base">
+        <p className="text-gray-300 text-base py-2">
           {props.team}
-        </p>
-        <p className="text-gray-300 text-base">
-          {props.country}
         </p>
       </div>
       <div className="px-6 pt-4 pb-2 bg-[#161616]">

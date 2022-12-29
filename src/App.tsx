@@ -6,8 +6,8 @@ import ConstructorPage from "./components/Constructors/ConstructorPage";
 import SingleConstructor from "./components/Constructors/SingleConstructor";
 import Tracks from "./components/Tracks/Tracks";
 import SingleTrack from "./components/Tracks/SingleTrack";
-import NotFound from "./components/NotFound";
-import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound/NotFound";
+import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 
 function App() {

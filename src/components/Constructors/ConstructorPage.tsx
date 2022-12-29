@@ -7,7 +7,7 @@ import data3 from "../Datas/2023/teams.json";
 export default function ConstructorPage() {
   return (
     <>
-      <div className="flex flex-col justify-center">
+      <div className="p-10 grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
         {data3.teams.map((res) => (
           <div key={res.id}>
             <SingleConstructor

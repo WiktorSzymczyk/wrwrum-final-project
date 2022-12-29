@@ -6,8 +6,7 @@ import SingleDriver from './SingleDriver';
 
 export default function Drivers() {
   return (
-      <div className='flex flex-col 
-                    items-center justify-center'>
+      <div className='grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8'>
       {data2023.driver.map((res) => (
             <div key={res.id}>
               <SingleDriver
