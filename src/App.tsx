@@ -1,4 +1,5 @@
-import React from "react";
+import {useEffect, useState} from "react";
+
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -11,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 
 function App() {
+
   return (
     <div className="App bg-[#151515] display-cover max-w-[100vw]">
       <div className="flex">
