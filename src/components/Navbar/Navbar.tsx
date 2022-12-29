@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import menu from '../Media/img/icons8-menu-90.png'
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -171,6 +172,19 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+
+      <div className="flex flex-col items-center absolute md:hidden z-10">
+        <img src={menu} alt="" className="w-[15vw] py-5"/>
+        <div className="w-[96.6vw] bg-slate-500 flex flex-col">
+          <Link to='/'>HOME</Link>
+          <Link to='/vote'>VOTE</Link>
+          <Link to='/tracks'>SEASONS</Link>
+          <Link to='/drivers'>DRIVERS</Link>
+          <Link to='/constructors'>CONSTRUCTORS</Link>
+          <Link to='/chat'>CHAT ROOM</Link>
+        </div>
+      </div>
+
     </>
   );
 }

@@ -14,15 +14,15 @@ export default function SingleTrack(props: {name: any, img: any, country: String
             </p>
 
             <p className="text-gray-300 text-base">
-            Circuit Length: {props.circuitLength}
+            Circuit Length: <span className="font-medium">{props.circuitLength} km</span>
             </p>
 
             <p className="text-gray-300 text-base">
-              Race Distance: {props.distance}
+              Race Distance: <span className="font-medium">{props.distance} km</span>
             </p>
 
             <p className="text-gray-300 text-base">
-              Laps: {props.laps}
+              Laps: <span className="font-medium">{props.laps}</span>
             </p>
 
           </div>
