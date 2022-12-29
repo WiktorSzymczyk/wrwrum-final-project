@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import {getNews} from "./services/newsApi";
 
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -13,15 +12,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 
 function App() {
-
-  //api testing
- const [newsFeed, setNewsFeed] = useState(null); 
-
-useEffect(() => {
- getNews().then(res => setNewsFeed(res))
- 
-  }, [])
-  console.log(newsFeed)
 
   return (
     <div className="App bg-[#151515] display-cover max-w-[100vw]">
