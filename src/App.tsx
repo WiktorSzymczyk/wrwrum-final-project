@@ -1,4 +1,6 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
+import {getNews} from "./services/newsApi";
+
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
