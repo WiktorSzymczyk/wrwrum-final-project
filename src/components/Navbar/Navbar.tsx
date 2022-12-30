@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import menu from '../Media/img/icons8-menu-90.png'
+import NavbarLinksMobile from "./NavbarLinksMobile";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -91,7 +93,7 @@ export default function Navbar() {
       }
     `}</style>
       </div> */}
-      <div className="px-5 py-5 sm:p-0 sm:hidden md:block">
+      <div className="p-0 sm:p-0 sm:hidden md:block">
         <div className="hidden md:grid md:place-items-center h-[96vh] h-screen sticky top-0 bg-[#232323] pb-[20vh] pt-[5vh]">
           <div className="sm:w-[10vw] md:w-[15vw]">
             <div className="p-5">
@@ -171,6 +173,14 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
+
+      <div className="flex flex-col absolute md:hidden z-10 h-screen sticky top-0">
+        <img src={menu} alt="" className="w-[10vw] pt-5" onClick={() => setIsNavOpen(!isNavOpen)}/>
+        {
+          isNavOpen?(<NavbarLinksMobile />) : (<div></div>)
+        }
+      </div>
+
     </>
   );
 }
