@@ -10,3 +10,5 @@ export default function NewsCard(props: {title: string, date: string}) {
     </div>
   )
 }
+
+// rafc

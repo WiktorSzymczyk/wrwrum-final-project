@@ -27,6 +27,7 @@ export default function SingleTrack(props: {name: any, img: any, country: String
             </p>
 
           </div>
+          <h1 className="text-white"> OR SMTNGH LESELap Record</h1>
           <div className="px-6 pt-4 pb-2 bg-[#161616]">
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordTime}</span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordSeason}</span>

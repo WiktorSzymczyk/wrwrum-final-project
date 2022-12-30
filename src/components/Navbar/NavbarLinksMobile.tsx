@@ -10,7 +10,7 @@ export default function NavbarLinksMobile() {
           <div className="flex-grow border-t border-[#00ff5e]"></div>
         </div>
         {/* Change from w-full to w-[96.6vw] */}
-        <div className="w-full flex flex-col text-white">
+        <div className="w-[96.6vw] flex flex-col text-white">
             <Link to='/' className='font-semibold pt-5'>HOME</Link>
             <Link to='/vote' className='font-semibold pt-5'>VOTE</Link>
             <Link to='/tracks' className='font-semibold pt-5'>SEASONS</Link>
