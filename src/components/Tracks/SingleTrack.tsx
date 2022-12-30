@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "../Image";
 
 export default function SingleTrack(props: {name: any, img: any, country: String, distance: String, firstGrandPrix: String, circuitLength: String, laps: String, lapRecordTime: String, lapRecordSeason: String, lapRecordDriver: String}) {
   return (
     <div>
       <div className="p-10">  
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
-          <img className="w-full" src={props.img} alt="" />
+          <Image placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load' className="w-full" src={props.img} alt="" />
           <div className="px-6 py-4 bg-[#161616]">
             <div className="font-bold text-2xl mb-2 text-white">{props.name}</div>
             

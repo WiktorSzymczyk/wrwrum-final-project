@@ -6,7 +6,7 @@ export default function SingleDriver(props: {img: any, Name: String, no: String,
     <div>
         <div className="p-10">  
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <Image className="w-full" src={props.img} alt="" />
+      <Image placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load' className="w-full" src={props.img} alt="" />
       <div className="px-6 py-4 bg-[#161616]">
         <div className="font-bold text-3xl mb-2 text-white">{props.no}</div>
         <div className='flex justify-center'>
