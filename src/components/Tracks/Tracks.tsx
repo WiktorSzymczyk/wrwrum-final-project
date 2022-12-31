@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import d2021 from '../Datas/2021/circuits.json'
-import d2022 from '../Datas/2022/circuits.json'
-import d2023 from '../Datas/2023/circuits.json'
+import d2021 from '../../Datas/2021/circuits.json'
+import d2022 from '../../Datas/2022/circuits.json'
+import d2023 from '../../Datas/2023/circuits.json'
 import SingleTrack from './SingleTrack';
 
 export default function Tracks() {

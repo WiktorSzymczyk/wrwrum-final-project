@@ -1,15 +1,16 @@
 import React from 'react'
+import Image from '../Image'
 
 export default function SingleDriver(props: {img: any, Name: String, no: String, team: String, country: String, pob: String, dob: String, points: String, countryImg: any}) {
   return (
     <div>
         <div className="p-10">  
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <img className="w-full" src={props.img} alt="" />
+      <Image placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load' className="w-full" src={props.img} alt="" />
       <div className="px-6 py-4 bg-[#161616]">
         <div className="font-bold text-3xl mb-2 text-white">{props.no}</div>
         <div className='flex justify-center'>
-          <img src={props.countryImg} alt='' className='w-[15%]'/>
+          <Image src={props.countryImg} alt='' className='w-[15%]'/>
           </div>
         <p className="text-gray-300 font-bold text-2xl py-2">
           {props.Name}

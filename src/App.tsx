@@ -10,6 +10,7 @@ import SingleTrack from "./components/Tracks/SingleTrack";
 import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
+import KidsZone from "./pages/KidsZone";
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
                 lapRecordSeason=''
                 circuitLength=''
                 lapRecordTime=''/>} />
+          <Route path="/kidszone" element={<KidsZone/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
