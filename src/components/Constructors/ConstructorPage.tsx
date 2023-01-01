@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import SingleConstructor from "./SingleConstructor";
-import data1 from "../../Datas/2021/teams.json";
-import data2 from "../../Datas/2022/teams.json";
-import data3 from "../../Datas/2023/teams.json"
+import data1 from "../../datas/2021/teams.json";
+import data2 from "../../datas/2022/teams.json";
+import data3 from "../../datas/2023/teams.json"
 
 export default function ConstructorPage() {
   return (

@@ -10,11 +10,15 @@ import SingleTrack from "./components/Tracks/SingleTrack";
 import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
+import SingleDriverDetails from './components/Drivers/SingleDriverDetails';
+import StandingsDrivers from './components/Standings/StandingsDrivers';
+import StandingsTeams from './components/Standings/StandingsTeams';
+import StandingsPage from './components/Standings/StandingsPage';
 
 function App() {
 
   return (
-    <div className="App bg-[#151515] display-cover max-w-[100vw]">
+    <div className="App bg-main-bg display-cover max-w-[100vw]">
       <div className="flex">
         <Navbar />
         <Routes>
@@ -38,6 +42,9 @@ function App() {
           />
           <Route path='/drivers' element={<Drivers />} />
           <Route path="/tracks" element={<Tracks />} />
+          <Route path="/standings" element={<StandingsPage />} />
+          <Route path="/standings/driver" element={<StandingsDrivers />} />
+          <Route path="/standings/team" element={<StandingsTeams />} />
           <Route path="/tracks/:id" element={<SingleTrack name=''
                 img=''
                 country=''
@@ -48,11 +55,11 @@ function App() {
                 lapRecordSeason=''
                 circuitLength=''
                 lapRecordTime=''/>} />
+          <Route path="/drivers/:id" element={<SingleDriverDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
-    // </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import menu from '../Media/img/icons8-menu-90.png'
+import menu from '../../assets/media/img/icons8-menu-90.png'
 import NavbarLinksMobile from "./NavbarLinksMobile";
 
 export default function Navbar() {

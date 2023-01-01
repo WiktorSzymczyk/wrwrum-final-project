@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../Image";
+import Image from "../../library/Image";
 
 export default function SingleConstructor(props: {name: String, chief: String, powerUnit: String, img: any, d1Name: String, d2Name: String, chasis: String, first: String, world: String}) {
   return (

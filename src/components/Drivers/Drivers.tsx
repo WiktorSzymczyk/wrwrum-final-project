@@ -1,7 +1,7 @@
 import React from 'react'
-import data2021 from '../../Datas/2021/drivers.json'
-import data2022 from '../../Datas/2022/drivers.json'
-import data2023 from '../../Datas/2023/drivers.json'
+import data2021 from '../../datas/2021/drivers.json'
+import data2022 from '../../datas/2022/drivers.json'
+import data2023 from '../../datas/2023/drivers.json'
 import SingleDriver from './SingleDriver';
 
 export default function Drivers() {
@@ -19,6 +19,7 @@ export default function Drivers() {
                 dob={res.dob}
                 points={res.points}
                 countryImg={res.countryImg}
+                id={res.id}
               />
             </div>
           ))}

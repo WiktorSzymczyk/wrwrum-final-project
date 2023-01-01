@@ -1,6 +1,6 @@
 import React from "react";
 import NewsCard from "./NewsCard";
-import Image from "../Image";
+import Image from "../../library/Image";
 
 export default function Home() {
   return (
