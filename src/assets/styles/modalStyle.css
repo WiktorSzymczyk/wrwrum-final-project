@@ -1,0 +1,7 @@
+.modalSmall {
+max-width: 320px;
+padding: 24px;
+background-color: var(--modal-bg);
+box-shadow: var(--modal-box-shadow);
+}
+
