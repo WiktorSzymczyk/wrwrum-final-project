@@ -2,8 +2,10 @@ import React from 'react'
 
 const KidsZone = () => {
   return (
-    <div>
-      KidsZone
+    <div className='m-11'>
+        <div className='modalSmall'>
+             Kids zone
+        </div>
     </div>
   )
 }

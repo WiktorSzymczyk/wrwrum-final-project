@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 
 import "./App.css";
+import "./assets/styles/modalStyle.css"
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ConstructorPage from "./components/Constructors/ConstructorPage";
@@ -11,6 +12,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 import KidsZone from "./pages/KidsZone";
+
 
 function App() {
 

@@ -1,6 +1,12 @@
+@import "./colour-library.css";
+
 .modalSmall {
+min-width: 320px;
 max-width: 320px;
+min-height: 320px;
+height: 100%;
 padding: 24px;
+border-radius: 6px;
 background-color: var(--modal-bg);
 box-shadow: var(--modal-box-shadow);
 }
