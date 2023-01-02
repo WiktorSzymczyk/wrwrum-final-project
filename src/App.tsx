@@ -11,6 +11,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 import KidsZone from "./pages/KidsZone";
+import MemoryGame from "./pages/MemoryGame";
 
 function App() {
 
@@ -49,7 +50,9 @@ function App() {
                 lapRecordSeason=''
                 circuitLength=''
                 lapRecordTime=''/>} />
-          <Route path="/kidszone" element={<KidsZone/>} />
+          <Route path="kidszone" element={<KidsZone/>} >
+            <Route path="memorygame" element={<MemoryGame/>} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
