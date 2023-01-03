@@ -1,6 +1,8 @@
 import {useEffect, useState} from "react";
 
 import "./App.css";
+import "./assets/styles/modalStyle.css";
+import "./assets/styles/button.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import ConstructorPage from "./components/Constructors/ConstructorPage";
