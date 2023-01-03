@@ -1,9 +1,10 @@
-import React from 'react'
 
 const KidsZone = () => {
   return (
     <div>
-      KidsZone
+      <h1>KidsZone</h1>
+        
+
     </div>
   )
 }

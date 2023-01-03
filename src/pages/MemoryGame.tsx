@@ -1,9 +1,12 @@
-import React from 'react'
+
+
 
 const MemoryGame = () => {
   return (
     <div>
-      Hey
+      <h1> well this </h1>
+        <img src="../img/memory_game/memory_game_01.png" />
+       
     </div>
   )
 }
