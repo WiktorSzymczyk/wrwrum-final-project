@@ -12,7 +12,7 @@ type CardProps = {
 
 const singleCard = (props: CardProps) => {
 
-    const backSide = <Logo />
+    const backSide = Logo 
 
     const handleClick = () => {
         !props.isFlipped && !props.isDisable && props.onClick(props.id);
@@ -28,7 +28,12 @@ const singleCard = (props: CardProps) => {
         "is-inactive": props.isInactive
       })}
       onClick={handleClick}>
-      test
+      <div className="card-face">
+        <img src={backSide} alt="card backside" />
+      </div>
+      <div className="card-face card-back-face">
+        <img src={props.image} alt="card" />
+      </div>
     </div>
   )
 }
