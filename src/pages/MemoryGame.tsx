@@ -1,5 +1,8 @@
-import {ReactComponent as Logo} from '../assets/img/logo.svg'
+
 import {useState} from "react"
+import SingleCard from "../components/MemoryGame/SingleCard"
+
+
 
 const cardImages = [
     {src: "/img/memory_game/memory_game_01.png"},
@@ -30,10 +33,11 @@ const MemoryGame = () => {
     <div>
       <h1> Memory Game </h1>
         <img src="../img/memory_game/memory_game_01.png" />
-        {/* <div className='modalSmall'>
-            <Logo />
-        </div> */}
+ 
+        
         <button className="medium-button" onClick={shuffleCards}>New Game</button>
+
+        
     </div>
   )
 }
