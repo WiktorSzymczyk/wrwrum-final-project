@@ -4,8 +4,6 @@ const KidsZone = () => {
   return (
     <div>
      <Outlet/>
-        
-
     </div>
   )
 }
