@@ -51,7 +51,9 @@ function App() {
                 lapRecordSeason=''
                 circuitLength=''
                 lapRecordTime=''/>} />
-          <Route path="/kidszone" element={<KidsZone/>} />
+          <Route path="kidszone" element={<KidsZone/>} >
+            <Route index element={<KidsZoneIndex />} />
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
