@@ -52,11 +52,12 @@ function App() {
                 lapRecordDriver=''
                 lapRecordSeason=''
                 circuitLength=''
-                lapRecordTime=''/>} />
+                lapRecordTime=''/>} />  
           <Route path="kidszone" element={<KidsZone/>} >
             <Route index element={<KidsZoneIndex />} />
             <Route path="memorygame" element={<MemoryGame/>} />
           </Route>
+         
           
       
 

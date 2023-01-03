@@ -1,43 +1,40 @@
+import Score from '../components/MemoryGame/Score'
+import Board from '../components/MemoryGame/Board'
+import { useState } from 'react'
 
-import {useState} from "react"
-import SingleCard from "../components/MemoryGame/SingleCard"
+import "../assets/styles/memory_game/memoryGame.scss"
 
 
 
-const cardImages = [
-    {src: "/img/memory_game/memory_game_01.png"},
-    {src: "/img/memory_game/racing-race-car-driver-rubber-duck-formula-1.png"},
-    {src: "/img/memory_game/memory_game_01.png"},
-    {src: "/img/memory_game/memory_game_01.png"},
-    {src: "/img/memory_game/memory_game_01.png"},
-    {src: "/img/memory_game/memory_game_01.png"},
-]
+const cardIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+cardIds.sort(() => 0.5 - Math.random())
+console.log(cardIds);
 
-const MemoryGame = () => {
+function MemoryGame() {
 
-    const [cards, setCards] = useState([{}])
-    const [turns, setTurns] = useState(0)
-
-    // shuffel cards
-    const shuffleCards = () => {
-    const suffledCards = [...cardImages, ...cardImages]
-    .sort(() => Math.random() - 0.5)
-    .map((card) => ({ ...card, id: Math.random()}))
-    setCards(suffledCards);
-    setTurns(0)
+  const [moves, setMoves] = useState<number>(0)
+  const [bestScore, setBestScore] = useState<number>(
+    parseInt(localStorage.getItem('bestScore') || '0') || Number.MAX_SAFE_INTEGER
+  )
+  const finishGameCallback = () => {
+    const newBestScore = moves < bestScore ? moves : bestScore
+    setBestScore(newBestScore)
+    localStorage.setItem('bestScore', '' + newBestScore)
   }
 
-    console.log(cards, turns)
-
   return (
-    <div>
-      <h1> Memory Game </h1>
-        <img src="../img/memory_game/memory_game_01.png" />
- 
-        
-        <button className="medium-button" onClick={shuffleCards}>New Game</button>
-
-        
+    <div className="">
+        <div className=''>
+            <Score 
+                moves={moves} 
+                bestScore={bestScore}
+            />
+            <Board 
+                setMoves={setMoves} 
+                finishGameCallback={finishGameCallback} 
+                cardIds={cardIds}
+            />
+        </div>
     </div>
   )
 }

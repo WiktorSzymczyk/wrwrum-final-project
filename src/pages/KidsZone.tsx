@@ -2,7 +2,7 @@ import {Outlet} from "react-router-dom"
 
 const KidsZone = () => {
   return (
-    <div>
+    <div >
      <Outlet/>
     </div>
   )

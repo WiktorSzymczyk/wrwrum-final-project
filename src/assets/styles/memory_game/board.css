@@ -1,0 +1,21 @@
+@import "../colour-library.css";
+
+.board {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--modal-bg);
+    border-radius: 6px;
+    gap: 16px;
+    width: 460px;
+    height: 460px;
+}
+/* small screens */
+    @media only screen and (max-width: 768px) {
+        .board {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        width: 300px;
+        height: 400px;
+    }}

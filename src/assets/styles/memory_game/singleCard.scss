@@ -1,0 +1,41 @@
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+   background-color: #4344;
+    
+
+    img {
+        width: 80%;
+        height: 80%;
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+
+    }
+
+    // hide and flip card
+    .card-face {
+        backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &.card-back-face {
+            transform: rotateY(180deg);
+        }
+    }
+
+    &.is-flipped {
+        transform: rotateY(180deg);
+    }
+
+    &.is-inactive {
+        opacity: 0;
+    }
+}
