@@ -1,8 +1,9 @@
+import {Outlet} from "react-router-dom"
 
 const KidsZone = () => {
   return (
     <div>
-      <h1>KidsZone</h1>
+     <Outlet/>
         
 
     </div>

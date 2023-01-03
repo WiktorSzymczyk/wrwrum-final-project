@@ -11,6 +11,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Drivers from "./components/Drivers/Drivers";
 import KidsZone from "./pages/KidsZone";
+import KidsZoneIndex from "./pages/KidsZoneIndex";
 import MemoryGame from "./pages/MemoryGame";
 
 function App() {
@@ -51,16 +52,10 @@ function App() {
                 circuitLength=''
                 lapRecordTime=''/>} />
           <Route path="kidszone" element={<KidsZone/>} >
+            <Route index element={<KidsZoneIndex />} />
             <Route path="memorygame" element={<MemoryGame/>} />
           </Route>
-          {/* <Route path="kidszone" element={<KidsZone/>} />
-          <Route path="memorygame" element={<MemoryGame/>} /> */}
-
-
-      <Route path="account" element={<div>Account</div>}>
-        <Route path="billing" element={<div>billing</div>} />
-        <Route path="purchased" element={<div>All my purchased products</div>}/>
-      </Route>
+          
       
 
           <Route path="*" element={<NotFound />} />
