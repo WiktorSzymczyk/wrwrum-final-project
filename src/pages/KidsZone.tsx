@@ -1,4 +1,4 @@
-import React from 'react'
+import {Outlet} from "react-router-dom"
 import {ReactComponent as Logo} from '../assets/img/logo.svg'
 
 const KidsZone = () => {
@@ -7,6 +7,7 @@ const KidsZone = () => {
         <div className='modalSmall'>
         <Logo />
         </div>
+       <Outlet/>
     </div>
   )
 }
