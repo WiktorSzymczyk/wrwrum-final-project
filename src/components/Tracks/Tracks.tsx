@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import d2021 from '../../datas/2021/circuits.json'
-import d2022 from '../../datas/2022/circuits.json'
-import d2023 from '../../datas/2023/circuits.json'
+import d2021 from '../../Datas/2021/circuits.json'
+import d2022 from '../../Datas/2022/circuits.json'
+import d2023 from '../../Datas/2023/circuits.json'
 import SingleTrack from './SingleTrack';
 
 export default function Tracks() {
@@ -19,6 +19,10 @@ export default function Tracks() {
           <option value='2022' onClick={() => setData(d2022) }>2022</option>
           <option value='2021' onClick={() => setData(d2021) }>2021</option>
         </select>
+
+      <div className="">
+        <h1>Show Current Standings</h1>
+      </div>
 
       <div className="grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
         {d2023.circuit.map((res:any) => (
