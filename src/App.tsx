@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import {useEffect, useState} from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
@@ -13,6 +13,7 @@ import SingleDriverDetails from './components/Drivers/SingleDriverDetails';
 import Standings from './components/Standings/Standings';
 import StandingsPage from './components/Standings/StandingsPage';
 import DriversInformation from './components/Drivers/DriversInformation';
+import KidsZone from "./pages/KidsZone";
 
 function App() {
 	return (
