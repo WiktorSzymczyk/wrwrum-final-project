@@ -8,8 +8,10 @@
     border-radius: 6px;
     gap: 16px;
     width: 520px;
-    height: 520px;
+    height: 640px;
     margin-bottom: 32px;
+    background-color: $modal-bg;
+    padding: 24px;
 }
 /* small screens */
     @media only screen and (max-width: 768px) {

@@ -6,8 +6,9 @@
     transform-style: preserve-3d;
     position: relative;
     cursor: pointer;
-    background-color: $modal-bg;
+    background-color: $modal-bg-second;
     box-shadow: $modal-box-shadow;
+    border-radius: 6px;
  
 
     img {
