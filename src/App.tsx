@@ -83,7 +83,7 @@ function App() {
 					/>
 
 					<Route
-						path='drivers/information/:name/:id'
+						path='drivers/:name/:id'
 						element={<DriversInformation />}
 					/>
 					<Route
