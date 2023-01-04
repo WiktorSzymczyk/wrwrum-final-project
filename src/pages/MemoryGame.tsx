@@ -23,8 +23,8 @@ function MemoryGame() {
 
   return (
     <div className="memory-game-container">
-        <div className=''>
-            <h1>Memory Game</h1>
+        <div>
+            <h1 className='game-title'>Memory Game</h1>
             <Score 
                 moves={moves} 
                 bestScore={bestScore}

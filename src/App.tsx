@@ -1,6 +1,4 @@
-import {useEffect, useState} from "react";
-
-import "./App.css";
+import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/button.scss";
 import { Routes, Route } from "react-router-dom";

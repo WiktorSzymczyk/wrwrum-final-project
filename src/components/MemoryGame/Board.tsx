@@ -41,7 +41,7 @@ function Board(props: BoardProps) {
     // flip the cards back after 500ms duration
     timeout.current = setTimeout(() => {
       setOpenCards([]);
-    }, 500);
+    }, 600);
   }
 
   const handleCardClick = (id: number) => {

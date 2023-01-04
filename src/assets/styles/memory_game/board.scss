@@ -11,13 +11,13 @@
     height: 640px;
     margin-bottom: 32px;
     background-color: $modal-bg;
-    padding: 24px;
+    padding: 24px 24px;
 }
 /* small screens */
     @media only screen and (max-width: 768px) {
         .board {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        width: 300px;
+        width: 100%;
         height: 400px;
     }}

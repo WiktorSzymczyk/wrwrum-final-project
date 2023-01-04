@@ -1,4 +1,4 @@
-@import "./assets/styles/colour-library.css";
+@import "./assets/styles/share/colour-library.scss";
 
 .App {
   text-align: center;
@@ -40,7 +40,7 @@
 }
 
 h1, h2, span {
-  color: var(--primary-text)
+  color: $primary-text;
 }
 
 h1 {
