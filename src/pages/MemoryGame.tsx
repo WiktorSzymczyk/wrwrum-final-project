@@ -24,7 +24,7 @@ function MemoryGame() {
   return (
     <div className="memory-game-container">
         <div>
-            <h1 className='game-title'>Memory Game</h1>
+            
             <Score 
                 moves={moves} 
                 bestScore={bestScore}
@@ -36,9 +36,7 @@ function MemoryGame() {
             />
         </div>
           <div>
-        <button className="medium-button" onClick={() => {window.location.reload()}}>
-          RESTART
-        </button>
+        
       </div>
     </div>
   )

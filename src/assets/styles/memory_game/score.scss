@@ -2,24 +2,36 @@
 
 .score-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 500px;
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 24px;
+    margin: 0px 12px 32px;
 
-
-    // small screens
-    @media screen and (max-width: 768px) {
-        width: 300px;
-        font-size: 16px;
-        
-    }
 }
 
 .score {
-    color: $secondary-text !important;
+    color: $secondary-text;
+    font-weight: 500;
+    font-size: 24px;
+
+// small screens
+    @media screen and (max-width: 768px) {
+
+        font-size: 16px;
+
+    }
 }
 
+.score-contain {
+    text-align: left;
+}
+
+.game-title {
+    background: red;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
