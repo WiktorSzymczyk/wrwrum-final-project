@@ -10,20 +10,15 @@ function Score(props:ScoreProps) {
 
   return (
     <div className="score-container">
-      <div className="score">
+      <div>
         <div>
-          <span>Moves:</span> {props.moves}
+          <span className="score">Moves:</span> <span className="score">{props.moves}</span>
         </div>
         {localStorage.getItem('bestScore') && (
           <div>
-            <span>Best score:</span> {props.bestScore}
+            <span className="score">Best score:</span> <span className="score"> {props.bestScore} </span>
           </div>
         )}
-      </div>
-      <div>
-        <button className="medium-button" onClick={() => {window.location.reload()}}>
-          RESTART
-        </button>
       </div>
     </div>
   )

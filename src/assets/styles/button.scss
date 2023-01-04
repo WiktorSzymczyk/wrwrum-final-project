@@ -1,0 +1,76 @@
+@import "./colour-library.scss";
+
+.medium-button {
+    box-shadow: inset 0 0 0 1px $primary;
+    color: $primary;
+    font-weight: 600;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    border-radius: 6px;
+
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    padding: 16px 24px;
+    letter-spacing: 0.05rem;
+
+    &::before, &::after{
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    &::before {
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+    }
+
+    &::after{
+        border-top-width: 1px;
+        border-right-width: 1px;
+    }
+
+    &:hover {
+        color: $primary-text;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        border-color: $primary-text;
+        border-radius: 6px;
+        transition: border-color 0s, width 0.25s, height 0.25s;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:hover::before {
+        transition-delay: 0s, 0s, 0.25s;
+    }
+
+    &:hover::after {
+        transition-delay: 0s, 0.25s, 0s;
+    }
+
+    &:active:not([disabled]) {
+        box-shadow: $modal-box-shadow;
+        transform: scale(.95)
+    }
+}
+
+
+
+
+
+
+
+
+
+

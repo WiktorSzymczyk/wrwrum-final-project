@@ -1,3 +1,5 @@
+@import "./assets/styles/colour-library.css";
+
 .App {
   text-align: center;
 }
@@ -37,6 +39,11 @@
   }
 }
 
-h1 {
-  color: #ffff
+h1, h2, span {
+  color: var(--primary-text)
 }
+
+h1 {
+  font-size: 32px;
+}
+

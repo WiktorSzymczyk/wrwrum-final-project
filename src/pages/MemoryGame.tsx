@@ -5,7 +5,6 @@ import { useState } from 'react'
 import "../assets/styles/memory_game/memoryGame.scss"
 
 
-
 const cardIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 cardIds.sort(() => 0.5 - Math.random())
 console.log(cardIds);
@@ -23,8 +22,9 @@ function MemoryGame() {
   }
 
   return (
-    <div className="">
+    <div className="memory-game-container">
         <div className=''>
+            <h1>Memory Game</h1>
             <Score 
                 moves={moves} 
                 bestScore={bestScore}
@@ -35,6 +35,11 @@ function MemoryGame() {
                 cardIds={cardIds}
             />
         </div>
+          <div>
+        <button className="medium-button" onClick={() => {window.location.reload()}}>
+          RESTART
+        </button>
+      </div>
     </div>
   )
 }

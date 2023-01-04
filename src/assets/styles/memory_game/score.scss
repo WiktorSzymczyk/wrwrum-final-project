@@ -1,30 +1,25 @@
+@import "../colour-library.scss";
+
 .score-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: xx-large;
-    color: #545454;
     width: 500px;
-    margin: 5%;
-    gap: 10%;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 24px;
 
-    .score {
-        display: flex;
-        justify-content: space-between;
-        width: 500px;
-    }
-
-  
 
     // small screens
     @media screen and (max-width: 768px) {
         width: 300px;
-        font-size: large;
+        font-size: 16px;
         margin: 10%;
-
-      
     }
+}
+
+.score {
+    color: $secondary-text !important;
 }
 

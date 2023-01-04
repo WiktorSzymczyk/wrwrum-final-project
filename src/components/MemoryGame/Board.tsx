@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import Card from './SingleCard'
-import "../../assets/styles/memory_game/board.css"
+import "../../assets/styles/memory_game/board.scss"
 
 
 

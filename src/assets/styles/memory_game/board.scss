@@ -1,15 +1,15 @@
-@import "../colour-library.css";
+@import "../colour-library.scss";
 
 .board {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    background-color: var(--modal-bg);
     border-radius: 6px;
     gap: 16px;
-    width: 460px;
-    height: 460px;
+    width: 520px;
+    height: 520px;
+    margin-bottom: 32px;
 }
 /* small screens */
     @media only screen and (max-width: 768px) {
