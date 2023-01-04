@@ -1,5 +1,4 @@
 import classnames from 'classnames'
-import {ReactComponent as Logo} from '../assets/img/logo.svg'
 import "../../assets/styles/memory_game/singleCard.scss"
 
 

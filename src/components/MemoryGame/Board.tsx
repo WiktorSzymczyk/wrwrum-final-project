@@ -38,7 +38,7 @@ function Board(props: BoardProps) {
       setOpenCards([]);
       return;
     }
-    // flip the cards back after 500ms duration
+    // flip the cards back after 600ms duration
     timeout.current = setTimeout(() => {
       setOpenCards([]);
     }, 600);
@@ -61,7 +61,7 @@ function Board(props: BoardProps) {
   useEffect(() => {
     let timeout: NodeJS.Timeout = setTimeout(()=>{});
     if (openCards.length === 2) {
-      timeout = setTimeout(evaluate, 300);
+      timeout = setTimeout(evaluate, 600);
     }
     return () => {
       clearTimeout(timeout);

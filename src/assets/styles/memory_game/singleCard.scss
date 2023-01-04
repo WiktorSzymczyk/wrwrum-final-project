@@ -12,8 +12,8 @@
  
 
     img {
-        width: 95%;
-        height: 95%;
+        width: 98%;
+        height: 98%;
         border-radius: 4px;
     }
 
@@ -31,6 +31,13 @@
         &.card-back-face {
             transform: rotateY(180deg);
         }
+        
+        img {
+            width: 85%;
+            height: 85%;
+            border-radius: 4px;
+        }
+
     }
 
     &.is-flipped {
