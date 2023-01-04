@@ -1,4 +1,4 @@
-import Score from '../components/MemoryGame/Score'
+import TopContainer from '../components/MemoryGame/memory-top-component'
 import Board from '../components/MemoryGame/Board'
 import { useState } from 'react'
 
@@ -23,9 +23,9 @@ function MemoryGame() {
 
   return (
     <div className="memory-game-container">
-        <div>
+      
             
-            <Score 
+            <TopContainer
                 moves={moves} 
                 bestScore={bestScore}
             />
@@ -34,10 +34,8 @@ function MemoryGame() {
                 finishGameCallback={finishGameCallback} 
                 cardIds={cardIds}
             />
-        </div>
-          <div>
+     
         
-      </div>
     </div>
   )
 }

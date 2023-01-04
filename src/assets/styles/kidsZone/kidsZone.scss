@@ -1,0 +1,11 @@
+.kidsZone-container{
+    width: 100%;
+    margin: 64px;
+
+    @media only screen and (max-width: 768px) {
+            width: 100%;
+            height: 100%;
+            margin: 32px 0px;
+            
+        }
+}

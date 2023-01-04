@@ -7,7 +7,6 @@
     transition: color 0.25s 0.0833333333s;
     position: relative;
     border-radius: 6px;
-
     font-size: 16px;
     background: none;
     border: none;
@@ -15,6 +14,12 @@
     line-height: 1.5;
     padding: 16px 24px;
     letter-spacing: 0.05rem;
+
+    @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 12px 16px;
+    
+        }
 
     &::before, &::after{
         border: 0 solid transparent;

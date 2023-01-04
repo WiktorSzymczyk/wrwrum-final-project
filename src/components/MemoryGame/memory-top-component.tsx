@@ -1,4 +1,4 @@
-import "../../assets/styles/memory_game/score.scss"
+import "../../assets/styles/memory_game/memory-top-component.scss"
 
 
 type ScoreProps = {
@@ -9,10 +9,10 @@ type ScoreProps = {
 function Score(props:ScoreProps) {
 
   return (
-    <div className="score-container">
-        <div>
+    <div className="memory-top-container">
+        <div className="score-container-main">
             <h1 className='game-title'>Memory Game</h1>
-            <div className="score-contain">
+            <div className="score-section">
             <span className="score">Moves:</span> <span className="score">{props.moves}</span>
             </div>
             {/* {localStorage.getItem('bestScore') && (
@@ -22,7 +22,7 @@ function Score(props:ScoreProps) {
             )} */}
         </div>
         <button className="medium-button" onClick={() => {window.location.reload()}}>
-          RESTART
+          NEW GAME
         </button>
 
     </div>

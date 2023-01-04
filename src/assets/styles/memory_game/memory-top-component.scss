@@ -1,11 +1,27 @@
 @import "../share/colour-library.scss";
 
-.score-container {
+.memory-top-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 12px 32px;
 
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+ 
+}
+
+.score-section {
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 24px;
+    }
 }
 
 .score {
@@ -17,12 +33,19 @@
     @media screen and (max-width: 768px) {
 
         font-size: 16px;
+        text-align: center;
 
     }
 }
 
-.score-contain {
-    text-align: left;
+
+.score-container-main {
+    margin-bottom: 16px;
+    margin-right: 82px;
+    @media screen and (max-width: 768px) {
+            display: contents;
+            margin: 0 auto;
+        }
 }
 
 .game-title {
@@ -34,4 +57,8 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
