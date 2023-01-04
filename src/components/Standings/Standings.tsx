@@ -23,7 +23,11 @@ export default function Standings(props: { team: boolean }) {
 								{t2022.standings.map((res) => (
 									<tr className='border-b-2 border-[#00ff5e]'>
 										<td className='p-2'>{res.position}</td>
-										<td className='p-2'>{res.car}</td>
+										<td className='p-2'>
+											<Link to={`/constructors/${res.car}/${res.id + 1}`}>
+												{res.car}
+											</Link>
+										</td>
 										<td className='p-2'>{res.pts}</td>
 									</tr>
 								))}

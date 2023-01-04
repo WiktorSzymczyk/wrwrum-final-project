@@ -13,6 +13,7 @@ import SingleDriverDetails from './components/Drivers/SingleDriverDetails';
 import Standings from './components/Standings/Standings';
 import StandingsPage from './components/Standings/StandingsPage';
 import DriversInformation from './components/Drivers/DriversInformation';
+import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 
 function App() {
 	return (
@@ -86,6 +87,12 @@ function App() {
 						path='drivers/:name/:id'
 						element={<DriversInformation />}
 					/>
+
+					<Route
+						path='constructors/:name/:id'
+						element={<SingleConstructorDetails />}
+					/>
+
 					<Route
 						path='*'
 						element={<NotFound />}
