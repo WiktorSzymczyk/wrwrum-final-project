@@ -117,15 +117,15 @@ export default function Navbar() {
 				</div>
 			</div>
 
-			<div className='flex flex-col md:hidden z-10 h-screen sticky sm:top-0'>
+			{/* <div className='flex flex-col md:hidden z-10 h-screen sticky sm:top-0'>
 				<img
 					src={menu}
 					alt=''
-					className='w-[10vw] pt-5 '
+					className='w-[10vw] pt-5'
 					onClick={() => setIsNavOpen(!isNavOpen)}
 				/>
 				{isNavOpen ? <NavbarLinksMobile /> : <div></div>}
-			</div>
+			</div> */}
 		</>
 	);
 }

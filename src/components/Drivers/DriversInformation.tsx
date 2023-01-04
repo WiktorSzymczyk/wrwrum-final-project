@@ -54,7 +54,7 @@ export default function DriversInformation() {
 						<div className='font-semibold text-3xl mb-2 text-white'>
 							{ds2022.standings[params.id - 1].name}
 						</div>
-						<div className='font-medium text-xl mb-2 text-white'>
+						<div className='font-thin text-lg mb-2 text-white'>
 							{ds2022.standings[params.id - 1].team}
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>

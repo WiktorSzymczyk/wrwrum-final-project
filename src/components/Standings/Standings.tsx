@@ -11,7 +11,7 @@ export default function Standings(props: { team: boolean }) {
 	return (
 		<div className='flex justify-center items-center'>
 			{props.team ? (
-				<h1>
+				<h1 className='h-screen mx-5'>
 					<table className='table-auto bg-[#262626] border-2 border-t-4 border-[#00ff5e]'>
 						<tbody>
 							<tr>
@@ -33,7 +33,7 @@ export default function Standings(props: { team: boolean }) {
 				</h1>
 			) : (
 				<h1>
-					<table className='table-auto bg-[#262626] border-2 border-t-4 border-[#00ff5e]'>
+					<table className='mx-10 table-auto bg-[#262626] border-2 border-t-4 border-[#00ff5e] mb-10'>
 						<tbody>
 							<tr>
 								<tr className='border-b-2 border-[#00ff5e]'>

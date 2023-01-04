@@ -13,6 +13,7 @@ export default function SingleDriver(props: {
 	points: String;
 	countryImg: any;
 	id: number;
+	idInfo: any;
 }) {
 	return (
 		<div>
@@ -38,7 +39,7 @@ export default function SingleDriver(props: {
 							{props.team}
 						</p>
 						<Link
-							to={`/drivers/${props.id}`}
+							to={`/drivers/${props.Name}/${props.idInfo}`}
 							className='text-white font-semibold'
 						>
 							Details

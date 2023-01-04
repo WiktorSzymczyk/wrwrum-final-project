@@ -43,6 +43,12 @@ export default function NavbarLinksMobile() {
 					CONSTRUCTORS
 				</Link>
 				<Link
+					to='/standings'
+					className='font-semibold pt-5'
+				>
+					STANDINGS
+				</Link>
+				<Link
 					to='/chat'
 					className='font-semibold pt-5'
 				>
