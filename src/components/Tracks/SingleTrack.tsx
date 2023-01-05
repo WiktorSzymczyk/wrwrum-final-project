@@ -1,16 +1,16 @@
 import React from "react";
-import Image from "../Image";
+import Image from "../../library/Image";
 
 export default function SingleTrack(props: {name: any, img: any, country: String, distance: String, firstGrandPrix: String, circuitLength: String, laps: String, lapRecordTime: String, lapRecordSeason: String, lapRecordDriver: String}) {
   return (
     <div>
       <div className="p-10">  
         <div className="max-w-sm rounded overflow-hidden shadow-lg">
-          <Image placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load' className="w-full" src={props.img} alt="" />
+          <Image placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load' className="w-full bg-white" src={props.img} alt="" />
           <div className="px-6 py-4 bg-[#161616]">
             <div className="font-bold text-2xl mb-2 text-white">{props.name}</div>
             
-            <p className="text-gray-300 font-bold text-xl">
+            <p className="text-secondary font-bold text-xl">
               {props.country}
             </p>
 
@@ -27,11 +27,14 @@ export default function SingleTrack(props: {name: any, img: any, country: String
             </p>
 
           </div>
-          <h1 className="text-white"> OR SMTNGH LESELap Record</h1>
+          <h1 className="text-white font-semibold">LAP RECORD</h1>
           <div className="px-6 pt-4 pb-2 bg-[#161616]">
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordTime}</span>
+            {/* <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordTime}</span>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordSeason}</span>
-            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordDriver}</span>
+  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.lapRecordDriver}</span> */}
+            <h1 className="text-gray-200 font-medium">{props.lapRecordTime}</h1>
+            <h1 className="text-gray-200 font-medium">{props.lapRecordSeason}</h1>
+            <h1 className="text-gray-200 font-medium">{props.lapRecordDriver}</h1>
           </div>
         </div>
       </div>

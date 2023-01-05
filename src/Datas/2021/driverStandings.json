@@ -2,6 +2,7 @@
 	"standings": [
 		{
 			"id": 0,
+			"position": "1",
 			"name": "Max Vestappen",
 			"nationality": "NED",
 			"car": "RED BULL RACING RBPT",
@@ -9,6 +10,7 @@
 		},
 		{
 			"id": 1,
+			"position": "2",
 			"name": "Lewis Hamilton",
 			"nationality": "GBP",
 			"car": "MERCEDES",
@@ -16,6 +18,7 @@
 		},
 		{
 			"id": 2,
+			"position": "3",
 			"name": "Valtteri Bottas",
 			"nationality": "FIN",
 			"car": "MERCEDES",
@@ -23,6 +26,7 @@
 		},
 		{
 			"id": 3,
+			"position": "4",
 			"name": "Sergio Perez",
 			"nationality": "MEX",
 			"car": "RED BULL RACING RBPT",
@@ -30,6 +34,7 @@
 		},
 		{
 			"id": 4,
+			"position": "5",
 			"name": "Carlos Sainz",
 			"nationality": "SPA",
 			"car": "FERRARI",
@@ -37,6 +42,7 @@
 		},
 		{
 			"id": 5,
+			"position": "6",
 			"name": "Lando Norris",
 			"nationality": "GBP",
 			"car": "MCLAREN MERCEDES",
@@ -44,6 +50,7 @@
 		},
 		{
 			"id": 6,
+			"position": "7",
 			"name": "Charles Leclerc",
 			"nationality": "MON",
 			"car": "FERRARI",
@@ -51,6 +58,7 @@
 		},
 		{
 			"id": 7,
+			"position": "8",
 			"name": "Daniel Riccardo",
 			"nationality": "AUS",
 			"car": "MCLAREN MERCEDES",
@@ -58,6 +66,7 @@
 		},
 		{
 			"id": 8,
+			"position": "9",
 			"name": "Pierre Gasly",
 			"nationality": "FRA",
 			"car": "ALPHATAURI RBPT",
@@ -65,6 +74,7 @@
 		},
 		{
 			"id": 9,
+			"position": "10",
 			"name": "Fernando Alonso",
 			"nationality": "ESP",
 			"car": "ALPINE RENAULT",
@@ -72,6 +82,7 @@
 		},
 		{
 			"id": 10,
+			"position": "11",
 			"name": "Estaban Ocon",
 			"nationality": "FRA",
 			"car": "ALPINE RENAULT",
@@ -79,6 +90,7 @@
 		},
 		{
 			"id": 11,
+			"position": "12",
 			"name": "Sebastian Vettel",
 			"nationality": "GER",
 			"car": "ASTON MARTIN ARAMCO MERCEDES",
@@ -86,6 +98,7 @@
 		},
 		{
 			"id": 12,
+			"position": "13",
 			"name": "Lance Stroll",
 			"nationality": "CAN",
 			"car": "ASTON MARTIN ARAMCO MERCEDES",
@@ -93,6 +106,7 @@
 		},
 		{
 			"id": 13,
+			"position": "14",
 			"name": "Yuki Tsunoda",
 			"nationality": "JPN",
 			"car": "ALPHATAURI RBPT",
@@ -100,6 +114,7 @@
 		},
 		{
 			"id": 14,
+			"position": "15",
 			"name": "George Russel",
 			"nationality": "GBP",
 			"car": "WILLIAMS MERCEDES",
@@ -107,6 +122,7 @@
 		},
 		{
 			"id": 15,
+			"position": "16",
 			"name": "Kimi Räikkönen",
 			"nationality": "FIN",
 			"car": "ALFA ROMEO RACING FERRARI",
@@ -114,6 +130,7 @@
 		},
 		{
 			"id": 16,
+			"position": "17",
 			"name": "Nicolas Latifi",
 			"nationality": "CAN",
 			"car": "WILLIAMS MERCEDES",
@@ -121,6 +138,7 @@
 		},
 		{
 			"id": 17,
+			"position": "18",
 			"name": "Antionio Giovinazzi",
 			"nationality": "ITA",
 			"car": "ALFA ROMEO RACING FERRARI",
@@ -128,6 +146,7 @@
 		},
 		{
 			"id": 18,
+			"position": "19",
 			"name": "Mick Schumacher",
 			"nationality": "GER",
 			"car": "HAAS FERRARI",
@@ -135,6 +154,7 @@
 		},
 		{
 			"id": 19,
+			"position": "20",
 			"name": "Robert Kubica",
 			"nationality": "POL",
 			"car": "ALFA ROMEO RACING FERRARI",
@@ -142,6 +162,7 @@
 		},
 		{
 			"id": 20,
+			"position": "21",
 			"name": "Nikita Mazepin",
 			"nationality": "RAF",
 			"car": "HAAS FERRARI",

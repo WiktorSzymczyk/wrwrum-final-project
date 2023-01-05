@@ -1,0 +1,28 @@
+@import "./colour-library.scss";
+
+// .material-symbols-outlined { 
+
+//     font-size: 32px;
+//     text-align: left;
+
+//     font-variation-settings:
+//         'FILL' 0,
+//         'wght' 600,
+//         'GRAD' 0,
+//         'opsz' 64,
+
+// }
+
+.back-button{
+    vertical-align: top;
+    fill: $primary;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.back-button-container {
+    padding: 8px 8px 8px 0px;
+    
+}
+

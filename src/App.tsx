@@ -1,17 +1,22 @@
-import {useEffect, useState} from "react";
-
-import "./App.css";
-import "./assets/styles/modalStyle.css"
+import "./App.scss";
+import "./assets/styles/share/modalStyle.scss";
+import "./assets/styles/share/mediumButton.scss";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
-import ConstructorPage from "./components/Constructors/ConstructorPage";
-import SingleConstructor from "./components/Constructors/SingleConstructor";
-import Tracks from "./components/Tracks/Tracks";
-import SingleTrack from "./components/Tracks/SingleTrack";
-import NotFound from "./components/NotFound/NotFound";
-import Navbar from "./components/Navbar/Navbar";
-import Drivers from "./components/Drivers/Drivers";
+import Home from './components/Home/Home';
+import ConstructorPage from './components/Constructors/ConstructorPage';
+import SingleConstructor from './components/Constructors/SingleConstructor';
+import Tracks from './components/Tracks/Tracks';
+import SingleTrack from './components/Tracks/SingleTrack';
+import NotFound from './components/NotFound/NotFound';
+import Navbar from './components/Navbar/Navbar';
+import Drivers from './components/Drivers/Drivers';
+import SingleDriverDetails from './components/Drivers/SingleDriverDetails';
+import Standings from './components/Standings/Standings';
+import StandingsPage from './components/Standings/StandingsPage';
+import DriversInformation from './components/Drivers/DriversInformation';
 import KidsZone from "./pages/KidsZone";
+import KidsZoneIndex from "./pages/KidsZoneIndex";
+import MemoryGame from "./pages/MemoryGame";
 
 
 function App() {
@@ -50,8 +55,15 @@ function App() {
                 lapRecordDriver=''
                 lapRecordSeason=''
                 circuitLength=''
-                lapRecordTime=''/>} />
-          <Route path="/kidszone" element={<KidsZone/>} />
+                lapRecordTime=''/>} />  
+          <Route path="kidszone" element={<KidsZone/>} >
+            <Route index element={<KidsZoneIndex />} />
+            <Route path="memorygame" element={<MemoryGame/>} />
+          </Route>
+         
+          
+      
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import f1 from '../Media/img/f1drawing.png'
+import f1 from '../../assets/media/img/f1drawing.png'
 
 export default function NotFound() {
   return (

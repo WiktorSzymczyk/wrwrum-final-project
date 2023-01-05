@@ -19,6 +19,7 @@ export default function Drivers() {
                 dob={res.dob}
                 points={res.points}
                 countryImg={res.countryImg}
+                id={res.id}
               />
             </div>
           ))}
