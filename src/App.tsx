@@ -1,6 +1,6 @@
 import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
-import "./assets/styles/share/button.scss";
+import "./assets/styles/share/mediumButton.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';

@@ -1,8 +1,10 @@
 import TopContainer from '../components/MemoryGame/memory-top-component'
 import Board from '../components/MemoryGame/Board'
 import { useState } from 'react'
+import BackButton from '../components/share/BackButton'
 
 import "../assets/styles/memory_game/memoryGame.scss"
+import "../assets/styles/memory_game/back-button-component.scss"
 
 
 const cardIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
@@ -23,6 +25,10 @@ function MemoryGame() {
 
   return (
     <div className="memory-game-container">
+
+        <div className="memory-game-content">
+
+            <div className="back-button-component"><BackButton /></div>
       
             
             <TopContainer
@@ -34,7 +40,8 @@ function MemoryGame() {
                 finishGameCallback={finishGameCallback} 
                 cardIds={cardIds}
             />
-     
+
+     </div>
         
     </div>
   )
