@@ -1,15 +1,18 @@
 @import "../share/colour-library.scss";
 
 .memory-top-container {
-    width: 78vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 32px;
 
+ 
+
     @media only screen and (min-width:768px) and (max-width:1025px) {
-            width: 90%;
+            width: 100%;
             margin-bottom: 24px;
+            padding: 0px 16px;
     
         }
 
