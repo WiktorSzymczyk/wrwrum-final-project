@@ -50,7 +50,7 @@ function App() {
 						element={<Drivers />}
 					/>
 					<Route
-						path='/tracks'
+						path='/tracks/:year'
 						element={<Tracks />}
 					/>
 					<Route
@@ -78,7 +78,7 @@ function App() {
 							/>
 						}
 					/>
-					
+
 					<Route
 						path='drivers/:name/:id'
 						element={<DriversInformation />}

@@ -26,7 +26,7 @@ export default function SingleDriver(props: {
 						alt=''
 					/>
 					<div className='px-6 py-4 bg-[#161616]'>
-						<div className='font-bold text-3xl mb-2 text-white'>{props.no}</div>
+						<h1 className='font-bold mb-2 text-white'>{props.no}</h1>
 						<div className='flex justify-center'>
 							<Image
 								src={props.countryImg}
@@ -34,10 +34,8 @@ export default function SingleDriver(props: {
 								className='w-[15%]'
 							/>
 						</div>
-						<p className=' font-bold text-2xl py-2 text-white'>{props.Name}</p>
-						<p className='text-white text-base py-2 text-secondary'>
-							{props.team}
-						</p>
+						<h2 className='font-bold py-2 text-white'>{props.Name}</h2>
+						<p className='text-white py-2 text-secondary'>{props.team}</p>
 						<Link
 							to={`/drivers/${props.Name}/${props.idInfo}`}
 							className='text-white font-semibold'
@@ -45,11 +43,6 @@ export default function SingleDriver(props: {
 							Details
 						</Link>
 					</div>
-					{/* <div className="px-6 pt-4 pb-2 bg-[#161616]">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.dob}</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.pob}</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{props.points} Points</span>
-      </div> */}
 				</div>
 			</div>
 		</div>

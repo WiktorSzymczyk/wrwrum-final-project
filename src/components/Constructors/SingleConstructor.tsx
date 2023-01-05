@@ -19,9 +19,7 @@ export default function SingleConstructor(props: {
 			<div className='p-10'>
 				<div className='max-w-sm rounded overflow-hidden shadow-lg'>
 					<div className='px-6 py-4 bg-[#161616]'>
-						<div className='font-bold text-3xl mb-2 text-white'>
-							{props.name}
-						</div>
+						<h2 className='font-bold mb-2 text-white'>{props.name}</h2>
 						<div className='flex justify-center'>
 							<Image
 								src={props.img}
@@ -29,14 +27,10 @@ export default function SingleConstructor(props: {
 								className='w-[50%]'
 							/>
 						</div>
-						<p className=' font-bold text-2xl py-2 text-white'>{props.chief}</p>
-						<p className=' font-bold text-xl py-2 text-white'>Drivers</p>
-						<p className='text-white text-base py-2 text-secondary'>
-							{props.d1Name}
-						</p>
-						<p className='text-white text-base py-2 text-secondary'>
-							{props.d2Name}
-						</p>
+						<h2 className='font-bold py-2 text-white'>{props.chief}</h2>
+						<h2 className='font-bold py-2 text-white'>Drivers</h2>
+						<p className='py-2 text-secondary'>{props.d1Name}</p>
+						<p className='py-2 text-secondary'>{props.d2Name}</p>
 						<Link
 							to={`/constructors/${props.name}/${props.idInfo}`}
 							className='text-white font-semibold'

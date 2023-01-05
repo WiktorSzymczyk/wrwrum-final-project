@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export default function NavbarLinksMobile() {
 	return (
-		<div>
-			<div className='flex py-5 items-center'>
+		<div className='bg-main-bg h-screen z-10'>
+			<div className='flex py-5 items-center '>
 				<div className='flex-grow border-t border-[#00ff5e]'></div>
 				<span className='flex-shrink mx-4 text-white text-2xl font-bold'>
 					Wrwrum...
@@ -25,7 +25,7 @@ export default function NavbarLinksMobile() {
 					VOTE
 				</Link>
 				<Link
-					to='/tracks'
+					to='/tracks/2023'
 					className='font-semibold pt-5'
 				>
 					SEASONS
