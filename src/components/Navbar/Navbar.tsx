@@ -8,8 +8,8 @@ export default function Navbar() {
 
 	return (
 		<>
-			<div className='p-0 sm:p-0 sm:hidden md:block'>
-				<div className='hidden md:grid md:place-items-center h-[96vh] h-screen sticky top-0 bg-[#232323] pb-[20vh] pt-[5vh]'>
+			<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
+				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full'>
 					<div className='sm:w-[10vw] md:w-[15vw]'>
 						<div className='p-5'>
 							<svg
@@ -117,7 +117,7 @@ export default function Navbar() {
 				</div>
 			</div>
 
-			{/* <div className='flex flex-col md:hidden z-10 h-screen sticky sm:top-0'>
+			<div className='flex flex-row md:hidden z-10'>
 				<img
 					src={menu}
 					alt=''
@@ -125,7 +125,7 @@ export default function Navbar() {
 					onClick={() => setIsNavOpen(!isNavOpen)}
 				/>
 				{isNavOpen ? <NavbarLinksMobile /> : <div></div>}
-			</div> */}
+			</div>
 		</>
 	);
 }

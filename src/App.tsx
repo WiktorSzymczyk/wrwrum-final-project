@@ -9,7 +9,6 @@ import SingleTrack from './components/Tracks/SingleTrack';
 import NotFound from './components/NotFound/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import Drivers from './components/Drivers/Drivers';
-import SingleDriverDetails from './components/Drivers/SingleDriverDetails';
 import Standings from './components/Standings/Standings';
 import StandingsPage from './components/Standings/StandingsPage';
 import DriversInformation from './components/Drivers/DriversInformation';
@@ -17,8 +16,8 @@ import SingleConstructorDetails from './components/Constructors/SingleConstructo
 
 function App() {
 	return (
-		<div className='App bg-main-bg display-cover max-w-[100vw] overflow-hidden z-10'>
-			<div className='flex'>
+		<div className='App bg-main-bg display-cover max-w-[100vw] z-10'>
+			<div className='flex w-full'>
 				<Navbar />
 				<Routes>
 					<Route
@@ -42,6 +41,7 @@ function App() {
 								chasis=''
 								world=''
 								first=''
+								idInfo=''
 							/>
 						}
 					/>
@@ -78,11 +78,7 @@ function App() {
 							/>
 						}
 					/>
-					<Route
-						path='/drivers/:id'
-						element={<SingleDriverDetails />}
-					/>
-
+					
 					<Route
 						path='drivers/:name/:id'
 						element={<DriversInformation />}
