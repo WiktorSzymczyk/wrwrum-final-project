@@ -1,16 +1,25 @@
 @import "../share/colour-library.scss";
 
 .memory-top-container {
+    width: 72vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 12px 32px;
+    margin-bottom: 32px;
+
+    @media only screen and (min-width:768px) and (max-width:1025px) {
+            width: 90%;
+            margin-bottom: 24px;
+    
+        }
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         justify-items: center;
+        width: 100%;
+        margin-bottom: 24px;
     }
  
 }
@@ -18,9 +27,9 @@
 .score-section {
     text-align: left;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 }
 
@@ -30,7 +39,7 @@
     font-size: 24px;
 
 // small screens
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
 
         font-size: 16px;
         text-align: center;
@@ -39,14 +48,14 @@
 }
 
 
-.score-container-main {
-    margin-bottom: 16px;
-    margin-right: 82px;
-    @media screen and (max-width: 768px) {
-            display: contents;
-            margin: 0 auto;
-        }
-}
+// .score-container-main {
+//     // margin-bottom: 16px;
+//     // margin-right: 82px;
+//     @media screen and (max-width: 767px) {
+//             display: contents;
+//             margin: 0 auto;
+//         }
+// }
 
 .game-title {
     background: red;
@@ -58,7 +67,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 500;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         text-align: center;
     }
 }

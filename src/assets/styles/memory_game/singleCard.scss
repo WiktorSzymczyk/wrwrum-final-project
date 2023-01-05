@@ -10,6 +10,10 @@
     box-shadow: $modal-box-shadow;
     border-radius: 6px;
  
+    @media only screen and (max-width: 767px) {
+        height: 100%;
+    
+    }
 
     img {
         width: 98%;
