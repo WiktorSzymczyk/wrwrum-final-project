@@ -1,5 +1,5 @@
 import "../assets/styles/kidsZone/kidsZoneIndex.scss";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const KidsZoneIndex = () => {
 
