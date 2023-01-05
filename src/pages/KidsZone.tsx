@@ -1,9 +1,10 @@
-import React from 'react'
+import {Outlet} from "react-router-dom"
+import "../assets/styles/kidsZone/kidsZone.scss"
 
 const KidsZone = () => {
   return (
-    <div>
-      KidsZone
+    <div className="kidsZone-container">
+     <Outlet/>
     </div>
   )
 }

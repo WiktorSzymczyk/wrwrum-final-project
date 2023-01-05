@@ -1,0 +1,73 @@
+@import "../share/colour-library.scss";
+
+.memory-top-container {
+    width: 78vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media only screen and (min-width:768px) and (max-width:1025px) {
+            width: 90%;
+            margin-bottom: 24px;
+    
+        }
+
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+ 
+}
+
+.score-section {
+    text-align: left;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+.score {
+    color: $secondary-text;
+    font-weight: 500;
+    font-size: 24px;
+
+// small screens
+    @media screen and (max-width: 767px) {
+
+        font-size: 16px;
+        text-align: center;
+
+    }
+}
+
+
+// .score-container-main {
+//     // margin-bottom: 16px;
+//     // margin-right: 82px;
+//     @media screen and (max-width: 767px) {
+//             display: contents;
+//             margin: 0 auto;
+//         }
+// }
+
+.game-title {
+    background: red;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+}
