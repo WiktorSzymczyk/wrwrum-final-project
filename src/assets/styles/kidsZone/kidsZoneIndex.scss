@@ -10,6 +10,8 @@
     -webkit-text-fill-color: transparent;
     font-weight: 500;
     margin-bottom: 32px;
+
+    
 }
 
 .kids-zone-container{
@@ -19,8 +21,16 @@
 }
 
 .kids-zone-card{
+    overflow: hidden;
+    background: linear-gradient(90deg, #28bab8, rgb(15, 74, 145), #ee6352);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 350ms;
+
+
     img{
         margin-bottom: 12px;
+        border-radius: 6px;
     }
 
     h3{
@@ -31,7 +41,20 @@
 
     &:hover{
         cursor: pointer;
+        position: relative;
+        z-index: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1.02);
+        -webkit-transition: .9s ease-in-out;
+        transition: .9s ease-in-out;
+        background-position: right;
+        
     }
+
+        &:active:not([disabled]) {
+            box-shadow: $modal-box-shadow;
+            transform: scale(.98)
+        }
 
 }
 

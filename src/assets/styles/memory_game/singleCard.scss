@@ -9,6 +9,22 @@
     background-color: $modal-bg-second;
     box-shadow: $modal-box-shadow;
     border-radius: 6px;
+
+    &:hover {
+    background: linear-gradient(90deg, #037989, rgb(17, 165, 51), #ee6352);
+        background-size: 300%;
+        background-position: left;
+        transition: background-position 350ms;
+        transition: .9s ease-in-out;
+        background-position: right;
+    }
+
+    &:active:not([disabled]) {
+        box-shadow: $modal-box-shadow;
+        transform: scale(.95)
+    }
+
+    
  
     @media only screen and (max-width: 767px) {
         height: 100%;

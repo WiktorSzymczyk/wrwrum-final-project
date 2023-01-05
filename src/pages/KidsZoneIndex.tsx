@@ -15,7 +15,7 @@ const KidsZoneIndex = () => {
       <div className="kids-zone-container">
         <h1 className="kids-zone-title">Kids Zone</h1>
         <div className="modalSmall kids-zone-card" onClick={handleClick}>
-          <div>
+          <div className="img-frame">
             <img src="/img/kids_zone/memory_game.jpg"></img>
           </div>
           <h3>Memory Game</h3>
