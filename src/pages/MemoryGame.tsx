@@ -4,6 +4,7 @@ import { useState } from 'react'
 import BackButton from '../components/share/BackButton'
 
 import "../assets/styles/memory_game/memoryGame.scss"
+import "../assets/styles/memory_game/back-button-component.scss"
 
 
 const cardIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
