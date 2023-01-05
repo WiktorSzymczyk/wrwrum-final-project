@@ -13,7 +13,7 @@ type CardProps = {
 
 const singleCard = (props: CardProps) => {
 
-    const cover = "/img/memory_game/logo.svg"
+    const cover = "/img/logo.svg"
 
     const handleClick = () => {
         !props.isFlipped && !props.isDisable && props.onClick(props.id);

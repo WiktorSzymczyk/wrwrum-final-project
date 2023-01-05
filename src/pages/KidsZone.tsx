@@ -3,7 +3,7 @@ import "../assets/styles/kidsZone/kidsZone.scss"
 
 const KidsZone = () => {
   return (
-    <div className="kidsZone-container">
+    <div className="kids-zone-page">
      <Outlet/>
     </div>
   )
