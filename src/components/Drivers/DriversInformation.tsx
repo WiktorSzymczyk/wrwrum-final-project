@@ -41,9 +41,9 @@ export default function DriversInformation() {
 						alt=''
 					/>
 					<div className='px-6 py-4 bg-[#161616]'>
-						<div className='font-bold text-2xl mb-2 text-white'>
+						<h1 className='font-bold mb-2 text-white'>
 							{ds2022.standings[params.id - 1].no}
-						</div>
+						</h1>
 						<div className='flex justify-center mb-2'>
 							<Image
 								src={ds2022.standings[params.id - 1].countryImg}
@@ -51,14 +51,14 @@ export default function DriversInformation() {
 								className='w-[15%]'
 							/>
 						</div>
-						<div className='font-semibold text-3xl mb-2 text-white'>
+						<h1 className='font-semibold mb-2 text-white'>
 							{ds2022.standings[params.id - 1].name}
-						</div>
-						<div className='font-medium text-xl mb-2 text-white'>
+						</h1>
+						<h2 className='font-thin mb-2 text-white'>
 							{ds2022.standings[params.id - 1].team}
-						</div>
+						</h2>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
-							<h1 className='text-white font-bold text-base'>Born: </h1>
+							<h3 className='text-white font-bold text-base'>Born: </h3>
 							<p className='text-md text-white font-medium'>
 								{ds2022.standings[params.id - 1].pob}
 							</p>
@@ -67,29 +67,29 @@ export default function DriversInformation() {
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
-							<h1 className='text-white font-bold text-base'>Total Points: </h1>
+							<h3 className='text-white font-bold text-base'>Total Points: </h3>
 							<p className='text-white font-medium'>
 								{ds2022.standings[params.id - 1].pointsTotal}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
-							<h1 className='text-white font-bold text-base'>
+							<h3 className='text-white font-bold text-base'>
 								World Championships:
-							</h1>
+							</h3>
 							<p className='text-white font-medium'>
 								{ds2022.standings[params.id - 1].worldChamp}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
-							<h1 className='text-white font-bold text-base'>Podiums: </h1>
+							<h3 className='text-white font-bold text-base'>Podiums: </h3>
 							<p className='text-white font-medium'>
 								{ds2022.standings[params.id - 1].podiums}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
-							<h1 className='text-white font-bold text-base'>
+							<h3 className='text-white font-bold text-base'>
 								Grands Prix entered:
-							</h1>
+							</h3>
 							<p className='text-white font-medium'>
 								{ds2022.standings[params.id - 1].gp}
 							</p>

@@ -14,7 +14,8 @@
 			"gp": "163",
 			"worldChamp": "2",
 			"dob": "30/09/1997",
-			"pob": "Hasselt, Belgium"
+			"pob": "Hasselt, Belgium",
+			"idInfo": 1
 		},
 		{
 			"id": 1,
@@ -30,7 +31,8 @@
 			"gp": "236",
 			"worldChamp": "N/A",
 			"dob": "26/01/1990",
-			"pob": "Guadalajara, Mexico"
+			"pob": "Guadalajara, Mexico",
+			"idInfo": 1
 		},
 		{
 			"id": 2,
@@ -46,7 +48,8 @@
 			"gp": "82",
 			"worldChamp": "N/A",
 			"dob": "15/02/1998",
-			"pob": "King's Lynn, England"
+			"pob": "King's Lynn, England",
+			"idInfo": 1
 		},
 		{
 			"id": 3,
@@ -62,7 +65,8 @@
 			"gp": "310",
 			"worldChamp": "N/A",
 			"dob": "07/01/1985",
-			"pob": "Stevenage, England"
+			"pob": "Stevenage, England",
+			"idInfo": 1
 		},
 		{
 			"id": 4,
@@ -78,7 +82,8 @@
 			"gp": "232",
 			"worldChamp": "N/A",
 			"dob": "01/07/1989",
-			"pob": "Perth, Australia"
+			"pob": "Perth, Australia",
+			"idInfo": 1
 		},
 		{
 			"id": 5,
@@ -94,7 +99,8 @@
 			"gp": "82",
 			"worldChamp": "N/A",
 			"dob": "13/11/1999",
-			"pob": "Bristol, England"
+			"pob": "Bristol, England",
+			"idInfo": 1
 		},
 		{
 			"id": 6,
@@ -110,7 +116,8 @@
 			"gp": "122",
 			"worldChamp": "N/A",
 			"dob": "29/10/1998",
-			"pob": "Montreal, Canada"
+			"pob": "Montreal, Canada",
+			"idInfo": 1
 		},
 		{
 			"id": 7,
@@ -126,7 +133,8 @@
 			"gp": "300",
 			"worldChamp": "4",
 			"dob": "03/07/1987",
-			"pob": "Heppenheim, Germany"
+			"pob": "Heppenheim, Germany",
+			"idInfo": 1
 		},
 		{
 			"id": 8,
@@ -142,7 +150,8 @@
 			"gp": "358",
 			"worldChamp": "2",
 			"dob": "29/07/1981",
-			"pob": "Oviedo, Spain"
+			"pob": "Oviedo, Spain",
+			"idInfo": 1
 		},
 		{
 			"id": 9,
@@ -158,7 +167,8 @@
 			"gp": "111",
 			"worldChamp": "N/A",
 			"dob": "17/09/1996",
-			"pob": "Évreux, Normandy"
+			"pob": "Évreux, Normandy",
+			"idInfo": 1
 		},
 		{
 			"id": 10,
@@ -174,7 +184,8 @@
 			"gp": "103",
 			"worldChamp": "N/A",
 			"dob": "16/10/1997",
-			"pob": "Monte Carlo, Monaco"
+			"pob": "Monte Carlo, Monaco",
+			"idInfo": 1
 		},
 		{
 			"id": 11,
@@ -190,7 +201,8 @@
 			"gp": "163",
 			"worldChamp": "N/A",
 			"dob": "01/09/1994",
-			"pob": "Madrid, Spain"
+			"pob": "Madrid, Spain",
+			"idInfo": 1
 		},
 		{
 			"id": 12,
@@ -206,7 +218,8 @@
 			"gp": "108",
 			"worldChamp": "N/A",
 			"dob": "07/02/1996",
-			"pob": "Rouen, France"
+			"pob": "Rouen, France",
+			"idInfo": 1
 		},
 		{
 			"id": 13,
@@ -222,7 +235,8 @@
 			"gp": "44",
 			"worldChamp": "N/A",
 			"dob": "11/05/2000",
-			"pob": "Sagamihara, Japan"
+			"pob": "Sagamihara, Japan",
+			"idInfo": 1
 		},
 		{
 			"id": 14,
@@ -238,7 +252,8 @@
 			"gp": "62",
 			"worldChamp": "N/A",
 			"dob": "14/12/1993",
-			"pob": "Martina Franca, Italy"
+			"pob": "Martina Franca, Italy",
+			"idInfo": 1
 		},
 		{
 			"id": 15,
@@ -254,7 +269,8 @@
 			"gp": "353",
 			"worldChamp": "0",
 			"dob": "17/10/1979",
-			"pob": "Espoo, Finland"
+			"pob": "Espoo, Finland",
+			"idInfo": 1
 		},
 		{
 			"id": 16,
@@ -270,7 +286,8 @@
 			"gp": "44",
 			"worldChamp": "N/A",
 			"dob": "22/03/1999",
-			"pob": "Vufflens-le-Château, Switzerland"
+			"pob": "Vufflens-le-Château, Switzerland",
+			"idInfo": 1
 		},
 		{
 			"id": 17,
@@ -286,7 +303,8 @@
 			"gp": "22",
 			"worldChamp": "N/A",
 			"dob": "02/03/1999",
-			"pob": "Moscow, Russia"
+			"pob": "Moscow, Russia",
+			"idInfo": 1
 		},
 		{
 			"id": 18,
@@ -302,7 +320,8 @@
 			"gp": "61",
 			"worldChamp": "N/A",
 			"dob": "29/06/1995",
-			"pob": "Montreal, Canada"
+			"pob": "Montreal, Canada",
+			"idInfo": 1
 		},
 		{
 			"id": 19,
@@ -318,7 +337,8 @@
 			"gp": "82",
 			"worldChamp": "N/A",
 			"dob": "15/02/1998",
-			"pob": "King's Lynn, England"
+			"pob": "King's Lynn, England",
+			"idInfo": 1
 		}
 	]
 }
