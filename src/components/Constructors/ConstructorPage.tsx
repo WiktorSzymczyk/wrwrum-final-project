@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import SingleConstructor from './SingleConstructor';
-import data1 from '../../Datas/2021/teams.json';
-import data2 from '../../Datas/2022/teams.json';
-import data3 from '../../Datas/2023/teams.json';
+import d2021 from '../../Datas/2021/teams.json';
+import d2022 from '../../Datas/2022/teams.json';
+import d2023 from '../../Datas/2023/teams.json';
 
 export default function ConstructorPage() {
 	const [data, setData] = useState(d2023);
 	const [value, setValue] = useState('2023');
-	const data2021 = data1;
-	const data2022 = data2;
-	const data2023 = data3;
+	const data2021 = d2021;
+	const data2022 = d2022;
+	const data2023 = d2023;
 
 	const handleChanges = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		setValue(event.target.value);
@@ -63,11 +63,11 @@ export default function ConstructorPage() {
 				</select>
 
 				<div className='text-white'>
-					<h1>Show Current Standings</h1>
+					<h1>Show Current Season</h1>
 				</div>
 			</div>
 			<div className='p-10 grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8'>
-				{data3.teams.map((res) => (
+				{data.teams.map((res) => (
 					<div key={res.id}>
 						<SingleConstructor
 							name={res.Name}

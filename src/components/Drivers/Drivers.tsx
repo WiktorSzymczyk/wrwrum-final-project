@@ -31,6 +31,9 @@ export default function Drivers() {
 		}
 	}, [data, value]);
 
+	console.log(value);
+	console.log(data);
+
 	return (
 		<form onSubmit={handleSubmit}>
 			<div className='pt-10 bg-[#151515]'>
@@ -60,7 +63,7 @@ export default function Drivers() {
 				</select>
 			</div>
 			<div className='sm:pt-10 md:pt-0 grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8'>
-				{data2023.driver.map((res) => (
+				{data.driver.map((res) => (
 					<div key={res.id}>
 						<SingleDriver
 							img={res.img}

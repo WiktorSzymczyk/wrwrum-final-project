@@ -3,7 +3,6 @@ import d2021 from '../../Datas/2021/circuits.json';
 import d2022 from '../../Datas/2022/circuits.json';
 import d2023 from '../../Datas/2023/circuits.json';
 import SingleTrack from './SingleTrack';
-import { Link, useParams } from 'react-router-dom';
 
 export default function Tracks() {
 	const [data, setData] = useState(d2023);
@@ -31,7 +30,6 @@ export default function Tracks() {
 			setData(data2021);
 		}
 	}, [data, value]);
-
 
 	console.log(value);
 	console.log(data);
