@@ -1,3 +1,5 @@
+@import "./assets/styles/share/colour-library.scss";
+
 .App {
   text-align: center;
 }
@@ -36,3 +38,21 @@
     transform: rotate(360deg);
   }
 }
+
+h1, h2, span {
+  color: $primary-text;
+}
+
+h1 {
+  font-size: 32px;
+
+  @media screen and (max-width: 768px) {
+      font-size: 24px;
+    
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
