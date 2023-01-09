@@ -1,6 +1,6 @@
 import { prependOnceListener } from 'process';
 import React from 'react'
-import {Content as IProps} from "./NewsContainer";
+// import {Content as IProps} from "./NewsContainer";
 
 // interface IProps {
 //     news:
@@ -9,8 +9,8 @@ import {Content as IProps} from "./NewsContainer";
 //         title: string;}[]
 // }
 
-const SingleNews: React.FC<IProps> = ({news}) => {
-    console.log(news)
+// const SingleNews: React.FC<IProps> = ({news}) => {
+//     console.log(news)
 
 //     const renderNews = (): JSX.Element => {
 //     return news.map((article) => {
@@ -19,6 +19,8 @@ const SingleNews: React.FC<IProps> = ({news}) => {
 //         )
 //     })
 //  }
+
+const SingleNews = () => {
 
   return (
     <div>

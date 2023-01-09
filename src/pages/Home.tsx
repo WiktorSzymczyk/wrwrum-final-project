@@ -1,7 +1,7 @@
 import React from "react";
-import NewsCard from "../components/Home/NewsCard";
 import Image from "../library/Image";
 import NewsContainer from "../components/News/NewsContainer";
+
 
 export default function Home() {
   return (
@@ -23,14 +23,10 @@ export default function Home() {
           <div className="flex-grow border-t border-[#00ff5e]"></div>
         </div>
         
-        <div className="grid grid-rows-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-8">
-          <NewsCard title='From the magic of Monza to the laughter at press conferences, our writers pick their favourite moments from Sebastian Vettel' date='16 hours ago'/>
-          <NewsCard title='dsad' date='dsadas'/>
-          <NewsCard title='dsad' date='dsadas'/>
-        </div>
+       
 
         <div>
-          <h1> news test </h1>
+          
           <NewsContainer/>
         </div>
       </div>

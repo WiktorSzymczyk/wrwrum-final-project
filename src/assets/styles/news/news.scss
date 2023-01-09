@@ -1,0 +1,20 @@
+.news-modal-containter {
+
+    display: flex;
+    direction: row;
+    gap: 16px; 
+    justify-content: flex-start;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .modalSmall{
+        width: 100%;
+    }
+
+    .news-modal-title{
+        text-align: left;
+        font-weight: 600;
+    }
+}
