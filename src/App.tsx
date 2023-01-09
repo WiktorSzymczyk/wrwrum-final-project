@@ -2,7 +2,7 @@ import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import { Routes, Route } from "react-router-dom";
-import Home from './components/Home/Home';
+import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
 import Tracks from './components/Tracks/Tracks';

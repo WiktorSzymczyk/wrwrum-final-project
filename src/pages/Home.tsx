@@ -1,6 +1,7 @@
 import React from "react";
-import NewsCard from "./NewsCard";
-import Image from "../../library/Image";
+import NewsCard from "../components/Home/NewsCard";
+import Image from "../library/Image";
+import NewsContainer from "../components/News/NewsContainer";
 
 export default function Home() {
   return (
@@ -26,6 +27,11 @@ export default function Home() {
           <NewsCard title='From the magic of Monza to the laughter at press conferences, our writers pick their favourite moments from Sebastian Vettel' date='16 hours ago'/>
           <NewsCard title='dsad' date='dsadas'/>
           <NewsCard title='dsad' date='dsadas'/>
+        </div>
+
+        <div>
+          <h1> news test </h1>
+          <NewsContainer/>
         </div>
       </div>
     </>   
