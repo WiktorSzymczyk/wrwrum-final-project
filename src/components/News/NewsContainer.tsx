@@ -1,11 +1,13 @@
 import {useEffect, useState} from "react";
 import {getNews} from "../../services/newsApi";
 import "../../assets/styles/news/news.scss"
+import { v4 as uuidv4 } from 'uuid';
+
+uuidv4()
 
 export interface Content {
     news:
         {
-        id: number ;
         content: string;
         link: string;
         title: string;}[]
@@ -37,7 +39,7 @@ const NewsContainer = () => {
   return (
     <div className="news-modal-containter">
          {threePost ? threePost.map((article) => (
-            <a key={article.id} href={article.link} target='_blank' >
+            <a key={uuidv4()} href={article.link} target='_blank' >
                 <div className="modalSmall">
                     <div>
                         <h3 className="news-modal-title">{article.title}</h3>
