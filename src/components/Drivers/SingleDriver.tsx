@@ -33,7 +33,6 @@ export default function SingleDriver(props: {
 	return (
 		<div>
 			<div className='p-10'>
-				{/* <h1 className='text-white'>{props.index}</h1> */}
 				<div
 					className='modalSmall w-screen'
 					onClick={handleClick}

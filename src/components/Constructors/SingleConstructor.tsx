@@ -27,7 +27,6 @@ export default function SingleConstructor(props: {
 	return (
 		<div>
 			<div className='p-10'>
-				{/* <h1 className='text-white'>{props.index}</h1> */}
 				<div
 					className='modalSmall'
 					onClick={handleClick}
