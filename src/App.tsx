@@ -1,7 +1,7 @@
-import "./App.scss";
-import "./assets/styles/share/modalStyle.scss";
-import "./assets/styles/share/mediumButton.scss";
-import { Routes, Route } from "react-router-dom";
+import './App.scss';
+import './assets/styles/share/modalStyle.scss';
+import './assets/styles/share/mediumButton.scss';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
@@ -13,10 +13,12 @@ import Drivers from './components/Drivers/Drivers';
 import Standings from './components/Standings/Standings';
 import StandingsPage from './components/Standings/StandingsPage';
 import DriversInformation from './components/Drivers/DriversInformation';
-import KidsZone from "./pages/KidsZone";
-import KidsZoneIndex from "./pages/KidsZoneIndex";
-import MemoryGame from "./pages/MemoryGame";
+import KidsZone from './pages/KidsZone';
+import KidsZoneIndex from './pages/KidsZoneIndex';
+import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
+import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
+import Chat from './components/Chat/Chat';
 
 function App() {
 	return (
@@ -46,6 +48,28 @@ function App() {
 								world=''
 								first=''
 								idInfo=''
+								index=''
+								id=''
+								value=''
+							/>
+						}
+					/>
+					<Route
+						path='/tracks/:id'
+						element={
+							<SingleTrack
+								id=''
+								name=''
+								img=''
+								country=''
+								distance=''
+								laps=''
+								firstGrandPrix=''
+								lapRecordDriver=''
+								lapRecordSeason=''
+								circuitLength=''
+								year={0}
+								lapRecordTime=''
 							/>
 						}
 					/>
@@ -54,7 +78,7 @@ function App() {
 						element={<Drivers />}
 					/>
 					<Route
-						path='/tracks/:year'
+						path='/tracks/'
 						element={<Tracks />}
 					/>
 					<Route
@@ -65,43 +89,45 @@ function App() {
 						path='/standings/team'
 						element={<Standings team={false} />}
 					/>
-					<Route
-						path='/tracks/:id'
-						element={
-							<SingleTrack
-								name=''
-								img=''
-								country=''
-								distance=''
-								laps=''
-								firstGrandPrix=''
-								lapRecordDriver=''
-								lapRecordSeason=''
-								circuitLength=''
-								lapRecordTime=''
-							/>
-						}
-					/>
 
 					<Route
-						path='drivers/:name/:id'
+						path='drivers/:year/:id'
 						element={<DriversInformation />}
 					/>
 
 					<Route
-						path='constructors/:name/:id'
+						path='constructors/:year/:id'
 						element={<SingleConstructorDetails />}
+					/>
+
+					<Route
+						path='tracks/:year/:id'
+						element={<SingleTrackDetails />}
+					/>
+
+					<Route
+						path='chat'
+						element={<Chat />}
 					/>
 
 					<Route
 						path='*'
 						element={<NotFound />}
 					/>
-          
-          <Route path="kidszone" element={<KidsZone/>} >
-            <Route index element={<KidsZoneIndex />} />
-            <Route path="memorygame" element={<MemoryGame/>} />
-          </Route>
+
+					<Route
+						path='kidszone'
+						element={<KidsZone />}
+					>
+						<Route
+							index
+							element={<KidsZoneIndex />}
+						/>
+						<Route
+							path='memorygame'
+							element={<MemoryGame />}
+						/>
+					</Route>
 				</Routes>
 			</div>
 		</div>

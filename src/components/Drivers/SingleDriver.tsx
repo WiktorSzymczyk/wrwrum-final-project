@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../../library/Image';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SingleDriver(props: {
 	img: any;
@@ -14,11 +14,30 @@ export default function SingleDriver(props: {
 	countryImg: any;
 	id: number;
 	idInfo: any;
+	idInfo2: any;
+	index: any;
+	value: any;
 }) {
+	let navigate = useNavigate();
+
+	const handleClick = () => {
+		let path: string = `/drivers/${props.value}/${props.id}`;
+		navigate(path);
+	};
+
+	const handleClickToConstructor = () => {
+		let path: string = `/constructors/${props.team}/${props.idInfo2}`;
+		navigate(path);
+	};
+
 	return (
 		<div>
 			<div className='p-10'>
-				<div className='max-w-sm rounded overflow-hidden shadow-lg'>
+				<h1 className='text-white'>{props.index}</h1>
+				<div
+					className='modalSmall w-screen'
+					onClick={handleClick}
+				>
 					<Image
 						placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load'
 						className=''
@@ -35,9 +54,14 @@ export default function SingleDriver(props: {
 							/>
 						</div>
 						<h2 className='font-bold py-2 text-white'>{props.Name}</h2>
-						<p className='text-white py-2 text-secondary'>{props.team}</p>
+						<p
+							className='text-white py-2 text-secondary'
+							onClick={handleClickToConstructor}
+						>
+							{props.team}
+						</p>
 						<Link
-							to={`/drivers/${props.Name}/${props.idInfo}`}
+							to={`/drivers/${props.value}/${props.id}`}
 							className='text-white font-semibold'
 						>
 							Details
