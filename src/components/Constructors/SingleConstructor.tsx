@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Image from '../../library/Image';
 
 export default function SingleConstructor(props: {
@@ -13,11 +13,24 @@ export default function SingleConstructor(props: {
 	first: String;
 	world: String;
 	idInfo: any;
+	index: any;
+	value: any;
+	id: any;
 }) {
+	let navigate = useNavigate();
+
+	const handleClick = () => {
+		let path: string = `/constructors/${props.value}/${props.id}`;
+		navigate(path);
+	};
+
 	return (
 		<div>
 			<div className='p-10'>
-				<div className='max-w-sm rounded overflow-hidden shadow-lg'>
+				<div
+					className='modalSmall'
+					onClick={handleClick}
+				>
 					<div className='px-6 py-4 bg-[#161616]'>
 						<h2 className='font-bold mb-2 text-white'>{props.name}</h2>
 						<div className='flex justify-center'>
@@ -32,7 +45,7 @@ export default function SingleConstructor(props: {
 						<p className='py-2 text-secondary'>{props.d1Name}</p>
 						<p className='py-2 text-secondary'>{props.d2Name}</p>
 						<Link
-							to={`/constructors/${props.name}/${props.idInfo}`}
+							to={`/constructors/${props.value}/${props.id}`}
 							className='text-white font-semibold'
 						>
 							Details
