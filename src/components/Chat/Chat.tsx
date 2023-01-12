@@ -13,7 +13,8 @@ export default function Chat() {
 		});
 	}, [socket]);
 
-	const sendMessage = (message: any) => {
+	const sendMessage = (e: any) => {
+		e.preventDefault();
 		socket.emit('send', message);
 	};
 
@@ -32,6 +33,9 @@ export default function Chat() {
 				onChange={(e) => setMessage(e.target.value)}
 			/>
 			<button onClick={sendMessage}>SEND</button>
+			<li>
+				<p></p>
+			</li>
 		</form>
 	);
 }
