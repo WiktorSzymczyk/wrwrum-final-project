@@ -80,12 +80,6 @@ export default function Navbar() {
 					</Link>
 					<Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
-						to='/vote'
-					>
-						VOTE
-					</Link>
-					<Link
-						className='py-5 text-white font-semibold text-2xl sm:text-sm'
 						to='/tracks'
 					>
 						SEASONS
@@ -113,6 +107,12 @@ export default function Navbar() {
 						to='/chat'
 					>
 						CHAT ROOM
+					</Link>
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/vote'
+					>
+						MORE
 					</Link>
 				</div>
 			</div>
