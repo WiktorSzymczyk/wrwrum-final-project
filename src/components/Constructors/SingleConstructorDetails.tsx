@@ -10,16 +10,16 @@ import BackButton from '../share/BackButton';
 export default function SingleConstructorDetails() {
 	const params = useParams<{ year: any; id: any }>();
 
-	const [value, setValue] = useState('2023');
-	const [data, setData] = useState(d2022);
+	const [value] = useState('2023');
+	const [data] = useState(d2022);
 	const [constructor, setConstructor]: any = useState({});
 
 	useEffect(() => {
-		if (params.year == 2023) {
+		if (params.year === '2023') {
 			setConstructor(d2023.teams[params.id]);
-		} else if (params.year == 2022) {
+		} else if (params.year === '2022') {
 			setConstructor(d2022.teams[params.id]);
-		} else if (params.year == 2021) {
+		} else if (params.year === '2021') {
 			setConstructor(d2021.teams[params.id]);
 		}
 	}, [data, value, constructor]);
