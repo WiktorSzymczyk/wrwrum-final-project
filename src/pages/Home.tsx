@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../library/Image";
-import NewsContainer from "../components/News/NewsContainer";
+import NewsContainer from "./../components/News/NewsContainer";
 
 
 export default function Home() {
