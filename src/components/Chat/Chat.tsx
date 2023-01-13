@@ -19,7 +19,7 @@ export default function Chat() {
 	};
 
 	socket.on('message', (message) => {
-		console.log(message); // world
+		console.log(message);
 	});
 
 	// socket.on('connectsocket.emit("hello", "world");', () => {
@@ -34,7 +34,7 @@ export default function Chat() {
 			/>
 			<button onClick={sendMessage}>SEND</button>
 			<li>
-				<p></p>
+				<p>{message}</p>
 			</li>
 		</form>
 	);
