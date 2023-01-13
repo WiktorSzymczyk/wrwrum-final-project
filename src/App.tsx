@@ -18,7 +18,7 @@ import KidsZoneIndex from './pages/KidsZoneIndex';
 import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
-import Chat from './components/Chat/Chat';
+
 
 function App() {
 	return (
@@ -107,7 +107,7 @@ function App() {
 
 					<Route
 						path='chat'
-						element={<Chat />}
+						element={<div>Chat</div>}
 					/>
 
 					<Route
