@@ -2,7 +2,6 @@ import {useEffect, useState} from "react";
 import {getNews} from "../../services/newsApi";
 import "../../assets/styles/news/news.scss"
 import { v4 as uuidv4 } from 'uuid';
-import React from "react";
 
 uuidv4()
 

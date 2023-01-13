@@ -39,7 +39,7 @@
   }
 }
 
-h1, h2, span {
+h1, h2, h3, span {
   color: $primary-text;
 }
 
@@ -52,7 +52,22 @@ h1 {
   }
 }
 
-h3 {
-  font-size: 24px;
+h2 {
+  font-size: 28px ;
 }
 
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+
+@media only screen and (min-width:768px) and (max-width:1025px) {
+    font-size: 20px;
+    line-height: 30px;
+
+  }
+
+@media only screen and (max-width: 767px) {
+      font-size: 20px;
+}
+
+}
