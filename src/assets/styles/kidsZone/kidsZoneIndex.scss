@@ -42,22 +42,10 @@
     }
 
     &:hover{
-        cursor: pointer;
-        position: relative;
-        z-index: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1.02);
-        -webkit-transition: .9s ease-in-out;
-        transition: .9s ease-in-out;
         background-position: right;
         
     }
 
-        &:active:not([disabled]) {
-            box-shadow: $modal-box-shadow;
-            transform: scale(.98)
-        }
-    
        
 
 }

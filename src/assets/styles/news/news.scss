@@ -1,20 +1,30 @@
 .news-modal-containter {
 
     display: flex;
-    direction: row;
+    flex-direction: row;
     gap: 16px; 
     justify-content: flex-start;
+    
 
-    &:hover {
-        cursor: pointer;
-    }
+    @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+    
+        }
 
     .modalSmall{
         width: 100%;
+        min-height: 200px;
+        @media only screen and (max-width: 767px) {
+                min-height: 160px;
+        
+            }
     }
 
     .news-modal-title{
         text-align: left;
         font-weight: 600;
+        
     }
 }
