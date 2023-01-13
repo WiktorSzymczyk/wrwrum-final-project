@@ -2,7 +2,7 @@
 
 .modalSmall {
 min-width: 320px;
-max-width: 320px;
+max-width: 450px;
 min-height: 320px;
 height: 100%;
 padding: 24px;
@@ -10,13 +10,27 @@ border-radius: 6px;
 background-color: $modal-bg;
 box-shadow: $modal-box-shadow;
 
+&:hover {
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02);
+        -webkit-transition: .6s ease-in-out;
+        transition: .6s ease-in-out;
+    }
+
+    &:active:not([disabled]) {
+        box-shadow: $modal-box-shadow;
+        transform: scale(.95); }
+
 @media only screen and (min-width:768px) and (max-width:1025px) {
     min-width: 200px;
     max-width: 250px;
     padding: 20px 16px;
     }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
         width: 100%;
         padding: 20px 16px;
     }

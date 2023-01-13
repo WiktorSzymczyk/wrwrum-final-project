@@ -114,6 +114,12 @@ export default function Navbar() {
 					>
 						CHAT ROOM
 					</Link>
+						<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/kidszone'
+					>
+						KIDS ZONE
+					</Link>
 				</div>
 			</div>
 
