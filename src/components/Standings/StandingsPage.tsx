@@ -1,6 +1,4 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import d2022 from '../../Datas/2023/driverStandings.json';
+import { useState } from 'react';
 import Standings from '../Standings/Standings';
 
 export default function StandingsPage() {

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import t2022 from '../../Datas/2022/teams.json';
-import ts2022 from '../../Datas/2022/teamStandings.json';
 import Image from '../../library/Image';
 
 export default function SingleConstructorDetails() {

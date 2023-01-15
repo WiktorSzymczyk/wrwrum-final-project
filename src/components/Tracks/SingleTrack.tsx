@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from '../../library/Image';
 
 export default function SingleTrack(props: {

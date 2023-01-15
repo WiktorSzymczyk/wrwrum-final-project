@@ -1,51 +1,68 @@
 import * as io from 'socket.io-client';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 const socket = io.connect('http://localhost:7000');
 
 export default function Chat() {
-	const socketClient = useRef<io.Socket>();
+	// const socketClient = useRef<io.Socket>();
 	const [message, setMessage] = useState('');
-	const [messageReceived, setMessageReceived] = useState('');
+	const [messageReceived, setMessageReceived] = useState([]);
 
-	// let messages: any = [];
-	// setSocket(io.('http://localhost:7000'));
 	useEffect(() => {
-		socket.on('receive_message', (message) => {
-			setMessageReceived(message);
-			// messages.push(message);
-		});
+		const hanndleMessage = (fuck: any) => {
+			setMessageReceived((prevState): any => [...prevState, fuck]);
+			console.log('messageReceived');
+		};
+		socket.on('receive_message', hanndleMessage);
+
+		return () => {
+			socket.off('receive_message', hanndleMessage);
+		};
 	}, [socket]);
 
-	const sendMessage = (e: any) => {
-		e.preventDefault();
-		socket.emit('send', message);
+	const sendMessage = () => {
+		// socket.emit('send', message);
+		// setMessageReceived((prevState): any => [...prevState, message]);
+		if (message !== '') {
+			// const messageData: any = {
+			// 	// room: room,
+			// 	// author: username,
+			// 	message: message,
+			// 	time:
+			// 		new Date(Date.now()).getHours() +
+			// 		':' +
+			// 		new Date(Date.now()).getMinutes(),
+			// };
+
+			socket.emit('send', message);
+			setMessageReceived((list): any => [...list, message]);
+			setMessage('');
+		}
 	};
 
-	socket.on('message', (message) => {
-		// console.log(message);
-	});
-
-	// socket.on('connectsocket.emit("hello", "world");', () => {
-	// 	console.log(socket.id);
-	// });
-
 	return (
-		<div className='text-white'>
-			<p>{messageReceived}</p>
-			{/* <p>{messages}</p> */}
-			<form className='bg-[#414040]'>
-				<input
-					className='text-[#222222] border-[#00FF59] border-2 p-1 w-[20vw] bg-gray-200'
-					placeholder='msg'
-					onChange={(e) => setMessage(e.target.value)}
-				/>
-				<button
-					onClick={sendMessage}
-					className='p-2'
-				>
-					SEND
-				</button>
-			</form>
+		<div className='text-white flex justify-center flex-col h-[]'>
+			<ol className='bg-[#222222]'>
+				{messageReceived.map((e) => (
+					<li>{e}</li>
+				))}
+			</ol>
+
+			{/* <form
+				className='bg-[#414040]'
+				onSubmit={sendMessage}
+			> */}
+			<input
+				className='text-[#222222] border-[#00FF59] border-2 p-1 w-[20vw] bg-gray-200'
+				placeholder='msg'
+				onChange={(e) => setMessage(e.target.value)}
+			/>
+			<button
+				onClick={sendMessage}
+				className='p-2'
+			>
+				SEND
+			</button>
+			{/* </form> */}
 		</div>
 	);
 }
