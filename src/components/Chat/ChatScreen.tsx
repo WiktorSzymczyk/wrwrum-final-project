@@ -2,22 +2,14 @@ import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 const socket = io.connect('http://localhost:7000');
 
-export default function Chat() {
+export default function ChatScreen() {
 	// const socketClient = useRef<io.Socket>();
 	const [message, setMessage] = useState('');
 	const [messageReceived, setMessageReceived] = useState([]);
-	const [username, setUsername] = useState('');
 
-	// const db = new MongoClient(
-	// 	'mongodb+srv://<username>:<password>@cluster0.xwrsq9a.mongodb.net/?retryWrites=true&w=majority'
-	// );
-	// const assignUsername = () => {
-	// 	const user = db.getUser('tomtom@hardy.com');
-	// 	console.log(user);
-	// };
 	useEffect(() => {
-		const hanndleMessage = (fuck: any) => {
-			setMessageReceived((prevState): any => [...prevState, fuck]);
+		const hanndleMessage = (state: any) => {
+			setMessageReceived((prevState): any => [...prevState, state]);
 			console.log('messageReceived');
 		};
 		socket.on('receive_message', hanndleMessage);
@@ -44,7 +36,6 @@ export default function Chat() {
 			socket.emit('send', message);
 			setMessageReceived((list): any => [...list, message]);
 			setMessage('');
-			// assignUsername();
 		}
 	};
 
