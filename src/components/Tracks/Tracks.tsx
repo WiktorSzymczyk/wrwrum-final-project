@@ -29,7 +29,7 @@ export default function Tracks() {
 		} else if (value === '2021') {
 			setData(data2021);
 		}
-	}, [data, value]);
+	}, [data, data2021, data2022, data2023, value]);
 
 	console.log(value);
 	console.log(data);

@@ -1,10 +1,9 @@
-import React from 'react';
-import d2021 from '../../Datas/2021/driverStandings.json';
+// import d2021 from '../../Datas/2021/driverStandings.json';
 import d2022 from '../../Datas/2022/driverStandings.json';
-import d2023 from '../../Datas/2023/driverStandings.json';
-import t2021 from '../../Datas/2021/teamStandings.json';
+// import d2023 from '../../Datas/2023/driverStandings.json';
+// import t2021 from '../../Datas/2021/teamStandings.json';
 import t2022 from '../../Datas/2022/teamStandings.json';
-import t2023 from '../../Datas/2023/teamStandings.json';
+// import t2023 from '../../Datas/2023/teamStandings.json';
 import { Link } from 'react-router-dom';
 
 export default function Standings(props: { team: boolean }) {

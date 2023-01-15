@@ -16,6 +16,7 @@ export default function Drivers() {
 	const data2022 = d2022;
 	const data2023 = d2023;
 
+	console.log(indexDriver);
 	const handleChanges = (event: React.ChangeEvent<HTMLSelectElement>) => {
 		setValue(event.target.value);
 		// 	console.log(data);
@@ -23,11 +24,6 @@ export default function Drivers() {
 	};
 	const handleSubmit = (event: React.FormEvent) => {
 		event.preventDefault();
-	};
-
-	const handleId = (event: React.MouseEvent) => {
-		const ev = event.target;
-		console.log(ev);
 	};
 
 	// const testClick = (event: any, id: any) => {
@@ -43,11 +39,7 @@ export default function Drivers() {
 		} else if (value === '2021') {
 			setData(data2021);
 		}
-	}, [data, value]);
-
-	const getDriverID = () => {
-		console.log();
-	};
+	}, [data, data2021, data2022, data2023, value]);
 
 	console.log(value);
 	console.log(data);

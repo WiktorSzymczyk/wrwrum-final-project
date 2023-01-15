@@ -4,6 +4,7 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   placeholderImg?: string;
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default ({ src, placeholderImg, ...props }: ImageProps) => {
   const [imgSrc, setSrc] = useState(placeholderImg || src);
   const onLoad = useCallback(() => {

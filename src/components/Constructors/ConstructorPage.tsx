@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import SingleConstructor from './SingleConstructor';
 import d2021 from '../../Datas/2021/teams.json';
@@ -29,7 +30,7 @@ export default function ConstructorPage() {
 		} else if (value === '2021') {
 			setData(data2021);
 		}
-	}, [data, value]);
+	}, [data, data2021, data2022, data2023, value]);
 
 	console.log(value);
 	console.log(data);
