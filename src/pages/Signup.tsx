@@ -30,26 +30,6 @@ const Signup = () => {
 
         console.log(input.firstName, input.email)
     }
-
-
-//     const handleSubmit = (e: any): void => {
-//         e.preventDefault()
-//     if (
-//         !input.firstName ||
-//         !input.email ||
-//         !input.password )
-//         {
-//             return
-//         }
-
-      
-
-//         setInput({
-//             firstName:"",
-//             email:"",
-//             password:"",
-//         })
-//  }
     
 
   return (
