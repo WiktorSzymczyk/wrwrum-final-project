@@ -18,6 +18,7 @@ import KidsZoneIndex from './pages/KidsZoneIndex';
 import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 import Chat from './components/Chat/Chat';
+import ChatScreen from './components/Chat/ChatScreen';
 
 function App() {
 	return (

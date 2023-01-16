@@ -2,20 +2,29 @@ import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 const socket = io.connect('http://localhost:7000');
 
+// interface User {
+// 	firstName: string;
+// 	lastName: string;
+// 	email: string;
+// }
+
+// interface Props {
+// 	user: User;
+// }
+
+// export default function Chat({ user }: Props) {
 export default function Chat() {
 	// const socketClient = useRef<io.Socket>();
+	const [fakeUser, setFakeUser] = useState('');
 	const [message, setMessage] = useState('');
 	const [messageReceived, setMessageReceived] = useState([]);
-	const [username, setUsername] = useState('');
+	// const [username, setUsername] = useState('you');
+	// const [usernameUser, setUsernameUser] = useState(false);
 
-	// const db = new MongoClient(
-	// 	'mongodb+srv://<username>:<password>@cluster0.xwrsq9a.mongodb.net/?retryWrites=true&w=majority'
-	// );
-	// const assignUsername = () => {
-	// 	const user = db.getUser('tomtom@hardy.com');
-	// 	console.log(user);
-	// };
 	useEffect(() => {
+		// const user: any = window.prompt('Username: ');
+		// setUsername(user);
+		// setUsernameUser(true);
 		const hanndleMessage = (fuck: any) => {
 			setMessageReceived((prevState): any => [...prevState, fuck]);
 			console.log('messageReceived');
@@ -27,7 +36,9 @@ export default function Chat() {
 		};
 	}, [socket]);
 
-	const sendMessage = () => {
+	const sendMessage = (e: React.FormEvent) => {
+		e.preventDefault();
+		const generateTime = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
 		// socket.emit('send', message);
 		// setMessageReceived((prevState): any => [...prevState, message]);
 		if (message !== '') {
@@ -41,37 +52,56 @@ export default function Chat() {
 			// 		new Date(Date.now()).getMinutes(),
 			// };
 
-			socket.emit('send', message);
-			setMessageReceived((list): any => [...list, message]);
+			socket.emit('send', message, fakeUser, generateTime);
+			setMessageReceived((list): any => [
+				...list,
+				{ message, userName: fakeUser, timestamp: generateTime },
+			]);
 			setMessage('');
-			// assignUsername();
 		}
 	};
 
 	return (
-		<div className='text-white flex justify-center flex-col h-[]'>
-			<ol className='bg-[#222222]'>
-				{messageReceived.map((e) => (
-					<li>{e}</li>
-				))}
+		<div className='text-white'>
+			<input
+				className='text-[#222222]'
+				value={fakeUser}
+				onChange={(e) => setFakeUser(e.target.value)}
+			/>
+			<ol className='bg-[#222222] pt-2'>
+				{messageReceived.map(
+					(e: any) =>
+						e.userName === fakeUser ? (
+							<li className='bg-[#444444]'>
+								{e.userName}: {e.message} <small>{e.timestamp}</small>
+							</li>
+						) : (
+							<li className='bg-[#777777]'>
+								{e.userName}: {e.message} <small>{e.timestamp}</small>
+							</li>
+						)
+					// <p>
+					// 	{usernameUser ? (
+					// 		<li className='bg-[#444444]'>{fakeUser}: {e}</li>
+					// 	) : (
+					// 		<li className='bg-[#777777]'></li>
+					// 	)}
+					// </p>
+				)}
 			</ol>
 
-			{/* <form
+			<form
 				className='bg-[#414040]'
 				onSubmit={sendMessage}
-			> */}
-			<input
-				className='text-[#222222] border-[#00FF59] border-2 p-1 w-[20vw] bg-gray-200'
-				placeholder='msg'
-				onChange={(e) => setMessage(e.target.value)}
-			/>
-			<button
-				onClick={sendMessage}
-				className='p-2'
 			>
-				SEND
-			</button>
-			{/* </form> */}
+				<input
+					className='text-[#222222] border-[#00FF59] border-2 p-1 w-[20vw] bg-gray-200'
+					placeholder='msg'
+					value={message}
+					onChange={(e) => setMessage(e.target.value)}
+				/>
+				<button className='p-2'>SEND</button>
+			</form>
 		</div>
 	);
 }
