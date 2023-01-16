@@ -34,9 +34,9 @@ const Signup = () => {
 
   return (
     <div className='signup-container '>
-        <div className="max-w-md w-full mx-auto">
-            <div className='modalMedium max-w-md w-full mx-auto'>
-                <h1 className="mb-11"> Signup</h1>
+        <div>
+            <div className='modalMedium'>
+                <h1 className="mb-11  font-bold"> Signup</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="input-field-container">
                             <div className="body">
