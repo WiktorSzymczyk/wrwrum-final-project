@@ -1,4 +1,5 @@
-import "../assets/styles/signup_login/signupSignin.scss"
+import "../assets/styles/signup_login/signupLogin.scss"
+import { Link } from "react-router-dom"
 
 import React, {useState} from "react"
 
@@ -7,7 +8,7 @@ interface FormData {
     password: string
 }
 
-const Signup = () => {
+const Login = () => {
 
     const [input, setInput] = useState<FormData> ({
         email: "",
@@ -34,7 +35,8 @@ const Signup = () => {
     <div className='signup-container '>
         <div>
             <div className='modalMedium'>
-                <h1 className="mb-11  font-bold"> Signup</h1>
+                <div className="signup-body">
+                    <h1 className="mb-11  font-bold"> Login</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="input-field-container">
                             <div className="body">
@@ -53,10 +55,14 @@ const Signup = () => {
                             </div>
                         </div>
                         
-                        <button className="medium-button w-full">Signup</button>
+                        <button className="medium-button w-full">Login</button>
                     </form>
-            
-                
+                </div>
+                <hr className="separation-line"/>
+                <div className="footer">
+                    <h4>New to Wrwrum?</h4>
+                    <Link to="/signup" className="text-link"> Join now </Link>
+                </div>
             </div>
         </div>
 
@@ -64,4 +70,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login
