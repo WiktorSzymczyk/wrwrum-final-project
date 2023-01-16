@@ -1,7 +1,9 @@
 import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
 import { useAuthContext, DataType } from "../components/context/AuthContext"
-import React, {useState, useContext} from "react"
+import React, {useState} from "react"
+import axios from "axios"
+
 
 interface FormData {
     firstName: string
@@ -10,9 +12,10 @@ interface FormData {
 }
 
 const Signup = () => {
-
+    
+    
     const { setToken } = useAuthContext() as DataType
-
+   
     const [input, setInput] = useState<FormData> ({
         firstName: "",
         email: "",
@@ -26,16 +29,14 @@ const Signup = () => {
         })
     } 
 
-
     const handleSubmit = async (e: any) => {
         e.preventDefault()
 
         console.log(input.firstName, input.email)
-        // post your form's data to your backend, and save the result ( that should be a token) in the setToken
-        // state setter that comes from context
-        // const { data } = await axios.post(process.env.REACT_APP_BACKEND_URL, input)
-        // localStorage.setItem('token', data)
-        // setToken(data)
+        const { data } = await axios.post("http://anxious-pink-cowboy-boots.cyclic.app/api/user/signup", input)
+        console.log(data)
+        localStorage.setItem('token', data)
+        setToken(data)
     }
     
 

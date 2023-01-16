@@ -29,31 +29,13 @@ const AuthProvider = ({children}: ContextProps) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [user, setUser] = useState<User | null>(null);
 
-    // const [datas, setDatas] = useState<IData[]>([{
-    //     firstName: null,
-    //     email: "",
-    //     password: ""
-    // }])
-
-    // const saveData = (data: IData) => {
-    //     const newData: IData = {
-    //         firstName: data.firstName,
-    //         email: data.email,
-    //         password: data.password
-    //     }
-    //     setDatas([...datas, newData])
-    // }
 
 
-
-
-
-  const verifyToken = async (body: any = {}) => {
+  const verifyToken = async () => {
     try{
 
-            const { data } = await axios.post(
-            'https://anxious-pink-cowboy-boots.cyclic.app/api/user/auth',
-            body,
+            const { data } = await axios.post("http://anxious-pink-cowboy-boots.cyclic.app/api/user/auth",
+            {},
             { headers: { Authorization: token } }
             );
             setIsAuthenticated(true);
@@ -74,10 +56,6 @@ const AuthProvider = ({children}: ContextProps) => {
 
    
  }
-
-
-
-
 
 export default AuthProvider;
 
