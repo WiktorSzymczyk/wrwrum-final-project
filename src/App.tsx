@@ -1,6 +1,7 @@
 import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
+import "./assets/styles/share/input-field.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
@@ -18,6 +19,7 @@ import KidsZoneIndex from './pages/KidsZoneIndex';
 import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
+import Signup from "./pages/Signup";
 
 
 function App() {
@@ -128,6 +130,7 @@ function App() {
 							element={<MemoryGame />}
 						/>
 					</Route>
+					<Route path='signup' element={<Signup />}/>
 				</Routes>
 			</div>
 		</div>
