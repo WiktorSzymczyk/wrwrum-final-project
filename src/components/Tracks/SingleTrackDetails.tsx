@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Image from '../../library/Image';
 import d2021 from '../../Datas/2021/circuits.json';
@@ -9,19 +9,19 @@ import BackButton from '../share/BackButton';
 export default function SingleTrackDetails() {
 	const params = useParams<{ year: any; id: any }>();
 
-	const [value, setValue] = useState('2023');
-	const [data, setData] = useState(d2023);
+	const [value] = useState('2023');
+	const [data] = useState(d2023);
 	const [track, setTrack]: any = useState({});
 
 	useEffect(() => {
-		if (params.year == 2023) {
+		if (params.year === '2023') {
 			setTrack(d2023.circuit[params.id - 1]);
-		} else if (params.year == 2022) {
+		} else if (params.year === '2022') {
 			setTrack(d2022.circuit[params.id - 1]);
-		} else if (params.year == 2021) {
+		} else if (params.year === '2021') {
 			setTrack(d2021.circuit[params.id - 1]);
 		}
-	}, [data, value, track]);
+	}, [data, value, track, params.year, params.id]);
 
 	return (
 		<div className='flex w-full justify-center'>

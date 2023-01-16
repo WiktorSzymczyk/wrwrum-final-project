@@ -18,7 +18,10 @@ const KidsZoneIndex = () => {
 					onClick={handleClick}
 				>
 					<div className='img-frame'>
-						<img src='/img/kids_zone/memory_game.jpg'></img>
+						<img
+							src='/img/kids_zone/memory_game.jpg'
+							alt=''
+						></img>
 					</div>
 					<h3>Memory Game</h3>
 				</div>

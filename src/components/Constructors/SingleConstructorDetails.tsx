@@ -1,28 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import d2021 from '../../Datas/2021/teams.json';
 import d2022 from '../../Datas/2022/teams.json';
 import d2023 from '../../Datas/2023/teams.json';
-import ts2022 from '../../Datas/2022/teamStandings.json';
 import Image from '../../library/Image';
 import BackButton from '../share/BackButton';
 
 export default function SingleConstructorDetails() {
 	const params = useParams<{ year: any; id: any }>();
 
-	const [value, setValue] = useState('2023');
-	const [data, setData] = useState(d2022);
+	const [value] = useState('2023');
+	const [data] = useState(d2022);
 	const [constructor, setConstructor]: any = useState({});
 
 	useEffect(() => {
-		if (params.year == 2023) {
+		if (params.year === '2023') {
 			setConstructor(d2023.teams[params.id]);
-		} else if (params.year == 2022) {
+		} else if (params.year === '2022') {
 			setConstructor(d2022.teams[params.id]);
-		} else if (params.year == 2021) {
+		} else if (params.year === '2021') {
 			setConstructor(d2021.teams[params.id]);
 		}
-	}, [data, value, constructor]);
+	}, [data, value, constructor, params.year, params.id]);
 
 	console.log(constructor);
 

@@ -23,12 +23,14 @@ function Board(props: BoardProps) {
     setShouldDisableAllCards(false);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const checkCompletion = () => {
     if (clearedCards.length === props.cardIds.length) {
      props.finishGameCallback()
     }
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const evaluate = () => {
     const [first, second] = openCards;
     enable();
@@ -66,11 +68,11 @@ function Board(props: BoardProps) {
     return () => {
       clearTimeout(timeout);
     };
-  }, [openCards]);
+  }, [evaluate, openCards]);
 
   useEffect(() => {
     checkCompletion();
-  }, [clearedCards]);
+  }, [checkCompletion, clearedCards]);
 
   const checkIsFlipped = (id: number) => {
     return clearedCards.includes(id) || openCards.includes(id);
