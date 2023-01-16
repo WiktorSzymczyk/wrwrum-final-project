@@ -1,8 +1,7 @@
 import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
-
-
-import React, {useState} from "react"
+import { useAuthContext, DataType } from "../components/context/AuthContext"
+import React, {useState, useContext} from "react"
 
 interface FormData {
     firstName: string
@@ -12,12 +11,13 @@ interface FormData {
 
 const Signup = () => {
 
+    const { setToken } = useAuthContext() as DataType
+
     const [input, setInput] = useState<FormData> ({
         firstName: "",
         email: "",
         password: ""
     })
-
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> ): void => {
         setInput({
@@ -31,6 +31,11 @@ const Signup = () => {
         e.preventDefault()
 
         console.log(input.firstName, input.email)
+        // post your form's data to your backend, and save the result ( that should be a token) in the setToken
+        // state setter that comes from context
+        // const { data } = await axios.post(process.env.REACT_APP_BACKEND_URL, input)
+        // localStorage.setItem('token', data)
+        // setToken(data)
     }
     
 

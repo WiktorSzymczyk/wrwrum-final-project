@@ -22,119 +22,122 @@ import SingleConstructorDetails from './components/Constructors/SingleConstructo
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import AuthProvider from "./components/context/AuthContext";
 
 
 function App() {
 	return (
 		<div className='App bg-main-bg display-cover max-w-[100vw] z-10'>
 			<div className='flex w-full'>
-				<Navbar />
-				<Routes>
-					<Route
-						path='/'
-						element={<Home />}
-					/>
-					<Route
-						path='/constructors'
-						element={<ConstructorPage />}
-					/>
-					<Route
-						path='/constructors/:id'
-						element={
-							<SingleConstructor
-								name=''
-								chief=''
-								powerUnit=''
-								img=''
-								d1Name=''
-								d2Name=''
-								chasis=''
-								world=''
-								first=''
-								idInfo=''
-								index=''
-								id=''
-								value=''
-							/>
-						}
-					/>
-					<Route
-						path='/tracks/:id'
-						element={
-							<SingleTrack
-								id=''
-								name=''
-								img=''
-								country=''
-								distance=''
-								laps=''
-								firstGrandPrix=''
-								lapRecordDriver=''
-								lapRecordSeason=''
-								circuitLength=''
-								year={0}
-								lapRecordTime=''
-							/>
-						}
-					/>
-					<Route
-						path='/drivers'
-						element={<Drivers />}
-					/>
-					<Route
-						path='/tracks/'
-						element={<Tracks />}
-					/>
-					<Route
-						path='/standings'
-						element={<StandingsPage />}
-					/>
-					<Route
-						path='/standings/team'
-						element={<Standings team={false} />}
-					/>
-
-					<Route
-						path='drivers/:year/:id'
-						element={<DriversInformation />}
-					/>
-
-					<Route
-						path='constructors/:year/:id'
-						element={<SingleConstructorDetails />}
-					/>
-
-					<Route
-						path='tracks/:year/:id'
-						element={<SingleTrackDetails />}
-					/>
-
-					<Route
-						path='chat'
-						element={<div>Chat</div>}
-					/>
-
-					<Route
-						path='*'
-						element={<NotFound />}
-					/>
-
-					<Route
-						path='kidszone'
-						element={<KidsZone />}
-					>
+				<AuthProvider>
+					<Navbar />
+					<Routes>
 						<Route
-							index
-							element={<KidsZoneIndex />}
+							path='/'
+							element={<Home />}
 						/>
 						<Route
-							path='memorygame'
-							element={<MemoryGame />}
+							path='/constructors'
+							element={<ConstructorPage />}
 						/>
-					</Route>
-					<Route path='signup' element={<Signup />}/>
-					<Route path='login' element={<Login />}/>
-				</Routes>
+						<Route
+							path='/constructors/:id'
+							element={
+								<SingleConstructor
+									name=''
+									chief=''
+									powerUnit=''
+									img=''
+									d1Name=''
+									d2Name=''
+									chasis=''
+									world=''
+									first=''
+									idInfo=''
+									index=''
+									id=''
+									value=''
+								/>
+							}
+						/>
+						<Route
+							path='/tracks/:id'
+							element={
+								<SingleTrack
+									id=''
+									name=''
+									img=''
+									country=''
+									distance=''
+									laps=''
+									firstGrandPrix=''
+									lapRecordDriver=''
+									lapRecordSeason=''
+									circuitLength=''
+									year={0}
+									lapRecordTime=''
+								/>
+							}
+						/>
+						<Route
+							path='/drivers'
+							element={<Drivers />}
+						/>
+						<Route
+							path='/tracks/'
+							element={<Tracks />}
+						/>
+						<Route
+							path='/standings'
+							element={<StandingsPage />}
+						/>
+						<Route
+							path='/standings/team'
+							element={<Standings team={false} />}
+						/>
+
+						<Route
+							path='drivers/:year/:id'
+							element={<DriversInformation />}
+						/>
+
+						<Route
+							path='constructors/:year/:id'
+							element={<SingleConstructorDetails />}
+						/>
+
+						<Route
+							path='tracks/:year/:id'
+							element={<SingleTrackDetails />}
+						/>
+
+						<Route
+							path='chat'
+							element={<div>Chat</div>}
+						/>
+
+						<Route
+							path='*'
+							element={<NotFound />}
+						/>
+
+						<Route
+							path='kidszone'
+							element={<KidsZone />}
+						>
+							<Route
+								index
+								element={<KidsZoneIndex />}
+							/>
+							<Route
+								path='memorygame'
+								element={<MemoryGame />}
+							/>
+						</Route>
+						<Route path='signup' element={<Signup />}/>
+						<Route path='login' element={<Login />}/>
+					</Routes>
+				</AuthProvider>
 			</div>
 		</div>
 	);
