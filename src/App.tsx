@@ -130,7 +130,7 @@ function App() {
 							element={<MemoryGame />}
 						/>
 					</Route>
-					<Route path='signup' element={<Signup/>}/>
+					<Route path='signup' element={<Signup />}/>
 				</Routes>
 			</div>
 		</div>
