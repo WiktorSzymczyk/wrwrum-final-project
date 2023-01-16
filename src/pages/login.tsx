@@ -1,19 +1,16 @@
 import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
 
-
 import React, {useState} from "react"
 
 interface FormData {
-    firstName: string
     email: string
     password: string
 }
 
-const Signup = () => {
+const Login = () => {
 
     const [input, setInput] = useState<FormData> ({
-        firstName: "",
         email: "",
         password: ""
     })
@@ -30,7 +27,7 @@ const Signup = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
 
-        console.log(input.firstName, input.email)
+        console.log( input.email)
     }
     
 
@@ -39,18 +36,9 @@ const Signup = () => {
         <div>
             <div className='modalMedium'>
                 <div className="signup-body">
-                    <h1 className="mb-11  font-bold"> Signup</h1>
+                    <h1 className="mb-11  font-bold"> Login</h1>
                     <form onSubmit={handleSubmit}>
                         <div className="input-field-container">
-                            <div className="body">
-                                <input
-                                type="text"  
-                                value={input.firstName}
-                                onChange={handleChange}
-                                placeholder="First Name" 
-                                name="firstName"
-                                />
-                            </div>
                             <div className="body">
                                 <input 
                                 type="email"  
@@ -66,18 +54,15 @@ const Signup = () => {
                                 placeholder="Password" name="password"/>
                             </div>
                         </div>
-                        <button className="medium-button w-full">Signup</button>
-                    
+                        
+                        <button className="medium-button w-full">Login</button>
                     </form>
                 </div>
-
-                     <hr className="separation-line"/>
+                <hr className="separation-line"/>
                 <div className="footer">
-                    <h4>Already on Wrwrum?</h4>
-                    <Link to="/login" className="text-link"> Log in </Link>
+                    <h4>New to Wrwrum?</h4>
+                    <Link to="/signup" className="text-link"> Join now </Link>
                 </div>
-            
-                
             </div>
         </div>
 
@@ -85,4 +70,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login

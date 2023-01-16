@@ -63,9 +63,16 @@ box-shadow: $modal-box-shadow;
     max-width: 640px;
     min-height: 320px;
     height: 100%;
-    padding: 24px;
+    padding: 32px;
     border-radius: 6px;
     background-color: $modal-bg;
     box-shadow: $modal-box-shadow;
+
+    @media only screen and (max-width: 767px) {
+            min-width: 350px;
+            min-height: none;
+            width: 100%;
+            padding: 20px 16px;
+        }
 
 }
