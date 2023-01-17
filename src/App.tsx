@@ -1,12 +1,9 @@
 import './App.scss';
 import './assets/styles/share/modalStyle.scss';
 import './assets/styles/share/mediumButton.scss';
+import './assets/styles/share/input-field.scss';
+import './assets/styles/share/text-link.scss';
 import { Routes, Route } from 'react-router-dom';
-import "./App.scss";
-import "./assets/styles/share/modalStyle.scss";
-import "./assets/styles/share/mediumButton.scss";
-import "./assets/styles/share/input-field.scss";
-import "./assets/styles/share/text-link.scss"
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
@@ -26,8 +23,8 @@ import Chat from './components/Chat/Chat';
 import ChatScreen from './components/Chat/ChatScreen';
 import Vote from './components/Vote/Vote';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
-import Signup from "./pages/Signup";
-import Login from "./pages/login";
+import Signup from './pages/Signup';
+import Login from './pages/login';
 
 function App() {
 	return (
@@ -114,10 +111,10 @@ function App() {
 						element={<SingleTrackDetails />}
 					/>
 
-					{/* <Route
+					<Route
 						path='chat'
 						element={<div>Chat</div>}
-					/> */}
+					/>
 
 					<Route
 						path='*'
@@ -147,8 +144,14 @@ function App() {
 							element={<MemoryGame />}
 						/>
 					</Route>
-					<Route path='signup' element={<Signup />}/>
-					<Route path='login' element={<Login />}/>
+					<Route
+						path='signup'
+						element={<Signup />}
+					/>
+					<Route
+						path='login'
+						element={<Login />}
+					/>
 				</Routes>
 			</div>
 		</div>
