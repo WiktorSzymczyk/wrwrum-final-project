@@ -3,6 +3,7 @@ import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import "./assets/styles/share/input-field.scss";
 import "./assets/styles/share/text-link.scss"
+import "./assets/styles/signup_login/signupLogin.scss"
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
@@ -23,6 +24,8 @@ import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import AuthProvider from "./context/AuthContext";
+import SuccessScreen_signup from "./pages/SuccessScreen_signup";
+
 
 
 function App() {
@@ -134,8 +137,12 @@ function App() {
 								element={<MemoryGame />}
 							/>
 						</Route>
-						<Route path='signup' element={<Signup />}/>
+						<Route path='signup' element={<Signup />} />
+						<Route path='signup-success' element={<SuccessScreen_signup />}/>
+
 						<Route path='login' element={<Login />}/>
+						
+
 					</Routes>
 				</AuthProvider>
 			</div>

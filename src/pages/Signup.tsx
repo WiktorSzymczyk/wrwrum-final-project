@@ -1,4 +1,3 @@
-import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
 import { useAuthContext, DataType } from "../context/AuthContext"
 import React, {useState} from "react"
@@ -11,7 +10,7 @@ export type FormData = {
     password: string
 }
 
-const Signup = () => {
+const SignuIndex = () => {
     
     
     const { setToken } = useAuthContext() as DataType
@@ -35,13 +34,22 @@ const Signup = () => {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
+        // try {
+        //     // console.log(input.firstName, input.email)
+        //     const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
+        //     // console.log(data)
+        //     localStorage.setItem('token', data)
+        //     setToken(data)
+        //     // console.log(setToken(data))
+        // } catch(error) {
+        //     console.log(error)
+        // }
         try {
-            // console.log(input.firstName, input.email)
             const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
             // console.log(data)
-            localStorage.setItem('token', data)
+            localStorage.setItem('token', data) // YOU ARE STORING THE TOKEN AS AN OBJECT 
             setToken(data)
-            // console.log(setToken(data))
+            console.log(data)
         } catch(error) {
             console.log(error)
         }
@@ -100,4 +108,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default SignuIndex
