@@ -1,9 +1,9 @@
+import { Routes, Route } from 'react-router-dom';
 import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import "./assets/styles/share/input-field.scss";
 import "./assets/styles/share/text-link.scss"
-import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
@@ -21,7 +21,7 @@ import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
-import Login from "./pages/Login";
+import Login from "./pages/login";
 
 
 function App() {
@@ -109,10 +109,10 @@ function App() {
 						element={<SingleTrackDetails />}
 					/>
 
-					<Route
+					{/* <Route
 						path='chat'
 						element={<div>Chat</div>}
-					/>
+					/> */}
 
 					<Route
 						path='*'
