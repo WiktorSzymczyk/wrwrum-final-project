@@ -7,16 +7,28 @@ export default function Navbar() {
 
 	return (
 		<>
-				<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
-					<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-10'>
-						<div className='w-28 object-none'>
-							<div className='p-5'>
-								<svg
-									id='logo_v01-09'
-									xmlns='http://www.w3.org/2000/svg'
-									width='100%'
-									height='160'
-									viewBox='0 0 230 160'
+			<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
+				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-6'>
+					<div className='sm:w-[10vw] md:w-[15vw]'>
+						<div className='p-5 flex'>
+							<svg
+								id='logo_v01-09'
+								xmlns='http://www.w3.org/2000/svg'
+								width='500px'
+								height='80'
+								viewBox='0 0 500 160'
+							>
+								<path
+									id='Path_11'
+									data-name='Path 11'
+									d='M128.7,140.757h-19.35l-8.637-23.075-3.147-9.391-3.013,9.62-8.5,22.846H67.5L62.614,65.92H77.143L79.219,113.9l.536,13.112,3.95-11.68,9.642-26.625h10.378L113.9,116.937l3.281,9.963.268-11.68,2.21-49.3h13.994L128.7,140.757Z'
+									transform='translate(-21.191 -25.591)'
+									fill='#f2f2f2'
+								/>
+								<g
+									id='Group_16'
+									data-name='Group 16'
+									transform='translate(0 0)'
 								>
 									<rect
 										id='Rectangle_35'
