@@ -7,7 +7,6 @@ export default function Navbar() {
 
 	return (
 		<>
-			<div>
 				<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
 					<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-10'>
 						<div className='w-28 object-none'>
@@ -127,7 +126,14 @@ export default function Navbar() {
 						>
 							MORE
 						</Link>
-					</div>
+					
+					 <Link
+						className='medium-button  text-2xl w-full'
+						to='/login'
+					>
+						LOG IN
+					</Link>
+
 				</div>
 
 				<div className='absolute bg-[#151515] w-screen flex sm:hidden h-[7%]'>
