@@ -17,12 +17,12 @@ export default function NavbarLinksMobile() {
 				>
 					HOME
 				</Link>
-				<Link
+				{/* <Link
 					to='/vote'
 					className='font-semibold pt-5'
 				>
 					VOTE
-				</Link>
+				</Link> */}
 				<Link
 					to='/tracks'
 					className='font-semibold pt-5'
