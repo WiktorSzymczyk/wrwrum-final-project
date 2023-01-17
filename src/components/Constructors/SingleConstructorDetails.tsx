@@ -1,7 +1,5 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
-import t2022 from '../../Datas/2022/teams.json';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import d2021 from '../../Datas/2021/teams.json';
 import d2022 from '../../Datas/2022/teams.json';
 import d2023 from '../../Datas/2023/teams.json';
