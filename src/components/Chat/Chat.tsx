@@ -1,9 +1,9 @@
 import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 import '../../assets/styles/share/mediumButton.scss';
-const backendUrl: any = process.env.REACT_APP_BACKEND;
-const socket = io.connect(backendUrl);
-
+// const backendUrl: any = process.env.REACT_APP_BACKEND;
+// const socket = io.connect(backendUrl);
+const socket = io.connect('https://anxious-pink-cowboy-boots.cyclic.app/news/api');
 // interface User {
 // 	firstName: string;
 // 	lastName: string;
