@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavbarLinksMobile from './NavbarLinksMobile';
 
@@ -8,9 +8,15 @@ export default function Navbar() {
 	return (
 		<>
 			<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
+<<<<<<< HEAD
 				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-10'>
 					<div className='w-28 object-none'>
 						<div className='p-5'>
+=======
+				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-6'>
+					<div className='sm:w-[10vw] md:w-[15vw]'>
+						<div className='p-5 flex'>
+>>>>>>> 1882b8036f694f81a6b6c8861ee373c97246723a
 							<svg
 								id='logo_v01-09'
 								xmlns='http://www.w3.org/2000/svg'
@@ -77,6 +83,7 @@ export default function Navbar() {
 					>
 						HOME
 					</Link>
+<<<<<<< HEAD
 					{/* <Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
 						to='/vote'
@@ -86,6 +93,10 @@ export default function Navbar() {
 					<Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
 						to='/tracks/2023'
+=======
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/tracks'
 					>
 						SEASONS
 					</Link>
@@ -113,6 +124,52 @@ export default function Navbar() {
 					>
 						CHAT ROOM
 					</Link>
+					
+					<Link
+					className='py-5 text-white font-semibold text-2xl sm:text-sm'
+					to='/kidszone'
+					>
+						KIDS ZONE
+					</Link>
+
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/vote'
+					>
+						MORE
+					</Link>
+					<Link
+						className='medium-button  text-2xl w-full'
+						to='/login'
+>>>>>>> 1882b8036f694f81a6b6c8861ee373c97246723a
+					>
+						SEASONS
+					</Link>
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/drivers'
+					>
+						DRIVERS
+					</Link>
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/constructors'
+					>
+						CONSTRUCTORS
+					</Link>
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/standings'
+					>
+						STANDINGS
+					</Link>
+					<Link
+						className='py-5 text-white font-semibold text-2xl sm:text-sm'
+						to='/chat'
+					>
+						CHAT ROOM
+					</Link>
+<<<<<<< HEAD
 
 					<Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
@@ -130,6 +187,11 @@ export default function Navbar() {
 				</div>
 			</div>
 
+=======
+				</div>
+			</div>
+
+>>>>>>> 1882b8036f694f81a6b6c8861ee373c97246723a
 			<div className='absolute bg-[#151515] w-screen flex sm:hidden h-[7%]'>
 				{/* <img
 					src={menu}
@@ -138,7 +200,11 @@ export default function Navbar() {
 					onClick={() => setIsNavOpen(!isNavOpen)}
 				/>
 
+<<<<<<< HEAD
 				<div className='flex justify-center items-center w-[60vw]'>
+=======
+				<div className='flex justify-center'>
+>>>>>>> 1882b8036f694f81a6b6c8861ee373c97246723a
 					<svg
 						id='logo_v01-09'
 						xmlns='http://www.w3.org/2000/svg'
