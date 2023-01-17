@@ -23,7 +23,7 @@ import SingleConstructorDetails from './components/Constructors/SingleConstructo
 import ChatScreen from './components/Chat/ChatScreen';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import AuthProvider from "./context/AuthContext";
 import SuccessScreen_signup from "./pages/SuccessScreen_signup";
 
