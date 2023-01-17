@@ -40,6 +40,7 @@ const NewsContainer = () => {
 							key={uuidv4()}
 							href={article.link}
 							target='_blank'
+							rel='noreferrer'
 						>
 							<div className='modalSmall'>
 								<div>

@@ -1,6 +1,3 @@
-import './App.scss';
-import './assets/styles/share/modalStyle.scss';
-import './assets/styles/share/mediumButton.scss';
 import { Routes, Route } from 'react-router-dom';
 import "./App.scss";
 import "./assets/styles/share/modalStyle.scss";
@@ -22,12 +19,10 @@ import KidsZone from './pages/KidsZone';
 import KidsZoneIndex from './pages/KidsZoneIndex';
 import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
-import Chat from './components/Chat/Chat';
-import ChatScreen from './components/Chat/ChatScreen';
-import Vote from './components/Vote/Vote';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
 import Login from "./pages/login";
+
 
 function App() {
 	return (
@@ -123,16 +118,6 @@ function App() {
 						path='*'
 						element={<NotFound />}
 					/>
-
-					<Route
-						path='/chat'
-						element={<ChatScreen />}
-					/>
-
-					{/* <Route
-						path='/vote'
-						element={<Vote />}
-					/> */}
 
 					<Route
 						path='kidszone'
