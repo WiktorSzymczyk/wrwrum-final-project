@@ -1,18 +1,15 @@
-import * as io from 'socket.io-client';
 import { HexColorPicker } from 'react-colorful';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Chat from './Chat';
 import '../../assets/styles/share/mediumButton.scss';
 import randomColor from 'randomcolor';
-const backendLink: any = process.env.REACT_APP_BACKEND;
-const socket = io.connect(backendLink);
 
 export default function ChatScreen() {
 	const [fakeUser, setFakeUser] = useState('');
 	const [chat, setChat] = useState(false);
 	const [colorMe, setColorMe] = useState('#aabbcc');
 	const color = randomColor();
-	const [colorOther, setColorOther] = useState(color);
+	const [colorOther] = useState(color);
 
 	// useEffect(() => {
 	// 	console.log(color);
