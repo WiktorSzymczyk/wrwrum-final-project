@@ -1,6 +1,6 @@
 import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
-import { useAuthContext, DataType } from "../components/context/AuthContext"
+import { useAuthContext, DataType } from "../context/AuthContext"
 import axios from "axios"
 
 import React, {useState} from "react"

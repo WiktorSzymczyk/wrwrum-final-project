@@ -22,7 +22,7 @@ import SingleConstructorDetails from './components/Constructors/SingleConstructo
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import AuthProvider from "./components/context/AuthContext";
+import AuthProvider from "./context/AuthContext";
 
 
 function App() {
