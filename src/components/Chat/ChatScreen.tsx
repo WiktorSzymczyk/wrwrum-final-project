@@ -1,5 +1,5 @@
 import { HexColorPicker } from 'react-colorful';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Chat from './Chat';
 import '../../assets/styles/share/mediumButton.scss';
 import randomColor from 'randomcolor';
