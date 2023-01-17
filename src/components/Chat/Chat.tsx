@@ -48,7 +48,7 @@ export default function Chat(props: {
 		return () => {
 			socket.off('receive_message', handleMessage);
 		};
-	}, [socket]);
+	}, []);
 
 	const sendMessage = (e: React.FormEvent) => {
 		e.preventDefault();
