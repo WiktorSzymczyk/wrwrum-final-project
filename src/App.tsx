@@ -3,9 +3,9 @@ import './assets/styles/share/modalStyle.scss';
 import './assets/styles/share/mediumButton.scss';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
-import "./App.scss";
-import "./assets/styles/share/modalStyle.scss";
-import "./assets/styles/share/mediumButton.scss";
+import './App.scss';
+import './assets/styles/share/modalStyle.scss';
+import './assets/styles/share/mediumButton.scss';
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
 import Tracks from './components/Tracks/Tracks';
@@ -110,10 +110,10 @@ function App() {
 						element={<SingleTrackDetails />}
 					/>
 
-					<Route
+					{/* <Route
 						path='chat'
 						element={<div>Chat</div>}
-					/>
+					/> */}
 
 					<Route
 						path='*'
