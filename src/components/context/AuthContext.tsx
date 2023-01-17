@@ -2,7 +2,7 @@ import {useState, useEffect, createContext, useContext, ReactNode} from 'react'
 import axios from 'axios'
 
 
-export interface User {
+export type User = {
     firstName: string | null
     email: string | null
     password: string | null
@@ -34,7 +34,7 @@ const AuthProvider = ({children}: ContextProps) => {
   const verifyToken = async () => {
     try{
 
-            const { data } = await axios.post("http://anxious-pink-cowboy-boots.cyclic.app/api/user/auth",
+            const { data } = await axios.post("https://anxious-pink-cowboy-boots.cyclic.app/api/user/auth",
             {},
             { headers: { Authorization: token } }
             );
@@ -45,6 +45,8 @@ const AuthProvider = ({children}: ContextProps) => {
         }
         
     }
+
+    console.log(token)
 
     useEffect(() => {
         token && verifyToken()

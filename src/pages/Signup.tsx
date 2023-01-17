@@ -5,7 +5,7 @@ import React, {useState} from "react"
 import axios from "axios"
 
 
-interface FormData {
+export type FormData = {
     firstName: string
     email: string
     password: string
@@ -16,11 +16,15 @@ const Signup = () => {
     
     const { setToken } = useAuthContext() as DataType
    
+    
+
     const [input, setInput] = useState<FormData> ({
         firstName: "",
         email: "",
         password: ""
     })
+
+ 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> ): void => {
         setInput({
@@ -31,12 +35,17 @@ const Signup = () => {
 
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-
-        console.log(input.firstName, input.email)
-        const { data } = await axios.post("http://anxious-pink-cowboy-boots.cyclic.app/api/user/signup", input)
-        console.log(data)
-        localStorage.setItem('token', data)
-        setToken(data)
+        try {
+            console.log(input.firstName, input.email)
+            const { data } = await axios.post("https://anxious-pink-cowboy-boots.cyclic.app/api/user/signup", input)
+            // console.log(data)
+            localStorage.setItem('token', data)
+            setToken(data)
+            // console.log(setToken(data))
+        } catch(error) {
+            console.log(error)
+        }
+        
     }
     
 
