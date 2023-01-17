@@ -20,6 +20,7 @@ import KidsZone from './pages/KidsZone';
 import KidsZoneIndex from './pages/KidsZoneIndex';
 import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
+import ChatScreen from './components/Chat/ChatScreen';
 import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
@@ -104,25 +105,25 @@ function App() {
 							element={<DriversInformation />}
 						/>
 
-						<Route
-							path='constructors/:year/:id'
-							element={<SingleConstructorDetails />}
-						/>
+					<Route
+						path='constructors/:year/:id'
+						element={<SingleConstructorDetails />}
+					/>
 
-						<Route
-							path='tracks/:year/:id'
-							element={<SingleTrackDetails />}
-						/>
+					<Route
+						path='tracks/:year/:id'
+						element={<SingleTrackDetails />}
+					/>
 
-						<Route
-							path='chat'
-							element={<div>Chat</div>}
-						/>
+					<Route
+						path='*'
+						element={<NotFound />}
+					/>
 
-						<Route
-							path='*'
-							element={<NotFound />}
-						/>
+					<Route
+						path='/chat'
+						element={<ChatScreen />}
+					/>
 
 						<Route
 							path='kidszone'

@@ -2,6 +2,7 @@
 declare module "*.png"
 declare module "*.jpg"
 declare module "*.json"
+declare module "uuid"
 
 declare module "\*.svg" {
   import React = require("react");
