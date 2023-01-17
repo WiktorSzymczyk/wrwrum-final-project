@@ -112,11 +112,6 @@ function App() {
 					/>
 
 					<Route
-						path='chat'
-						element={<div>Chat</div>}
-					/>
-
-					<Route
 						path='*'
 						element={<NotFound />}
 					/>

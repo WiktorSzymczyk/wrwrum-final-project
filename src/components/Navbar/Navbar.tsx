@@ -8,14 +8,14 @@ export default function Navbar() {
 	return (
 		<>
 			<div className='p-0 sm:p-0 sm:hidden md:block w-25'>
-				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-6'>
-					<div className='sm:w-[10vw] md:w-[15vw]'>
-						<div className='p-5 flex'>
+				<div className='hidden md:grid md:place-items-center sticky top-0 right-0 h-screen bg-[#232323] pb-[20vh] pt-[5vh] w-full px-10'>
+					<div className='w-28 object-none'>
+						<div className='p-5'>
 							<svg
 								id='logo_v01-09'
 								xmlns='http://www.w3.org/2000/svg'
-								width='500px'
-								height='80'
+								width='100%'
+								height='160'
 								viewBox='0 0 230 160'
 							>
 								<path
@@ -85,7 +85,7 @@ export default function Navbar() {
 					</Link> */}
 					<Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
-						to='/tracks/2023'
+						to='/tracks/'
 					>
 						SEASONS
 					</Link>
