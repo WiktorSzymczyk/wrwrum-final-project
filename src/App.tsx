@@ -19,6 +19,7 @@ import MemoryGame from './pages/MemoryGame';
 import SingleConstructorDetails from './components/Constructors/SingleConstructorDetails';
 import Chat from './components/Chat/Chat';
 import ChatScreen from './components/Chat/ChatScreen';
+import Vote from './components/Vote/Vote';
 
 function App() {
 	return (
@@ -102,8 +103,13 @@ function App() {
 
 					<Route
 						path='/chat'
-						element={<Chat />}
+						element={<ChatScreen />}
 					/>
+
+					{/* <Route
+						path='/vote'
+						element={<Vote />}
+					/> */}
 
 					<Route
 						path='kidszone'

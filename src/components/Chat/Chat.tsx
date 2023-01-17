@@ -1,5 +1,6 @@
 import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
+import '../../assets/styles/share/mediumButton.scss';
 const socket = io.connect('http://localhost:7000');
 
 // interface User {
@@ -13,26 +14,38 @@ const socket = io.connect('http://localhost:7000');
 // }
 
 // export default function Chat({ user }: Props) {
-export default function Chat() {
+export default function Chat(props: {
+	fakeUser: string;
+	colorMe: any;
+	colorOther: any;
+}) {
+	const fakeUser = props.fakeUser;
+	const colorMe = props.colorMe;
+	const colorOther = props.colorOther;
 	// const socketClient = useRef<io.Socket>();
-	const [fakeUser, setFakeUser] = useState('');
+	// const [fakeUser, setFakeUser] = useState(props.fakeUser);
 	const [message, setMessage] = useState('');
 	const [messageReceived, setMessageReceived] = useState([]);
 	// const [username, setUsername] = useState('you');
 	// const [usernameUser, setUsernameUser] = useState(false);
 
 	useEffect(() => {
+		const mess = messageReceived.length - 1;
+		console.log(mess);
+	}, [messageReceived]);
+
+	useEffect(() => {
 		// const user: any = window.prompt('Username: ');
 		// setUsername(user);
 		// setUsernameUser(true);
-		const hanndleMessage = (fuck: any) => {
-			setMessageReceived((prevState): any => [...prevState, fuck]);
+		const handleMessage = (message: any) => {
+			setMessageReceived((prevState): any => [...prevState, message]);
 			console.log('messageReceived');
 		};
-		socket.on('receive_message', hanndleMessage);
+		socket.on('receive_message', handleMessage);
 
 		return () => {
-			socket.off('receive_message', hanndleMessage);
+			socket.off('receive_message', handleMessage);
 		};
 	}, [socket]);
 
@@ -55,30 +68,55 @@ export default function Chat() {
 			socket.emit('send', message, fakeUser, generateTime);
 			setMessageReceived((list): any => [
 				...list,
-				{ message, userName: fakeUser, timestamp: generateTime },
+				{
+					message,
+					userName: fakeUser,
+					timestamp: generateTime,
+					colorMe: colorMe,
+					colorOther: colorOther,
+				},
 			]);
 			setMessage('');
 		}
 	};
 
+	// const styles = {
+	// 	bg: { backgroundColor: color },
+	// };
+
 	return (
-		<div className='text-white'>
-			<input
-				className='text-[#222222]'
+		<div className='h-full w-[50vw] bg-[#222222]'>
+			{/* <input
+				className='text-[#222222] p-2 rounded-sm'
 				value={fakeUser}
+				placeholder='username'
 				onChange={(e) => setFakeUser(e.target.value)}
-			/>
-			<ol className='bg-[#222222] pt-2'>
+			/> */}
+			<ol className='grid grid-cols-1 content-center overflow-y-scroll min-h-[60%] max-h-[60%]'>
 				{messageReceived.map(
 					(e: any) =>
 						e.userName === fakeUser ? (
-							<li className='bg-[#444444]'>
-								{e.userName}: {e.message} <small>{e.timestamp}</small>
-							</li>
+							<div className='text-white'>
+								<li className='float-left flex space-x-2 p-2'>
+									<p style={{ color: colorMe }}>{e.userName}: </p>
+									<p>{e.message}</p>
+									<p>
+										{' '}
+										<small>{e.timestamp}</small>
+									</p>
+								</li>
+							</div>
 						) : (
-							<li className='bg-[#777777]'>
-								{e.userName}: {e.message} <small>{e.timestamp}</small>
-							</li>
+							<div className='text-white'>
+								<li className='float-left flex space-x-2 p-2'>
+									<p style={{ color: colorOther }}>{e.userName}: </p>
+									<p>{e.message}</p>
+									<p>
+										{' '}
+										<small>{e.timestamp}</small>
+									</p>
+								</li>
+							</div>
 						)
 					// <p>
 					// 	{usernameUser ? (
@@ -91,16 +129,18 @@ export default function Chat() {
 			</ol>
 
 			<form
-				className='bg-[#414040]'
+				className='mt-2'
 				onSubmit={sendMessage}
 			>
 				<input
-					className='text-[#222222] border-[#00FF59] border-2 p-1 w-[20vw] bg-gray-200'
+					className='text-[#222222] p-[5px] mr-5 w-[20vw] medium-button'
 					placeholder='msg'
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 				/>
-				<button className='p-2'>SEND</button>
+				<button className='bg-gray-200 medium-button absolute fixed sticky bottom-0'>
+					SEND
+				</button>
 			</form>
 		</div>
 	);
