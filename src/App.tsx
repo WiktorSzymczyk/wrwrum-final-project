@@ -3,6 +3,9 @@ import './assets/styles/share/modalStyle.scss';
 import './assets/styles/share/mediumButton.scss';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
+import "./App.scss";
+import "./assets/styles/share/modalStyle.scss";
+import "./assets/styles/share/mediumButton.scss";
 import ConstructorPage from './components/Constructors/ConstructorPage';
 import SingleConstructor from './components/Constructors/SingleConstructor';
 import Tracks from './components/Tracks/Tracks';
@@ -20,6 +23,7 @@ import SingleConstructorDetails from './components/Constructors/SingleConstructo
 import Chat from './components/Chat/Chat';
 import ChatScreen from './components/Chat/ChatScreen';
 import Vote from './components/Vote/Vote';
+import SingleTrackDetails from './components/Tracks/SingleTrackDetails';
 
 function App() {
 	return (
@@ -49,6 +53,28 @@ function App() {
 								world=''
 								first=''
 								idInfo=''
+								index=''
+								id=''
+								value=''
+							/>
+						}
+					/>
+					<Route
+						path='/tracks/:id'
+						element={
+							<SingleTrack
+								id=''
+								name=''
+								img=''
+								country=''
+								distance=''
+								laps=''
+								firstGrandPrix=''
+								lapRecordDriver=''
+								lapRecordSeason=''
+								circuitLength=''
+								year={0}
+								lapRecordTime=''
 							/>
 						}
 					/>
@@ -57,7 +83,7 @@ function App() {
 						element={<Drivers />}
 					/>
 					<Route
-						path='/tracks/:year'
+						path='/tracks/'
 						element={<Tracks />}
 					/>
 					<Route
@@ -68,32 +94,25 @@ function App() {
 						path='/standings/team'
 						element={<Standings team={false} />}
 					/>
-					<Route
-						path='/tracks/:id'
-						element={
-							<SingleTrack
-								name=''
-								img=''
-								country=''
-								distance=''
-								laps=''
-								firstGrandPrix=''
-								lapRecordDriver=''
-								lapRecordSeason=''
-								circuitLength=''
-								lapRecordTime=''
-							/>
-						}
-					/>
 
 					<Route
-						path='drivers/:name/:id'
+						path='drivers/:year/:id'
 						element={<DriversInformation />}
 					/>
 
 					<Route
-						path='constructors/:name/:id'
+						path='constructors/:year/:id'
 						element={<SingleConstructorDetails />}
+					/>
+
+					<Route
+						path='tracks/:year/:id'
+						element={<SingleTrackDetails />}
+					/>
+
+					<Route
+						path='chat'
+						element={<div>Chat</div>}
 					/>
 
 					<Route

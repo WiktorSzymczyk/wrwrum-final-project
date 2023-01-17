@@ -2,7 +2,7 @@
 	"circuit": [
 		{
 			"id": 1,
-			"name": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023",
+			"name": "Bahrain International Circuit",
 			"country": "Bahrain",
 			"img": "https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Bahrain_Circuit.png.transform/7col/image.png",
 			"firstGrandPrix": "2004",
@@ -11,7 +11,8 @@
 			"numberOfLaps": "57",
 			"lapRecordTime": "1:31.447",
 			"lapRecordDriver": "Pedro de la Rosa",
-			"lapRecordSeason": "2005"
+			"lapRecordSeason": "2005",
+			"year": 2023
 		},
 		{
 			"id": 2,
@@ -24,7 +25,8 @@
 			"numberOfLaps": "50",
 			"lapRecordTime": "1:30.734",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 3,
@@ -37,7 +39,8 @@
 			"numberOfLaps": "58",
 			"lapRecordTime": "1:20.260",
 			"lapRecordDriver": "Charles Leclerc",
-			"lapRecordSeason": "2022"
+			"lapRecordSeason": "2022",
+			"year": 2023
 		},
 		{
 			"id": 4,
@@ -50,7 +53,8 @@
 			"numberOfLaps": "N/A",
 			"lapRecordTime": "N/A",
 			"lapRecordDriver": "N/A",
-			"lapRecordSeason": "N/A"
+			"lapRecordSeason": "N/A",
+			"year": 2023
 		},
 		{
 			"id": 5,
@@ -63,7 +67,8 @@
 			"numberOfLaps": "51",
 			"lapRecordTime": "1:43.009",
 			"lapRecordDriver": "Charles Leclerc",
-			"lapRecordSeason": "2019"
+			"lapRecordSeason": "2019",
+			"year": 2023
 		},
 		{
 			"id": 6,
@@ -76,7 +81,8 @@
 			"numberOfLaps": "57",
 			"lapRecordTime": "1:31.361 ",
 			"lapRecordDriver": "Max Verstappen",
-			"lapRecordSeason": "2022"
+			"lapRecordSeason": "2022",
+			"year": 2023
 		},
 		{
 			"id": 7,
@@ -89,7 +95,8 @@
 			"numberOfLaps": "63",
 			"lapRecordTime": "1:15.484",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2020"
+			"lapRecordSeason": "2020",
+			"year": 2023
 		},
 		{
 			"id": 8,
@@ -102,7 +109,8 @@
 			"numberOfLaps": "78",
 			"lapRecordTime": "1:12.909",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 9,
@@ -115,7 +123,8 @@
 			"numberOfLaps": "66",
 			"lapRecordTime": "1:18.149",
 			"lapRecordDriver": "Mas Verstappen",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 10,
@@ -128,7 +137,8 @@
 			"numberOfLaps": "70",
 			"lapRecordTime": "1:13.078",
 			"lapRecordDriver": "Valtteri Bottas",
-			"lapRecordSeason": "2019"
+			"lapRecordSeason": "2019",
+			"year": 2023
 		},
 		{
 			"id": 11,
@@ -141,7 +151,8 @@
 			"numberOfLaps": "71",
 			"lapRecordTime": "1:05.619",
 			"lapRecordDriver": "Carlos Sainz",
-			"lapRecordSeason": "2020"
+			"lapRecordSeason": "2020",
+			"year": 2023
 		},
 		{
 			"id": 12,
@@ -154,7 +165,8 @@
 			"numberOfLaps": "52",
 			"lapRecordTime": "1:27.097",
 			"lapRecordDriver": "Max Verstappen",
-			"lapRecordSeason": "2020"
+			"lapRecordSeason": "2020",
+			"year": 2023
 		},
 		{
 			"id": 13,
@@ -167,7 +179,8 @@
 			"numberOfLaps": "70",
 			"lapRecordTime": "1:16.627",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2020"
+			"lapRecordSeason": "2020",
+			"year": 2023
 		},
 		{
 			"id": 14,
@@ -180,7 +193,8 @@
 			"numberOfLaps": "44",
 			"lapRecordTime": "1:46.286",
 			"lapRecordDriver": "Valtteri Bottas",
-			"lapRecordSeason": "2018"
+			"lapRecordSeason": "2018",
+			"year": 2023
 		},
 		{
 			"id": 15,
@@ -193,7 +207,8 @@
 			"numberOfLaps": "72",
 			"lapRecordTime": "1:11.097",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 16,
@@ -206,7 +221,8 @@
 			"numberOfLaps": "53",
 			"lapRecordTime": "1:21.046",
 			"lapRecordDriver": "Rubens Barrichello",
-			"lapRecordSeason": "2004"
+			"lapRecordSeason": "2004",
+			"year": 2023
 		},
 		{
 			"id": 17,
@@ -219,7 +235,8 @@
 			"numberOfLaps": "61",
 			"lapRecordTime": "1:41.905",
 			"lapRecordDriver": "Kevin Magnussen",
-			"lapRecordSeason": "2018"
+			"lapRecordSeason": "2018",
+			"year": 2023
 		},
 		{
 			"id": 18,
@@ -232,7 +249,8 @@
 			"numberOfLaps": "53",
 			"lapRecordTime": "1:30.983",
 			"lapRecordDriver": "Lewis Hamilton",
-			"lapRecordSeason": "2019"
+			"lapRecordSeason": "2019",
+			"year": 2023
 		},
 		{
 			"id": 19,
@@ -245,7 +263,8 @@
 			"numberOfLaps": "57",
 			"lapRecordTime": "1:23.196",
 			"lapRecordDriver": "Max Verstappen",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 20,
@@ -258,7 +277,8 @@
 			"numberOfLaps": "56",
 			"lapRecordTime": "1:36.169",
 			"lapRecordDriver": "Charles Leclerc",
-			"lapRecordSeason": "2019"
+			"lapRecordSeason": "2019",
+			"year": 2023
 		},
 		{
 			"id": 21,
@@ -271,7 +291,8 @@
 			"numberOfLaps": "71",
 			"lapRecordTime": "1:17.774",
 			"lapRecordDriver": "Valtteri Bottas",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		},
 		{
 			"id": 22,
@@ -284,7 +305,8 @@
 			"numberOfLaps": "71",
 			"lapRecordTime": "1:10.540",
 			"lapRecordDriver": "Valtteri Bottas",
-			"lapRecordSeason": "2018"
+			"lapRecordSeason": "2018",
+			"year": 2023
 		},
 		{
 			"id": 23,
@@ -297,7 +319,8 @@
 			"numberOfLaps": "50",
 			"lapRecordTime": "N/A",
 			"lapRecordDriver": "N/A",
-			"lapRecordSeason": "N/A"
+			"lapRecordSeason": "N/A",
+			"year": 2023
 		},
 		{
 			"id": 24,
@@ -310,7 +333,8 @@
 			"numberOfLaps": "58",
 			"lapRecordTime": "1:26.103",
 			"lapRecordDriver": "Max Verstappen",
-			"lapRecordSeason": "2021"
+			"lapRecordSeason": "2021",
+			"year": 2023
 		}
 	]
 }

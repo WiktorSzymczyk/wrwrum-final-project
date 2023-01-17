@@ -49,9 +49,7 @@ export default function Standings(props: { team: boolean }) {
 									<tr className='border-b-2 border-[#00ff5e]'>
 										<td className='p-2'>{res.position}</td>
 										<td className='p-2'>
-											<Link to={`/drivers/${res.name}/${res.id + 1}`}>
-												{res.name}
-											</Link>
+											<Link to={`/drivers/${res.name}`}>{res.name}</Link>
 										</td>
 										<td className='p-2'>{res.nationality}</td>
 										<td className='p-2'>{res.points}</td>

@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import SingleConstructor from './SingleConstructor';
 import d2021 from '../../Datas/2021/teams.json';
@@ -29,7 +30,7 @@ export default function ConstructorPage() {
 		} else if (value === '2021') {
 			setData(data2021);
 		}
-	}, [data, value]);
+	}, [data, data2021, data2022, data2023, value]);
 
 	console.log(value);
 	console.log(data);
@@ -66,8 +67,8 @@ export default function ConstructorPage() {
 					<h1>Show Current Season</h1>
 				</div>
 			</div>
-			<div className='p-10 grid grid-rows-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8'>
-				{data.teams.map((res) => (
+			<div className='flex flex-wrap justify-center items-center'>
+				{data.teams.map((res, index) => (
 					<div key={res.id}>
 						<SingleConstructor
 							name={res.Name}
@@ -80,6 +81,9 @@ export default function ConstructorPage() {
 							first={res.FirstTeamEntry}
 							world={res.WorldChampionships}
 							idInfo={res.id + 1}
+							value={value}
+							index={index}
+							id={res.id}
 						/>
 					</div>
 				))}

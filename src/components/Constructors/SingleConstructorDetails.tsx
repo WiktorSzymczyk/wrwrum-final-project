@@ -1,90 +1,91 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import t2022 from '../../Datas/2022/teams.json';
+import { useState, useEffect } from 'react';
+import d2021 from '../../Datas/2021/teams.json';
+import d2022 from '../../Datas/2022/teams.json';
+import d2023 from '../../Datas/2023/teams.json';
 import Image from '../../library/Image';
+import BackButton from '../share/BackButton';
 
 export default function SingleConstructorDetails() {
-	const params = useParams<{ name: string; id: any }>();
+	const params = useParams<{ year: any; id: any }>();
 
-	// const index = d2023.driver.find(params.id);
-	// const index = d2023.driver.findIndex(params.id);
-	// console.log(params.id);
-	// console.log(ds2022.standings[params.id]);
-	// console.log(ds2022.standings[params.id - 1]);
+	const [value] = useState('2023');
+	const [data] = useState(d2022);
+	const [constructor, setConstructor]: any = useState({});
+
+	useEffect(() => {
+		if (params.year === '2023') {
+			setConstructor(d2023.teams[params.id]);
+		} else if (params.year === '2022') {
+			setConstructor(d2022.teams[params.id]);
+		} else if (params.year === '2021') {
+			setConstructor(d2021.teams[params.id]);
+		}
+	}, [data, value, constructor, params.year, params.id]);
+
+	console.log(constructor);
+
+	// const message =
+	// 	typeof constructor == 'object' && Object.keys(constructor).length === 0
+	// 		? 'object is empty'
+	// 		: 'object is not empty';
+	// console.log(message);
+
 	return (
-		// <div className='flex flex-col text-center justify-center text-white bg-[#222222]'>
-		// 	{/* <h3>{d2023.driver.findIndex(params.name)}</h3> */}
-		// 	{/* <h1 className='text-white'>{index}</h1> */}
-		// 	<img
-		// 		src={ds2022.standings[params.id - 1].img}
-		// 		className='h-[30vh] w-auto'
-		// 	/>
-		// 	<div className='flex-col justify-center'>
-		// 		<div className='font-semibold text-2xl'>{params.name}</div>
-		// 		<h1 className=''>{ds2022.standings[params.id - 1].country}</h1>
-		// 		<img
-		// 			src={ds2022.standings[params.id - 1].countryImg}
-		// 			className='w-[3vw]'
-		// 		/>
-		// 		{ds2022.standings[params.id - 1].car}
-		// 	</div>
-		// </div>
-
 		<div className='flex w-full justify-center'>
+			<div className='back-button-component absolute pl-2'>
+				<BackButton />
+			</div>
 			<div className='p-10'>
-				<div className='max-w-sm rounded overflow-hidden shadow-lg'>
+				<div className='modalMedium'>
 					<div className='px-6 py-4 bg-[#161616]'>
 						<div className='flex justify-center mb-2'>
 							<Image
-								src={t2022.teams[params.id - 1].img}
-								alt={t2022.teams[params.id - 1].Name}
+								src={constructor.img}
+								alt={constructor.Name}
 								className='w-[40%]'
 							/>
 						</div>
 						<div className='font-semibold text-3xl mb-2 text-white'>
-							{t2022.teams[params.id - 1].Name}
+							{constructor.Name}
 						</div>
 						<div className='font-semibold text-xl mb-2 text-white'>
-							{t2022.teams[params.id - 1].TeamChief}
+							{constructor.TeamChief}
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>Base:</h1>
-							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].Base}
-							</p>
+							<p className='text-white font-medium'>{constructor.Base}</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>Power Unit:</h1>
-							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].PowerUnit}
-							</p>
+							<p className='text-white font-medium'>{constructor.PowerUnit}</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>
 								World Championships:
 							</h1>
 							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].WorldChampionships}
+								{constructor.WorldChampionships}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>Chasis:</h1>
-							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].Chasis}
-							</p>
+							<p className='text-white font-medium'>{constructor.Chasis}</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>
 								First Team Entry:
 							</h1>
 							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].FirstTeamEntry}
+								{constructor.FirstTeamEntry}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>Fastest Laps:</h1>
 							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].FastestLaps}
+								{constructor.FastestLaps}
 							</p>
 						</div>
 						<div className='flex justify-center space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
@@ -92,24 +93,24 @@ export default function SingleConstructorDetails() {
 								Pole Positions:
 							</h1>
 							<p className='text-white font-medium'>
-								{t2022.teams[params.id - 1].PolePositions}
+								{constructor.PolePositions}
 							</p>
 						</div>
 						<div className='flex justify-center flex-col space-x-2 bg-[#2a2a2a] p-2 rounded-md mt-4'>
 							<h1 className='text-white font-bold text-base'>Drivers</h1>
 							<p className='text-white font-medium'>
-								<Link to='/'>
-									{t2022.teams[params.id - 1].Drivers[0].Name +
+								{/* <Link to='/'>
+									{constructor.Drivers[0].Name +
 										' ' +
-										t2022.teams[params.id - 1].Drivers[0].Surname}
-								</Link>
+										constructor.Drivers[0].Surname}
+								</Link> */}
 							</p>
 							<p className='text-white font-medium'>
-								<Link to='/'>
-									{t2022.teams[params.id - 1].Drivers[1].Name +
+								{/* <Link to='/'>
+									{constructor.Drivers[1].Name +
 										' ' +
-										t2022.teams[params.id - 1].Drivers[1].Surname}
-								</Link>
+										constructor.Drivers[1].Surname}
+								</Link> */}
 							</p>
 						</div>
 					</div>

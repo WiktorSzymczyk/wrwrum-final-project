@@ -29,7 +29,7 @@ export default function Tracks() {
 		} else if (value === '2021') {
 			setData(data2021);
 		}
-	}, [data, value]);
+	}, [data, data2021, data2022, data2023, value]);
 
 	console.log(value);
 	console.log(data);
@@ -65,24 +65,27 @@ export default function Tracks() {
 					<h1>Show Current Standings</h1>
 				</div>
 
-				<div className='grid grid-rows-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8'>
-					{data.circuit.map((res: any) => (
-						<div key={res.id}>
-							<SingleTrack
-								name={res.name}
-								img={res.img}
-								country={res.country}
-								distance={res.raceDistance}
-								laps={res.numberOfLaps}
-								firstGrandPrix={res.firstGrandPrix}
-								lapRecordDriver={res.lapRecordDriver}
-								lapRecordSeason={res.lapRecordSeason}
-								lapRecordTime={res.lapRecordTime}
-								circuitLength={res.circuitLength}
-							/>
-						</div>
-					))}
-					{}
+				<div className='flex justify-center'>
+					<div className='flex flex-wrap justify-center items-center'>
+						{data.circuit.map((res: any) => (
+							<div key={res.id}>
+								<SingleTrack
+									name={res.name}
+									img={res.img}
+									country={res.country}
+									distance={res.raceDistance}
+									laps={res.numberOfLaps}
+									firstGrandPrix={res.firstGrandPrix}
+									lapRecordDriver={res.lapRecordDriver}
+									lapRecordSeason={res.lapRecordSeason}
+									lapRecordTime={res.lapRecordTime}
+									circuitLength={res.circuitLength}
+									id={res.id}
+									year={res.year}
+								/>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</form>
