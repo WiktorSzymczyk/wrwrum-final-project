@@ -1,16 +1,21 @@
-import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
-
-
+import { useAuthContext, DataType } from "../context/AuthContext"
 import React, {useState} from "react"
+import axios from "axios"
 
-interface FormData {
+
+export type FormData = {
     firstName: string
     email: string
     password: string
 }
 
-const Signup = () => {
+const SignuIndex = () => {
+    
+    
+    const { setToken } = useAuthContext() as DataType
+   
+    
 
     const [input, setInput] = useState<FormData> ({
         firstName: "",
@@ -18,6 +23,7 @@ const Signup = () => {
         password: ""
     })
 
+ 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> ): void => {
         setInput({
@@ -26,11 +32,28 @@ const Signup = () => {
         })
     } 
 
-
     const handleSubmit = async (e: any) => {
         e.preventDefault()
-
-        console.log(input.firstName, input.email)
+        // try {
+        //     // console.log(input.firstName, input.email)
+        //     const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
+        //     // console.log(data)
+        //     localStorage.setItem('token', data)
+        //     setToken(data)
+        //     // console.log(setToken(data))
+        // } catch(error) {
+        //     console.log(error)
+        // }
+        try {
+            const { data: {token} } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
+            // console.log(data)
+            localStorage.setItem('token', token) // YOU ARE STORING THE TOKEN AS AN OBJECT 
+            setToken(token)
+            // console.log(token)
+        } catch(error) {
+            console.log(error)
+        }
+        
     }
     
 
@@ -85,4 +108,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default SignuIndex
