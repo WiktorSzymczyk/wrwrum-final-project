@@ -31,13 +31,33 @@ const Login = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
 
-        // console.log( input.email)
+        // console.log("input" + JSON.stringify(input))
+        // try {
+           
+        //     // const response = await fetch(`${process.env.REACT_APP_BACKEND_LOGIN}`,{
+        //     //     method: "POST",
+        //     //     headers: { "Content-Type": "application/json" },
+        //     //     body: JSON.stringify({input})
+        //     // } )
+        //     // const data = await response.json()
+
+        //     // console.log('data' + JSON.stringify(data))
+        //     console.log(data._id)
+        //     if (response.ok) {
+        //         console.log("hello")
+        //         localStorage.setItem('token', data)
+        //         setToken(data)
+        //     }
+        // } catch(error) {
+        //     console.log(error)
+        // }
+
         try {
-            const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_LOGIN}`, input)
+            const { data: {token} } = await axios.post(`${process.env.REACT_APP_BACKEND_LOGIN}`, input)
             // console.log(data)
-            localStorage.setItem('token', data)
-            setToken(data)
-            console.log(data)
+            localStorage.setItem('token', token) // YOU ARE STORING THE TOKEN AS AN OBJECT 
+            setToken(token)
+            // console.log(token)
         } catch(error) {
             console.log(error)
         }

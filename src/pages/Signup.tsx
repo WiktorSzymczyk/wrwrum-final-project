@@ -45,11 +45,11 @@ const SignuIndex = () => {
         //     console.log(error)
         // }
         try {
-            const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
+            const { data: {token} } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
             // console.log(data)
-            localStorage.setItem('token', data) // YOU ARE STORING THE TOKEN AS AN OBJECT 
-            setToken(data)
-            console.log(data)
+            localStorage.setItem('token', token) // YOU ARE STORING THE TOKEN AS AN OBJECT 
+            setToken(token)
+            // console.log(token)
         } catch(error) {
             console.log(error)
         }

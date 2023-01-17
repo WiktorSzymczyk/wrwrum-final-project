@@ -12,7 +12,7 @@ export type DataType = {
     user: User | null;
     setToken: React.Dispatch<React.SetStateAction<string | null>>;
     verifyToken: () => void;
-   
+    isAuthenticated: boolean;
 }
 
 interface ContextProps {
@@ -34,10 +34,18 @@ const AuthProvider = ({children}: ContextProps) => {
   const verifyToken = async (body: any = {}) => {
     try{
 
+            // const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_AUTH}`,
+            // {   
+            //     headers: { Authorization: `Bearer ${token}` } 
+            // }
+            // );
+
             const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_AUTH}`,
             {body},
             { headers: { Authorization: token } }
             );
+          
+            
             setIsAuthenticated(true);
             setUser(data);
         } catch (error) {
@@ -54,7 +62,7 @@ const AuthProvider = ({children}: ContextProps) => {
 
 
 
-    return (<AuthContext.Provider value={{user, setToken, verifyToken}}>{children}</AuthContext.Provider>);
+    return (<AuthContext.Provider value={{user, setToken, verifyToken, isAuthenticated}}>{children}</AuthContext.Provider>);
 
    
  }
