@@ -13,6 +13,7 @@ export type DataType = {
     setToken: React.Dispatch<React.SetStateAction<string | null>>;
     verifyToken: () => void;
     isAuthenticated: boolean;
+    // setIsAuthenticated: boolean;
 }
 
 interface ContextProps {

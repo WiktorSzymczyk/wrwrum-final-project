@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavbarLinksMobile from './NavbarLinksMobile';
+import { useAuthContext, DataType} from '../../context/AuthContext';
 
 export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+
+	const { setToken, isAuthenticated} = useAuthContext() as DataType
+
+	// const logout = () => {
+	// 	localStorage.removeItem('token'),
+	// 	setToken(),
+	// 	setIsAuthenticated(false)
+
+	// }
+
 
 	return (
 		<>
@@ -120,19 +131,34 @@ export default function Navbar() {
 						KIDS ZONE
 					</Link>
 
-					<Link
+					{/* <Link
 						className='py-5 text-white font-semibold text-2xl sm:text-sm'
 						to='/vote'
 					>
 						MORE
-					</Link>
-
-					<Link
+					</Link> */}
+					{/* <Link
 						className='medium-button  text-2xl w-full'
-						to='/login'
-					>
+						to='/login'>
 						LOG IN
-					</Link>
+					</Link> */}
+					    {isAuthenticated ? (
+                            
+                                <Link
+                                    className='medium-button  text-2xl w-full'
+                                    to='/login'>
+                                    LOG IN
+                                </Link>
+                        
+                    ): (
+                        <>
+                        <button className='medium-button  text-2xl w-full'>
+                            LOG OUT
+                        </button>
+                        </>                 
+                    )}
+				
+										
 				</div>
 
 				<div className='absolute bg-[#151515] w-screen flex sm:hidden h-[7%]'>

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 import { useAuthContext, DataType } from "../context/AuthContext"
 import axios from "axios"
 
@@ -11,7 +12,9 @@ interface FormData {
 
 const Login = () => {
 
-    const { setToken } = useAuthContext() as DataType
+    const navigate = useNavigate()
+
+    const { isAuthenticated, setToken } = useAuthContext() as DataType
 
 
     const [input, setInput] = useState<FormData> ({
@@ -31,26 +34,6 @@ const Login = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
 
-        // console.log("input" + JSON.stringify(input))
-        // try {
-           
-        //     // const response = await fetch(`${process.env.REACT_APP_BACKEND_LOGIN}`,{
-        //     //     method: "POST",
-        //     //     headers: { "Content-Type": "application/json" },
-        //     //     body: JSON.stringify({input})
-        //     // } )
-        //     // const data = await response.json()
-
-        //     // console.log('data' + JSON.stringify(data))
-        //     console.log(data._id)
-        //     if (response.ok) {
-        //         console.log("hello")
-        //         localStorage.setItem('token', data)
-        //         setToken(data)
-        //     }
-        // } catch(error) {
-        //     console.log(error)
-        // }
 
         try {
             const { data: {token} } = await axios.post(`${process.env.REACT_APP_BACKEND_LOGIN}`, input)
@@ -63,7 +46,8 @@ const Login = () => {
         }
     }
     
-
+if (isAuthenticated) return <Navigate to='/' />
+else
   return (
     <div className='signup-container '>
         <div>
