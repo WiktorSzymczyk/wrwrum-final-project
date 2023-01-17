@@ -36,8 +36,8 @@ const Signup = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
         try {
-            console.log(input.firstName, input.email)
-            const { data } = await axios.post("https://anxious-pink-cowboy-boots.cyclic.app/api/user/signup", input)
+            // console.log(input.firstName, input.email)
+            const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_SIGNUP}`, input)
             // console.log(data)
             localStorage.setItem('token', data)
             setToken(data)

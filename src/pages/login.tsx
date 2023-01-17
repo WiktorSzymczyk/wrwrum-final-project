@@ -1,5 +1,7 @@
 import "../assets/styles/signup_login/signupLogin.scss"
 import { Link } from "react-router-dom"
+import { useAuthContext, DataType } from "../components/context/AuthContext"
+import axios from "axios"
 
 import React, {useState} from "react"
 
@@ -9,6 +11,9 @@ interface FormData {
 }
 
 const Login = () => {
+
+    const { setToken } = useAuthContext() as DataType
+
 
     const [input, setInput] = useState<FormData> ({
         email: "",
@@ -27,7 +32,16 @@ const Login = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault()
 
-        console.log( input.email)
+        // console.log( input.email)
+        try {
+            const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_LOGIN}`, input)
+            // console.log(data)
+            localStorage.setItem('token', data)
+            setToken(data)
+            console.log(data)
+        } catch(error) {
+            console.log(error)
+        }
     }
     
 

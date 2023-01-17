@@ -31,11 +31,11 @@ const AuthProvider = ({children}: ContextProps) => {
 
 
 
-  const verifyToken = async () => {
+  const verifyToken = async (body: any = {}) => {
     try{
 
-            const { data } = await axios.post("https://anxious-pink-cowboy-boots.cyclic.app/api/user/auth",
-            {},
+            const { data } = await axios.post(`${process.env.REACT_APP_BACKEND_AUTH}`,
+            {body},
             { headers: { Authorization: token } }
             );
             setIsAuthenticated(true);
@@ -46,7 +46,7 @@ const AuthProvider = ({children}: ContextProps) => {
         
     }
 
-    console.log(token)
+    // console.log(token)
 
     useEffect(() => {
         token && verifyToken()
