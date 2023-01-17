@@ -1,0 +1,37 @@
+@import "../share/colour-library.scss";
+
+.signup-container{
+   display: block;
+   margin: auto;
+
+   @media only screen and (max-width: 767px) {
+         margin: 0px;
+         width: 100%;
+         height: 100vh;
+      }
+
+   .signup-body {
+      margin-bottom: 38px;
+
+      @media screen and (max-width: 767px) {
+            margin-bottom: 32px;
+         }
+   }
+   .separation-line {
+      color: $separation-line;
+   }
+
+   hr{
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 767px) {
+            margin-bottom: 16px;
+         }
+   }
+
+   .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}

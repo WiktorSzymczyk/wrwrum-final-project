@@ -127,7 +127,14 @@ export default function Navbar() {
 						>
 							MORE
 						</Link>
-					</div>
+					
+					 <Link
+						className='medium-button  text-2xl w-full'
+						to='/login'
+					>
+						LOG IN
+					</Link>
+
 				</div>
 
 				<div className='absolute bg-[#151515] w-screen flex sm:hidden h-[7%]'>

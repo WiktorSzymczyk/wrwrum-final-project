@@ -33,6 +33,11 @@
     img{
         margin-bottom: 12px;
         border-radius: 6px;
+        width: 320px;
+
+        @media screen and (max-width: 767px) {
+               width: 100%;
+        }
     }
 
     h3{
