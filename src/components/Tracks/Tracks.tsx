@@ -35,7 +35,7 @@ export default function Tracks() {
 	console.log(data);
 	return (
 		<form onSubmit={handleSubmit}>
-			<div className='pt-10 bg-[#151515]'>
+			<div className='pt-10 '>
 				<select
 					value={value}
 					className='mb-5 mr-5'

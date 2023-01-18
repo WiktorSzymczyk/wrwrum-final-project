@@ -4,7 +4,7 @@ import NewsContainer from './../components/News/NewsContainer';
 export default function Home() {
 	return (
 		<>
-			<div className='w-full px-10 pr-[15vw] md:pr-[3vw]'>
+			<div className='w-full  md:pr-[3vw]'>
 				<Image
 					src='https://www.dhl.com/content/dam/dhl/global/delivered/images/social-share-1200x630/g168-dl-formula-1-season-2022-racing-car.jpg'
 					className='hidden md:block w-[100vw] h-[25vh] py-10 object-cover'

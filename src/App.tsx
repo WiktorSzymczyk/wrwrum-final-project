@@ -3,7 +3,8 @@ import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import "./assets/styles/share/input-field.scss";
 import "./assets/styles/share/text-link.scss"
-import "./assets/styles/signup_login/signupLogin.scss"
+import "./assets/styles/signup_login/signupLogin.scss";
+import "./assets/styles/navBar/navBar.scss"
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
@@ -31,7 +32,7 @@ import SuccessScreen_signup from "./pages/SuccessScreen_signup";
 
 function App() {
 	return (
-		<div className='App bg-main-bg display-cover max-w-[100vw] z-10'>
+		<div className='App bg-main-bg  w-full '>
 			<div className='flex w-full'>
 				<AuthProvider>
 					<Navbar />

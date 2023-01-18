@@ -38,7 +38,7 @@ export default function SingleConstructorDetails() {
 			</div>
 			<div className='p-10'>
 				<div className='modalMedium'>
-					<div className='px-6 py-4 bg-[#161616]'>
+					<div className='px-6 py-4 '>
 						<div className='flex justify-center mb-2'>
 							<Image
 								src={constructor.img}
