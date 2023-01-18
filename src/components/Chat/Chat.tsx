@@ -6,7 +6,8 @@ const backendUrl: any = process.env.REACT_APP_BACKEND;
 // 	transports: ['polling'],
 // });
 // const socket = io.connect('http://localhost:7000/');
-const socket = io.connect('https://wrwrum-57o3.onrender.com/');
+const socket = io.connect('https://wrwrum-57o3.onrender.com');
+//
 
 // interface User {
 // 	firstName: string;
@@ -19,7 +20,7 @@ const socket = io.connect('https://wrwrum-57o3.onrender.com/');
 // }
 
 // export default function Chat({ user }: Props) {
-https: export default function Chat(props: {
+export default function Chat(props: {
 	fakeUser: string;
 	colorMe: any;
 	colorOther: any;
