@@ -1,0 +1,63 @@
+@import "../share/colour-library.scss";
+
+.menu-logo {
+    display: block;
+    margin: auto;
+    width: 150px;
+    margin-bottom: 46px;
+
+}
+
+.Nav-bar-container {
+    width: 319px;
+    padding: 46px 24px;
+    background-color: $navBar-bg;
+    border-radius: 6px;
+    margin: 46px 46px 46px 32px;
+    height: 100%;
+
+
+
+
+}
+
+.nav-bar-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .nav-bar-main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .nav-list {
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary-text;
+        padding: 18px 0px;
+        width: 270px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+
+        &.active {
+            color: $primary-green-text;
+            border: 0.5px solid $primary;
+        }
+    }
+
+
+
+
+
+}
+
+.login-button-section {
+    width: 270px;
+
+    .login-button {
+        width: 100%;
+    }
+}
