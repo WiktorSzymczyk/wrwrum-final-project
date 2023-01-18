@@ -5,59 +5,80 @@
     margin: auto;
     width: 150px;
     margin-bottom: 46px;
- 
+    
+
 }
 
-.Nav-bar-container{
+.nav-bar-desktop{
+    height: auto;
+}
+
+.Nav-bar-container {
     width: 319px;
-    padding:46px 24px;
+    padding: 46px 24px;
     background-color: $navBar-bg;
     border-radius: 6px;
-    margin: 46px 46px 46px 32px ;
+    margin: 46px 46px 46px 32px;
     height: 100%;
-    
-   
-    
-    
+
 }
-.nav-bar-body{
+
+.nav-bar-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
     .nav-bar-main {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
     }
 
     .nav-list {
         font-size: 20px;
         font-weight: 500;
         color: $primary-text;
-        padding: 18px 0px;
+        padding: 16px 0px;
         width: 270px;
         border-radius: 6px;
         margin-bottom: 12px;
 
         &.active {
-                color: $primary-green-text;
-                border: 0.5px solid $primary;
-         }
+            color: $primary;
+            border: 0.5px solid $primary;
+        }
+
+        &:hover{
+            font-size: 21px;
+            color: $primary-text;
+            border: 0.5px solid $primary-text;
+            transition: 0.15s ease-in-out;
+        }
+
+        .medium-button{
+            width: 270px;
+            border-color: $primary-text !important;
+            color: $primary-text !important;
+        }
     }
 
-    
 
-   
+
+
 
 }
 
-.login-button-section{
+.login-button-section {
     width: 270px;
 
-    .login-button{
+    .login-button {
         width: 100%;
     }
 }
 
+/// mobile
+.nav-bar-mobile-main{
+    width: 100%;
+    height: 84px
+}

@@ -11,7 +11,7 @@ export default function Standings(props: { team: boolean }) {
 		<div className='flex justify-center items-center'>
 			{props.team ? (
 				<h1 className='h-screen mx-5'>
-					<table className='table-auto bg-[#262626] border-2 border-t-4 border-[#00ff5e]'>
+					<table className='table-auto border-2 border-t-4 border-[#00ff5e]'>
 						<tbody>
 							<tr>
 								<tr className='border-b-2 border-[#00ff5e]'>
@@ -23,9 +23,12 @@ export default function Standings(props: { team: boolean }) {
 									<tr className='border-b-2 border-[#00ff5e]'>
 										<td className='p-2'>{res.position}</td>
 										<td className='p-2'>
-											<Link to={`/constructors/${res.car}/${res.id + 1}`}>
+											<p>
 												{res.car}
-											</Link>
+											</p>
+											{/* <Link to={`/constructors/${res.car}/${res.id + 1}`}>
+												{res.car}
+											</Link> */}
 										</td>
 										<td className='p-2'>{res.pts}</td>
 									</tr>
@@ -49,7 +52,8 @@ export default function Standings(props: { team: boolean }) {
 									<tr className='border-b-2 border-[#00ff5e]'>
 										<td className='p-2'>{res.position}</td>
 										<td className='p-2'>
-											<Link to={`/drivers/2022/${res.link}`}>{res.name}</Link>
+											<p>{res.name}</p>
+											{/* <Link to={`/drivers/2022/${res.link}`}>{res.name}</Link> */}
 										</td>
 										<td className='p-2'>{res.nationality}</td>
 										<td className='p-2'>{res.points}</td>

@@ -1,0 +1,47 @@
+@import "../share/colour-library.scss";
+.driver-information-container {
+    margin-bottom: 16px;
+
+    
+}
+
+.driver-card-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    .driver-name-section{
+        display: flex;
+        align-items: center;
+
+
+        .driver-name{
+            font-weight: 600;
+            margin-right: 14px;
+        }
+
+        .driver-country{
+            height: 20px
+        }
+    }
+
+ 
+
+        
+}
+
+hr.driver-seperation-card {
+    border-top: 0.1px solid $primary-green-text;
+    margin-bottom: 12px;
+}
+
+ .driver-team {
+     font-size: 18px;
+     font-weight: 600;
+     color: $secondary-text;
+     text-align: left;
+ }
+
+ .driver-image {
+     border-radius: 6px;
+ }

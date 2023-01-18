@@ -1,13 +1,14 @@
 import { Link, useNavigate } from "react-router-dom"
 import { Navigate } from "react-router-dom"
 import { useAuthContext, DataType } from "../context/AuthContext"
-import axios from "axios"
+import axios, { AxiosError } from "axios"
+import { toast } from "react-toastify"
 
 import React, {useState} from "react"
 
 interface FormData {
-    email: string
-    password: string
+    email: string 
+    password: string 
 }
 
 const Login = () => {
@@ -18,7 +19,7 @@ const Login = () => {
 
 
     const [input, setInput] = useState<FormData> ({
-        email: "",
+        email: "" ,
         password: ""
     })
 
@@ -40,9 +41,19 @@ const Login = () => {
             // console.log(data)
             localStorage.setItem('token', token) // YOU ARE STORING THE TOKEN AS AN OBJECT 
             setToken(token)
+
+            
             // console.log(token)
-        } catch(error) {
-            console.log(error)
+        } catch(error: unknown) {
+           if(error instanceof AxiosError){
+                toast.error(error.response?.data.error)
+                return
+            }
+            if( error instanceof Error){
+               toast.error(error.message)
+                return
+            }
+
         }
     }
     
@@ -88,3 +99,5 @@ else
 }
 
 export default Login
+
+

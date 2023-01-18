@@ -37,7 +37,7 @@ export default function ConstructorPage() {
 
 	return (
 		<form onSubmit={handleSubmit}>
-			<div className='pt-10'>
+			<div className='pt-10 '>
 				<select
 					value={value}
 					className='mb-5 mr-5'

@@ -1,6 +1,5 @@
 import Image from '../../library/Image';
-import {  useNavigate } from 'react-router-dom';
-import "../../assets/styles/f1Datas/drivers-card.scss"
+import { Link, useNavigate } from 'react-router-dom';
 
 export default function SingleDriver(props: {
 	img: any;
@@ -36,36 +35,35 @@ export default function SingleDriver(props: {
 				<div
 					onClick={handleClick}
 				>
-
-					<div className='driver-information-container'>
-						<div className="driver-card-top">
-							<div className="driver-name-section">
-								<h3 className='driver-name'>{props.Name}</h3>
-								<Image
-										src={props.countryImg}
-										alt=''
-										className='driver-country'
-									/>
-							</div>
-							<h1 className='font-bold'>{props.no}</h1>
-							</div>	
-							<hr className="driver-seperation-card"/>
-							<p
-							className='driver-team'
-							onClick={handleClickToConstructor}>
-							{props.team}
-							</p>
-						</div>
-
-					
-					
 					<Image
 						placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load'
-						className='driver-image'
+						className=''
 						src={props.img}
 						alt=''
 					/>
-					
+					<div className='px-6 py-4'>
+						<h1 className='font-bold'>{props.no}</h1>
+						<div className='flex justify-center'>
+							<Image
+								src={props.countryImg}
+								alt=''
+								className='w-[15%]'
+							/>
+						</div>
+						<h2 className='font-bold py-2'>{props.Name}</h2>
+						<p
+							className='text-white py-2 text-secondary'
+							onClick={handleClickToConstructor}
+						>
+							{props.team}
+						</p>
+						<Link
+							to={`/drivers/${props.value}/${props.id}`}
+							className='text-white font-semibold'
+						>
+							Details
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>

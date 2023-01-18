@@ -11,9 +11,10 @@ export type User = {
 export type DataType = {
     user: User | null;
     setToken: React.Dispatch<React.SetStateAction<string | null>>;
+    token: string | null;
     verifyToken: () => void;
     isAuthenticated: boolean;
-    // setIsAuthenticated: boolean;
+    setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface ContextProps {
@@ -63,7 +64,7 @@ const AuthProvider = ({children}: ContextProps) => {
 
 
 
-    return (<AuthContext.Provider value={{user, setToken, verifyToken, isAuthenticated}}>{children}</AuthContext.Provider>);
+    return (<AuthContext.Provider value={{user, token, setToken, verifyToken, isAuthenticated, setIsAuthenticated}}>{children}</AuthContext.Provider>);
 
    
  }
