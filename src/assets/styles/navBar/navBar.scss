@@ -9,16 +9,17 @@
 
 }
 
+.nav-bar-desktop{
+    height: auto;
+}
+
 .Nav-bar-container {
     width: 319px;
     padding: 46px 24px;
     background-color: $navBar-bg;
     border-radius: 6px;
     margin: 46px 46px 46px 32px;
-    height: auto;
-
-
-
+    height: 100%;
 
 }
 
@@ -38,18 +39,27 @@
         font-size: 20px;
         font-weight: 500;
         color: $primary-text;
-        padding: 18px 0px;
+        padding: 16px 0px;
         width: 270px;
         border-radius: 6px;
         margin-bottom: 12px;
 
         &.active {
-            color: $primary-green-text;
+            color: $primary;
             border: 0.5px solid $primary;
+        }
+
+        &:hover{
+            font-size: 21px;
+            color: $primary-text;
+            border: 0.5px solid $primary-text;
+            transition: 0.15s ease-in-out;
         }
 
         .medium-button{
             width: 270px;
+            border-color: $primary-text !important;
+            color: $primary-text !important;
         }
     }
 
@@ -65,4 +75,10 @@
     .login-button {
         width: 100%;
     }
+}
+
+/// mobile
+.nav-bar-mobile-main{
+    width: 100%;
+    height: 84px
 }

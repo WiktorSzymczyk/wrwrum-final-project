@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Logo from './Logo';
-import NavbarLists from './NavbarLists';
+import NavBarDekstop from './NavBarDekstop';
+
 
 export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -8,14 +8,13 @@ export default function Navbar() {
 
 	return (
 		<>
-			<div className='Nav-bar-container'>
-				
-					<Logo/>
-					<NavbarLists/>
-			
-				
+			<div className="nav-bar">
+				<div className="nav-bar-desktop">
+					<NavBarDekstop />
+				</div>
+				<div className='nav-bar-mobile'>
 
-				
+				</div>
 			</div>
 		</>
 	);

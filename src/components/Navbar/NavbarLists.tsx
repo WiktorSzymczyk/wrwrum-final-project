@@ -4,14 +4,17 @@ import { useAuthContext, DataType} from '../../context/AuthContext';
 
 
 const NavbarLists = () => {
-    const { setToken, isAuthenticated} = useAuthContext() as DataType
+    const { token, setToken, isAuthenticated, setIsAuthenticated} = useAuthContext() as DataType
 
-    	// const logout = () => {
-	// 	localStorage.removeItem('token'),
-	// 	setToken(),
-	// 	setIsAuthenticated(false)
+    	const logout = () => {
+            localStorage.removeItem('token')
+            setToken(null)
+            setIsAuthenticated(false)
+	    }
 
-	// }
+        console.log(token)
+
+
   return (
     <div className="nav-bar-body">
         <div className="nav-bar-main">
@@ -58,6 +61,23 @@ const NavbarLists = () => {
                 >
                     KIDS ZONE
                 </NavLink>
+
+              {/* -----> login and out */}
+                {isAuthenticated ? (
+                    <button className='nav-list' onClick={logout}>
+                        LOG OUT
+                    </button>
+                                
+                    ): (
+                   
+                    <Link
+                        className='nav-list'
+                        to='/login'>
+                        LOG IN
+                    </Link>
+                                  
+                     )}
+           
             </div>
                 
                 {/* <Link
@@ -65,23 +85,7 @@ const NavbarLists = () => {
                     to='/login'>
                     LOG IN
                 </Link> */}
-            <div className="login-button-section">
-                    {isAuthenticated ? (
-                        
-                            <Link
-                                className='medium-button login-button text-2xl'
-                                to='/login'>
-                                LOG IN
-                            </Link>
-                    
-                ): (
-                   
-                    <button className='medium-button login-button  text-2xl '>
-                        LOG OUT
-                    </button>
-                                  
-                )}
-            </div>
+            
     </div>
   )
 }
