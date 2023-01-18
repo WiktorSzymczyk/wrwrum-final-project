@@ -102,14 +102,14 @@ export default function Chat(props: {
 				placeholder='username'
 				onChange={(e) => setFakeUser(e.target.value)}
 			/> */}
-			<ol className='grid grid-cols-1 content-center overflow-y-scroll min-h-[60%] max-h-[60%]'>
+			<ol className='grid grid-cols-1 content-center overflow-y-scroll min-h-[60%]'>
 				{messageReceived.map(
 					(e: any) =>
 						e.userName === fakeUser ? (
-							<div className='text-white flex'>
+							<div className='text-white flex max-w-[50%]'>
 								<li className='float-left flex space-x-2 p-2 px-20'>
 									<p style={{ color: colorMe }}>{e.userName}: </p>
-									<p>{e.message}</p>
+									<p className='break-all'>{e.message}</p>
 									<p>
 										{' '}
 										<small>{e.timestamp}</small>
