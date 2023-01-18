@@ -5,7 +5,8 @@ const backendUrl: any = process.env.REACT_APP_BACKEND;
 // const socket = io.connect('https://anxious-pink-cowboy-boots.cyclic.app/', {
 // 	transports: ['polling'],
 // });
-const socket = io.connect('http://localhost:7000/');
+// const socket = io.connect('http://localhost:7000/');
+const socket = io.connect('wrwrum-57o3.onrender.com/');
 
 // interface User {
 // 	firstName: string;
@@ -18,7 +19,7 @@ const socket = io.connect('http://localhost:7000/');
 // }
 
 // export default function Chat({ user }: Props) {
-export default function Chat(props: {
+https: export default function Chat(props: {
 	fakeUser: string;
 	colorMe: any;
 	colorOther: any;
