@@ -12,7 +12,7 @@ const NavbarLists = () => {
             setIsAuthenticated(false)
 	    }
 
-        console.log(token)
+        // console.log(token)
 
 
   return (
