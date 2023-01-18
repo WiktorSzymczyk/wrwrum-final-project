@@ -42,7 +42,7 @@ export default function ChatScreen() {
 							/>
 						</div> */}
 					<input
-						className='text-[#222222] p-2 rounded-sm mb-5  mt-5'
+						className='text-[#222222] p-2 rounded-sm mb-5  mt-5 medium-button'
 						value={fakeUser}
 						placeholder='username'
 						onChange={(e) => setFakeUser(e.target.value)}
