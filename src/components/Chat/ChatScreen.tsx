@@ -16,8 +16,8 @@ export default function ChatScreen() {
 	// }, [color]);
 
 	return (
-		<div className='w-screen flex justify-center pt-10 h-screen'>
-			;{' '}
+		<div className='w-screen flex justify-center h-screen'>
+			{' '}
 			{chat ? (
 				<Chat
 					fakeUser={fakeUser}
