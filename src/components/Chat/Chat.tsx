@@ -95,7 +95,7 @@ export default function Chat(props: {
 	// };
 
 	return (
-		<div className='h-full w-[50vw] bg-[#222222]'>
+		<div className='h-full w-[90vw] md:w-[50vw] bg-[#222222]'>
 			{/* <input
 				className='text-[#222222] p-2 rounded-sm'
 				value={fakeUser}
@@ -106,8 +106,8 @@ export default function Chat(props: {
 				{messageReceived.map(
 					(e: any) =>
 						e.userName === fakeUser ? (
-							<div className='text-white'>
-								<li className='float-left flex space-x-2 p-2'>
+							<div className='text-white flex'>
+								<li className='float-left flex space-x-2 p-2 px-20'>
 									<p style={{ color: colorMe }}>{e.userName}: </p>
 									<p>{e.message}</p>
 									<p>
@@ -118,7 +118,7 @@ export default function Chat(props: {
 							</div>
 						) : (
 							<div className='text-white'>
-								<li className='float-left flex space-x-2 p-2'>
+								<li className='float-right flex space-x-2 p-2 px-20'>
 									<p style={{ color: colorOther }}>{e.userName}: </p>
 									<p>{e.message}</p>
 									<p>

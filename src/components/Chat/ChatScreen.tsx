@@ -26,14 +26,14 @@ export default function ChatScreen() {
 				/>
 			) : (
 				<form className='flex flex-col justify-center'>
-					<div className='flex flex-col'>
-						<h2>Choose Your Color!</h2>
+					<h2>Choose Your Color!</h2>
+					<div className='flex justify-center '>
 						<HexColorPicker
-							className='mr-5'
 							color={colorMe}
 							onChange={setColorMe}
 						/>
 					</div>
+
 					{/* <div className=''>
 							<h2>Other Color</h2>
 							<HexColorPicker
