@@ -2,8 +2,10 @@ import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 import '../../assets/styles/share/mediumButton.scss';
 const backendUrl: any = process.env.REACT_APP_BACKEND;
-const socket = io.connect('https://anxious-pink-cowboy-boots.cyclic.app/');
-/* const socket = io.connect('http://localhost:7000/'); */
+// const socket = io.connect('https://anxious-pink-cowboy-boots.cyclic.app/', {
+// 	transports: ['polling'],
+// });
+const socket = io.connect('http://localhost:7000/');
 
 // interface User {
 // 	firstName: string;
