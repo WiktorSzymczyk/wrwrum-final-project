@@ -3,6 +3,7 @@ import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import "./assets/styles/share/input-field.scss";
 import "./assets/styles/share/text-link.scss"
+import "./assets/styles/navBar/navBar.scss";
 import "./assets/styles/signup_login/signupLogin.scss"
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
