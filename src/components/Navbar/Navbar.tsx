@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import NavBarDekstop from './NavBarDekstop';
+import { useAuthContext, DataType } from "../../context/AuthContext"
+
 
 
 export default function Navbar() {
