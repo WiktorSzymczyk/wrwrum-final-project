@@ -1,8 +1,13 @@
 import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 import '../../assets/styles/share/mediumButton.scss';
- const backendUrl: any = process.env.REACT_APP_BACKEND;
- const socket = io.connect(backendUrl);
+const backendUrl: any = process.env.REACT_APP_BACKEND;
+// const socket = io.connect('https://anxious-pink-cowboy-boots.cyclic.app/', {
+// 	transports: ['polling'],
+// });
+// const socket = io.connect('http://localhost:7000/');
+const socket = io.connect('https://wrwrum-57o3.onrender.com');
+//
 
 // interface User {
 // 	firstName: string;
@@ -45,6 +50,10 @@ export default function Chat(props: {
 		};
 		socket.on('receive_message', handleMessage);
 
+		socket.on('connect_error', (err) => {
+			console.log(`connect_error due to ${err.message}`);
+		});
+
 		return () => {
 			socket.off('receive_message', handleMessage);
 		};
@@ -86,21 +95,21 @@ export default function Chat(props: {
 	// };
 
 	return (
-		<div className='h-full w-[50vw] bg-[#222222]'>
+		<div className='h-full w-[90vw] md:w-[50vw] bg-[#222222]'>
 			{/* <input
 				className='text-[#222222] p-2 rounded-sm'
 				value={fakeUser}
 				placeholder='username'
 				onChange={(e) => setFakeUser(e.target.value)}
 			/> */}
-			<ol className='grid grid-cols-1 content-center overflow-y-scroll min-h-[60%] max-h-[60%]'>
+			<ol className='grid grid-cols-1 content-center overflow-y-scroll min-h-[60%]'>
 				{messageReceived.map(
 					(e: any) =>
 						e.userName === fakeUser ? (
-							<div className='text-white'>
-								<li className='float-left flex space-x-2 p-2'>
+							<div className='text-white flex max-w-[50%]'>
+								<li className='float-left flex space-x-2 p-2 px-20'>
 									<p style={{ color: colorMe }}>{e.userName}: </p>
-									<p>{e.message}</p>
+									<p className='break-all'>{e.message}</p>
 									<p>
 										{' '}
 										<small>{e.timestamp}</small>
@@ -109,7 +118,7 @@ export default function Chat(props: {
 							</div>
 						) : (
 							<div className='text-white'>
-								<li className='float-left flex space-x-2 p-2'>
+								<li className='float-right flex space-x-2 p-2 px-20'>
 									<p style={{ color: colorOther }}>{e.userName}: </p>
 									<p>{e.message}</p>
 									<p>
