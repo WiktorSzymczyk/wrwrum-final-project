@@ -15,14 +15,14 @@ export default function StandingsPage() {
 				{team ? (
 					<button
 						onClick={() => setTeams(!team)}
-						className='hover:cursor-pointer text-white font-semibold'
+						className='medium-button'
 					>
 						Constructors Standings
 					</button>
 				) : (
 					<button
 						onClick={() => setTeams(!team)}
-						className='hover:cursor-pointer text-white font-semibold'
+						className='medium-button'
 					>
 						Drivers Standings
 					</button>

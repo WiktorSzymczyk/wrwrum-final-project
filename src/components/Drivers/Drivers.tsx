@@ -80,29 +80,29 @@ export default function Drivers() {
 						<h1> season </h1>
 				</div>
 				<div className='datas-body'>
-				{data.driver.slice(0, 20).map((res, index) => (
-					<div
-						key={res.id}
-						onClick={() => setIndexDriver(index)}
-					>
-						<SingleDriver
-							img={res.img}
-							Name={res.name + ' ' + res.surname}
-							no={res.no}
-							team={res.team}
-							country={res.country}
-							pob={res.pob}
-							dob={res.dob}
-							points={res.points}
-							countryImg={res.countryImg}
-							id={res.id}
-							idInfo={res.idInfo}
-							idInfo2={res.idInfo2}
-							index={index}
-							value={value}
-						/>
-					</div>
-				))}
+					{data.driver.slice(0, 20).map((res, index) => (
+						<div
+							key={res.id}
+							onClick={() => setIndexDriver(index)}
+						>
+							<SingleDriver
+								img={res.img}
+								Name={res.name + ' ' + res.surname}
+								no={res.no}
+								team={res.team}
+								country={res.country}
+								pob={res.pob}
+								dob={res.dob}
+								points={res.points}
+								countryImg={res.countryImg}
+								id={res.id}
+								idInfo={res.idInfo}
+								idInfo2={res.idInfo2}
+								index={index}
+								value={value}
+							/>
+						</div>
+					))}
 			</div>
 			</div>
 			
