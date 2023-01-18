@@ -33,7 +33,7 @@ import SuccessScreen_signup from "./pages/SuccessScreen_signup";
 
 function App() {
 	return (
-		<div className='App bg-main-bg w-full w-max'>
+		<div className='App bg-main-bg w-full '>
 			<div className='flex w-full'>
 				<AuthProvider>
 					<Navbar />
