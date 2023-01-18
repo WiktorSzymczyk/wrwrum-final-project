@@ -31,9 +31,8 @@ export default function SingleDriver(props: {
 
 	return (
 		<div>
-			<div className='p-10'>
+			<div className='modalSmall driver-card'>
 				<div
-					className='modalSmall w-screen'
 					onClick={handleClick}
 				>
 					<Image
@@ -42,8 +41,8 @@ export default function SingleDriver(props: {
 						src={props.img}
 						alt=''
 					/>
-					<div className='px-6 py-4 bg-[#161616]'>
-						<h1 className='font-bold mb-2 text-white'>{props.no}</h1>
+					<div className='px-6 py-4'>
+						<h1 className='font-bold'>{props.no}</h1>
 						<div className='flex justify-center'>
 							<Image
 								src={props.countryImg}
@@ -51,7 +50,7 @@ export default function SingleDriver(props: {
 								className='w-[15%]'
 							/>
 						</div>
-						<h2 className='font-bold py-2 text-white'>{props.Name}</h2>
+						<h2 className='font-bold py-2'>{props.Name}</h2>
 						<p
 							className='text-white py-2 text-secondary'
 							onClick={handleClickToConstructor}

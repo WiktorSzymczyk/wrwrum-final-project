@@ -3,6 +3,8 @@ import SingleDriver from './SingleDriver';
 import d2021 from '../../Datas/2021/drivers.json';
 import d2022 from '../../Datas/2022/drivers.json';
 import d2023 from '../../Datas/2023/drivers.json';
+import "../../assets/styles/drivers/drivers.scss"
+
 
 export interface driverData {
 	index: any;
@@ -46,33 +48,34 @@ export default function Drivers() {
 
 	return (
 		<form onSubmit={handleSubmit}>
-			<div className='pt-10 pt-20 md:pt-10'>
-				<select
-					value={value}
-					className='mb-5 mr-5'
-					onChange={handleChanges}
-				>
-					<option
-						className='2023'
-						value='2023'
+			<div className='divers-container'>
+				<div className='custom-select'>
+					<select
+						value={value}
+						className='dropdown-small '
+						onChange={handleChanges}
 					>
-						Current
-					</option>
-					<option
-						className='2022'
-						value='2022'
-					>
-						2022
-					</option>
-					<option
-						className='2021'
-						value='2021'
-					>
-						2021
-					</option>
-				</select>
-			</div>
-			<div className='flex flex-wrap justify-center items-center'>
+						<option
+							className='2023 dropdown-content'
+							value='2023'
+						>
+							Current 
+						</option>
+						<option
+							className='2022'
+							value='2022'
+						>
+							2022
+						</option>
+						<option
+							className='2021'
+							value='2021'
+						>
+							2021
+						</option>
+					</select>
+				</div>
+				<div className='drivers-body'>
 				{data.driver.slice(0, 20).map((res, index) => (
 					<div
 						key={res.id}
@@ -97,6 +100,8 @@ export default function Drivers() {
 					</div>
 				))}
 			</div>
+			</div>
+			
 		</form>
 	);
 }

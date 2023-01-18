@@ -3,6 +3,7 @@ import "./assets/styles/share/modalStyle.scss";
 import "./assets/styles/share/mediumButton.scss";
 import "./assets/styles/share/input-field.scss";
 import "./assets/styles/share/text-link.scss"
+import "./assets/styles/share/dropdown.scss"
 import "./assets/styles/navBar/navBar.scss";
 import "./assets/styles/signup_login/signupLogin.scss"
 import "./assets/styles/navBar/navBar.scss"
@@ -28,6 +29,8 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import AuthProvider from "./context/AuthContext";
 import SuccessScreen_signup from "./pages/SuccessScreen_signup";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -35,6 +38,8 @@ function App() {
 	return (
 		<div className='App bg-main-bg w-full '>
 			<div className='main-website w-full'>
+
+        <ToastContainer/>
 				<AuthProvider>
 					<Navbar />
 					<Routes>

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 import { useAuthContext, DataType } from "../context/AuthContext"
 import React, {useState} from "react"
-import axios from "axios"
+import { toast } from "react-toastify"
+import axios , {AxiosError} from "axios"
+
 
 
 export type FormData = {
@@ -50,8 +52,16 @@ const SignuIndex = () => {
             localStorage.setItem('token', token) // YOU ARE STORING THE TOKEN AS AN OBJECT 
             setToken(token)
             // console.log(token)
-        } catch(error) {
-            console.log(error)
+        } catch(error: unknown) {
+            if(error instanceof AxiosError){
+                toast.error(error.response?.data.error)
+                return
+            }
+            if( error instanceof Error){
+               toast.error(error.message)
+                return
+            }
+
         }
         
     }
