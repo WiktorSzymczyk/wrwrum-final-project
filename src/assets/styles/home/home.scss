@@ -5,11 +5,18 @@
         height: 150px;
         width: 100%;
         object-fit: cover;
-        margin-bottom: 32px;
+        margin-bottom: 46px;
     }
 }
 
 .driver-section {
     display: flex;
     gap: 16px;
+    margin-bottom: 32px;
+}
+
+.more-drivers-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
 }

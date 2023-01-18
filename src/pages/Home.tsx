@@ -4,6 +4,7 @@ import SingleDriver from '../components/Drivers/SingleDriver';
 import d2023 from '../Datas/2023/drivers.json';
 import { useEffect, useState } from 'react';
 import "../assets/styles/home/home.scss"
+import { NavLink } from 'react-router-dom';
 
 
 export interface driverData {
@@ -32,9 +33,9 @@ export default function Home() {
 					className='top-image'
 					alt=''
 				/>
-				<div className='relative flex my-6 items-center'>
+				<div className='relative flex my-8 items-center'>
 					<div className='flex-grow border-t border-[#00ff5e]'></div>
-					<span className='flex-shrink mx-4 text-white text-2xl font-bold'>
+					<span className='flex-shrink mx-6 text-white text-2xl font-bold'>
 						DRIVERS
 					</span>
 					<div className='flex-grow border-t border-[#00ff5e]'></div>
@@ -66,11 +67,17 @@ export default function Home() {
 						</div>
 						))}
 					</div>
+
+					<div className='more-drivers-section'>
+						<NavLink className="medium-button" to="/drivers">
+							MORE DRIVERS
+						</NavLink>
+					</div>
 				
 
-				<div className='relative flex my-6  items-center py-5'>
+				<div className='relative flex my-8 items-center '>
 					<div className='flex-grow border-t border-[#00ff5e]'></div>
-					<span className='flex-shrink mx-4 text-white text-2xl font-bold'>
+					<span className='flex-shrink mx-6 text-white text-2xl font-bold'>
 						NEWS
 					</span>
 					<div className='flex-grow border-t border-[#00ff5e]'></div>
