@@ -6,7 +6,7 @@ const backendUrl: any = process.env.REACT_APP_BACKEND;
 // 	transports: ['polling'],
 // });
 // const socket = io.connect('http://localhost:7000/');
-const socket = io.connect('wrwrum-57o3.onrender.com/');
+const socket = io.connect('https://wrwrum-57o3.onrender.com/');
 
 // interface User {
 // 	firstName: string;
