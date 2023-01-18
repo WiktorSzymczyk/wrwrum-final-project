@@ -78,7 +78,15 @@
 }
 
 /// mobile
+
 .nav-bar-mobile-main{
     width: 100%;
-    height: 84px
+    height: 84px;
+    background-color: $navBar-bg;
+}
+
+@media only screen and (max-width:1025px) {
+    .nav-bar-desktop {
+        display: none;
+    }
 }

@@ -41,7 +41,7 @@ function App() {
 		<div className='App bg-main-bg w-full '>
 			<div className='main-website w-full'>
 
-        <ToastContainer/>
+        	<ToastContainer/>
 				<AuthProvider>
 					<Navbar />
 					<Routes>

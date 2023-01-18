@@ -1,21 +1,11 @@
 import React, { useState } from 'react';
 import NavBarDekstop from './NavBarDekstop';
-import { useAuthContext, DataType } from "../../context/AuthContext"
+import NavbarMobile from './NavbarMobile';
 
 
 
 export default function Navbar() {
-	const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
-
-	const { setToken, isAuthenticated} = useAuthContext() as DataType
-
-	// const logout = () => {
-	// 	localStorage.removeItem('token'),
-	// 	setToken(),
-	// 	setIsAuthenticated(false)
-
-	// }
-
+	
 
 	return (
 		<>
@@ -24,7 +14,7 @@ export default function Navbar() {
 					<NavBarDekstop />
 				</div>
 				<div className='nav-bar-mobile'>
-
+					<NavbarMobile />
 				</div>
 			</div>
 		</>
