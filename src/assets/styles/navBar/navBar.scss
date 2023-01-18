@@ -5,6 +5,7 @@
     margin: auto;
     width: 150px;
     margin-bottom: 46px;
+    
 
 }
 
@@ -14,7 +15,7 @@
     background-color: $navBar-bg;
     border-radius: 6px;
     margin: 46px 46px 46px 32px;
-    height: 100%;
+    height: auto;
 
 
 
@@ -45,6 +46,10 @@
         &.active {
             color: $primary-green-text;
             border: 0.5px solid $primary;
+        }
+
+        .medium-button{
+            width: 270px;
         }
     }
 
