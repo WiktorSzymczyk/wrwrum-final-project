@@ -1,8 +1,8 @@
 import * as io from 'socket.io-client';
 import { useState, useEffect } from 'react';
 import '../../assets/styles/share/mediumButton.scss';
- const backendUrl: any = process.env.REACT_APP_BACKEND;
- const socket = io.connect(backendUrl);
+const backendUrl: any = process.env.REACT_APP_BACKEND;
+const socket = io.connect('http://localhost:7000/');
 
 // interface User {
 // 	firstName: string;
