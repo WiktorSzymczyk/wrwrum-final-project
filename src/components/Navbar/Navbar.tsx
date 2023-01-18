@@ -5,6 +5,15 @@ import NavBarDekstop from './NavBarDekstop';
 export default function Navbar() {
 	const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
+	const { setToken, isAuthenticated} = useAuthContext() as DataType
+
+	// const logout = () => {
+	// 	localStorage.removeItem('token'),
+	// 	setToken(),
+	// 	setIsAuthenticated(false)
+
+	// }
+
 
 	return (
 		<>

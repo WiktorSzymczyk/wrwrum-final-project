@@ -16,8 +16,8 @@ export default function ChatScreen() {
 	// }, [color]);
 
 	return (
-		<div className='w-screen flex justify-center pt-10 h-screen'>
-			;{' '}
+		<div className='w-screen flex justify-center h-screen'>
+			{' '}
 			{chat ? (
 				<Chat
 					fakeUser={fakeUser}
@@ -26,14 +26,14 @@ export default function ChatScreen() {
 				/>
 			) : (
 				<form className='flex flex-col justify-center'>
-					<div className='flex flex-col'>
-						<h2>Choose Your Color!</h2>
+					<h2>Choose Your Color!</h2>
+					<div className='flex justify-center '>
 						<HexColorPicker
-							className='mr-5'
 							color={colorMe}
 							onChange={setColorMe}
 						/>
 					</div>
+
 					{/* <div className=''>
 							<h2>Other Color</h2>
 							<HexColorPicker
@@ -42,7 +42,7 @@ export default function ChatScreen() {
 							/>
 						</div> */}
 					<input
-						className='text-[#222222] p-2 rounded-sm mb-5  mt-5'
+						className='text-[#222222] p-2 rounded-sm mb-5  mt-5 medium-button'
 						value={fakeUser}
 						placeholder='username'
 						onChange={(e) => setFakeUser(e.target.value)}
