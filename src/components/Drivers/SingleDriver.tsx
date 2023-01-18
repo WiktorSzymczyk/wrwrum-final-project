@@ -31,7 +31,7 @@ export default function SingleDriver(props: {
 
 	return (
 		<div>
-			<div className='modalSmall driver-card'>
+			<div className='modalSmall datas-card'>
 				<div
 					onClick={handleClick}
 				>

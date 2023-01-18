@@ -34,60 +34,65 @@ export default function Tracks() {
 	console.log(value);
 	console.log(data);
 	return (
-		<form onSubmit={handleSubmit}>
-			<div className='pt-10'>
-				<select
-					value={value}
-					className='mb-5 mr-5'
-					onChange={handleChanges}
-				>
-					<option
-						className='2023'
-						value='2023'
-					>
-						Current
-					</option>
-					<option
-						className='2022'
-						value='2022'
-					>
-						2022
-					</option>
-					<option
-						className='2021'
-						value='2021'
-					>
-						2021
-					</option>
-				</select>
-
-				<div className='text-white'>
-					<h1>Show Current Standings</h1>
-				</div>
-
-				<div className='flex justify-center'>
-					<div className='flex flex-wrap justify-center items-center'>
-						{data.circuit.map((res: any) => (
-							<div key={res.id}>
-								<SingleTrack
-									name={res.name}
-									img={res.img}
-									country={res.country}
-									distance={res.raceDistance}
-									laps={res.numberOfLaps}
-									firstGrandPrix={res.firstGrandPrix}
-									lapRecordDriver={res.lapRecordDriver}
-									lapRecordSeason={res.lapRecordSeason}
-									lapRecordTime={res.lapRecordTime}
-									circuitLength={res.circuitLength}
-									id={res.id}
-									year={res.year}
-								/>
-							</div>
-						))}
+	<div className="datas-container"> 
+		<div className="datas-top">
+			<h1 >Season of </h1>
+			
+				<div onSubmit={handleSubmit}>
+						<select
+							value={value}
+							className='dropdown-small'
+							onChange={handleChanges}
+						>
+							<option
+								className='2023'
+								value='2023'
+							>
+								Current
+							</option>
+							<option
+								className='2022'
+								value='2022'
+							>
+								2022
+							</option>
+							<option
+								className='2021'
+								value='2021'
+							>
+								2021
+							</option>
+						</select>
 					</div>
 				</div>
-			</div>
-		</form>
+
+					
+
+					<div className='datas-body'>
+						
+							{data.circuit.map((res: any) => (
+								<div key={res.id}>
+									<SingleTrack
+										name={res.name}
+										img={res.img}
+										country={res.country}
+										distance={res.raceDistance}
+										laps={res.numberOfLaps}
+										firstGrandPrix={res.firstGrandPrix}
+										lapRecordDriver={res.lapRecordDriver}
+										lapRecordSeason={res.lapRecordSeason}
+										lapRecordTime={res.lapRecordTime}
+										circuitLength={res.circuitLength}
+										id={res.id}
+										year={res.year}
+									/>
+								</div>
+							))}
+					
+					</div>
+			
+			
+	</div>
+
 	);
 }

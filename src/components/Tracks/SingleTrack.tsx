@@ -23,35 +23,31 @@ export default function SingleTrack(props: {
 	};
 
 	return (
-		<div>
-			<div className='p-10'>
+		<div className='modalSmall datas-card'>
+			
 				<div
-					className='modalSmall'
+					
 					onClick={handleClick}
 				>
 					<Image
 						placeholderImg='https://via.placeholder.com/400x200.png?text=This+Will+Be+Shown+Before+Load'
-						className='w-full bg-white'
+						className='card-img'
 						src={props.img}
 						alt=''
 					/>
-					<div className='px-6 py-4'>
-						<h2 className='font-bold mb-2 text-white'>{props.name}</h2>
+					<div className='py-4'>
+						<h4 className='text-secondary mb-2'>{props.country}</h4>
+						<h4 className='font-bold mb-6'>{props.name}</h4>
 
-						<h2 className='text-secondary font-bold'>{props.country}</h2>
+						
 
 						<p className='text-gray-300 text-base pb-2'>
 							Laps: <span className='font-medium'>{props.laps}</span>
 						</p>
-						<Link
-							to={`/tracks/${props.year}/${props.id}`}
-							className='text-white font-semibold'
-						>
-							Details
-						</Link>
+						
 					</div>
 				</div>
-			</div>
+			
 		</div>
 	);
 }

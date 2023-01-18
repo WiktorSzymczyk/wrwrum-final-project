@@ -7,6 +7,8 @@ import "./assets/styles/share/dropdown.scss"
 import "./assets/styles/navBar/navBar.scss";
 import "./assets/styles/signup_login/signupLogin.scss"
 import "./assets/styles/navBar/navBar.scss"
+import "./assets/styles/f1Datas/data-style.scss"
+import "./assets/styles/f1Datas/datas-card.scss"
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import ConstructorPage from './components/Constructors/ConstructorPage';
