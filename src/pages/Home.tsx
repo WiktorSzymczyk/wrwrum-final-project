@@ -83,7 +83,7 @@ export default function Home() {
 					<div className='flex-grow border-t border-[#00ff5e]'></div>
 				</div>
 
-				<div>
+				<div className="home-news-section">
 					<NewsContainer />
 				</div>
 			</div>
