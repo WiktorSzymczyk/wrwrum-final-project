@@ -38,10 +38,14 @@
 
     @media screen and (max-width: 767px) {
             flex-direction: column;
+          
         }
 
     .dropdown-small {
         margin-right: 24px ;
+        @media screen and (max-width: 767px) {
+            margin-right: 0px;
+        }
     }
 
 
@@ -50,6 +54,7 @@
 
         @media screen and (max-width: 767px) {
                 margin-bottom: 12px;
+                margin-right: 0px;
             }
 
     }
