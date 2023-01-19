@@ -23,7 +23,11 @@
     gap: 16px;
     margin-bottom: 32px;
 
-    @media only screen and (max-width:1025px) {
+    @media only screen and (min-width:768px) and (max-width:1025px) {
+            margin: 0px 16px;
+        }
+
+    @media only screen and (max-width:767px) {
      flex-direction: column;
      margin: 0px 16px 46px;
     }

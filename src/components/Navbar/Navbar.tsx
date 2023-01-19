@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import NavBarDekstop from './NavBarDekstop';
 import NavbarMobile from './NavbarMobile';
-
+import { Outlet } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -17,6 +17,7 @@ export default function Navbar() {
 					<NavbarMobile />
 				</div>
 			</div>
+			<Outlet />
 		</>
 	);
 }

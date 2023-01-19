@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import NavbarLists from "./NavbarLists";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -11,12 +12,13 @@ export default function NavbarMobile() {
 	return (
 		<div className='nav-bar-mobile-main'>
 			<div className="mobile-logo">
-				<img src={logo}/>
+				<a href="/"><img src={logo}/></a>
 			</div>
 			<div className="burger-menu" onClick={setIsShown}>
 				{isShown? <div className="drop-down-submenu"><NavbarLists/></div>: !(<NavbarLists/>)}
 				<img src="/img/burger-menu.png" alt="menu" />
 			</div>
+			
 		</div>
 	);
 }
