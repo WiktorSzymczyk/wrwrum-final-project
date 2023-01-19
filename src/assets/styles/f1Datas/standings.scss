@@ -1,0 +1,33 @@
+@import "../share/colour-library.scss";
+
+.standing-main {
+    width: 100%;
+    margin: 64px 0px;
+
+}
+
+.standing-option-body{
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        margin-bottom: 32px;
+    }
+}
+
+.standing-option {
+    color: $primary-text ;
+    font-size: 20px;
+    margin-right: 24px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 0.5px solid $secondary-text;
+
+    &:focus {
+         color: $primary-green-text;
+         border: 0.5px solid $primary;
+         
+     } 
+
+}

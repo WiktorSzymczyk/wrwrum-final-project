@@ -1,7 +1,7 @@
 @import "../share/colour-library.scss";
+
 .driver-information-container {
     margin-bottom: 16px;
-
     
 }
 
@@ -9,15 +9,34 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    @media only screen and (min-width:768px) and (max-width:1025px) {
+            align-items: flex-end;
+
+            h1{
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }
 
     .driver-name-section{
         display: flex;
         align-items: center;
 
+        @media only screen and (min-width:768px) and (max-width:1025px) {
+              align-items: flex-end;
+            }
+
 
         .driver-name{
             font-weight: 600;
             margin-right: 14px;
+            line-height: 24px;
+            text-align: left;
+                @media only screen and (min-width:768px) and (max-width:1025px) {
+                    margin-right: 16px;
+                    width: min-content;
+                }
+            
         }
 
         .driver-country{

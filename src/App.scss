@@ -88,4 +88,12 @@ p{
 
 .main-website {
   display: flex;
+
+  @media only screen and (max-width:1025px) {
+      display: flex;
+      flex-direction: column;
+  
+    }
+
+
 }
