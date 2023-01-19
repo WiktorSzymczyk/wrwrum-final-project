@@ -1,35 +1,38 @@
 import { useState } from 'react';
 // import d2022 from '../../Datas/2023/driverStandings.json';
 import Standings from '../Standings/Standings';
+import "../../assets/styles/f1Datas/standings.scss"
+import { NavLink } from 'react-router-dom';
 
 export default function StandingsPage() {
 	const [team, setTeams] = useState(false);
 
 	return (
-		<div className='w-full pt-20'>
-			<h1 className='text-white text-2xl font-semibold text-center'>
-				STANDINGS
-			</h1>
+		<div className='standing-main'>
+			
 
-			<div className='flex justify-center'>
-				{team ? (
-					<button
+			<div className='standing-option-body'>
+				<h1 >
+				STANDINGS
+				</h1>
+				<div>
+					<NavLink
+					onClick={() => setTeams(!team)}
+					className='standing-option' to={''}					>
+						Constructors
+					</NavLink>
+				
+					<NavLink
 						onClick={() => setTeams(!team)}
-						className='medium-button'
+						className='standing-option' to={''}	
 					>
-						Constructors Standings
-					</button>
-				) : (
-					<button
-						onClick={() => setTeams(!team)}
-						className='medium-button'
-					>
-						Drivers Standings
-					</button>
-				)}
+						Drivers
+					</NavLink>
+				</div>
+				
 			</div>
 
-			<div className='w-full text-center text-white'>
+			<div>
 				<Standings team={team} />
 			</div>
 		</div>
