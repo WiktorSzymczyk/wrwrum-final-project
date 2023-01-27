@@ -10,6 +10,11 @@
 
 .nav-bar-desktop{
     height: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: auto;
+    top: 0.1%;
+    
 }
 
 .Nav-bar-container {
@@ -17,9 +22,9 @@
     padding: 46px 24px;
     background-color: $navBar-bg;
     border-radius: 6px;
-    margin: 46px 46px 46px 32px;
+    margin: 32px;
     height: 100%;
-
+    
 }
 
 .nav-bar-body {
@@ -123,10 +128,13 @@
 
 }
 
+
+
 @media only screen and (max-width:1025px) {
     .nav-bar-desktop {
         display: none;
     }
+   
 }
 
 @media only screen and (min-width:1024px) {
