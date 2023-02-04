@@ -9,7 +9,7 @@
 
 This project is separated into two repositories. 
 
-Frontend (this)
+Frontend (this) & 
 [Backend](https://github.com/AdaN6/wrwrum-final-project-backend) 
 
 # Website
